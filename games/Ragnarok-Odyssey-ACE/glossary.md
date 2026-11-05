@@ -259,3 +259,25 @@ Chỉ bổ sung mục chưa dịch; checkpoint K gồm 372 ID, không ghi đè b
 NPC 3071–3080 (Yukino) giữ lối xưng tôi/cậu, nói chừng mực; thợ rèn 3085–3091 bộc trực; người trông Hũ tỷ phú 3127–3141 nói vui, hơi láu cá. Tiếng kêu thú nhỏ 3081–3084 phiên âm Kiu/Kuê. NPC 3090 giữ nguyên bản dịch đã có.
 
 **QA:** Một số câu NPC có token màu/tên nhân vật ẩn chỉ nằm trong `source_tagged` như ID 3083, 3084, 3088; đã giữ nguyên. `validate_return.py` của gói bàn giao PASS 240/240. Chưa xác nhận font hoặc độ rộng chữ trên RPCS3/PS3.
+
+## Thuật ngữ và quy tắc — đợt Q (05/11)
+
+| Nguyên văn | Bản Việt |
+|---|---|
+| Billionaire Pot | Hũ tỷ phú |
+| Halomonas Weapon | Vũ khí Halomonas |
+| Made to Order | Đơn chế tạo |
+| ACE Skills / Active Skills | Kỹ năng ACE / kỹ năng chủ động |
+| Proof of Expertise | Giữ tên vật phẩm Proof of Expertise cho đến khi chuẩn hóa bảng vật phẩm |
+| Brandish | Vung Kiếm |
+| HP Absorption Up / Dainsleif Power Up | Tăng Hút HP / Tăng Sức Mạnh Dainsleif |
+| Hallucination Walk | Bước Ảo Ảnh |
+| Eucharistica / Meditatio | Giữ tên kỹ năng quen thuộc |
+| Power Swing / True Sight / Soul Drain | Vung Đòn Uy Lực / Thị Giác Chân Thật / Hút Linh Hồn |
+| Triple Jump | Chưa sửa khác biệt tên–mô tả từ đợt L |
+| Unlimited Potential (JP) | Tiềm Năng Vô Hạn |
+| Deadly Poison / Bind / Freeze / Burn | Kịch Độc / Trói / Đóng Băng / Bỏng |
+
+**Xưng hô:** Người quản lý Hũ tỷ phú (3142–3165) xưng tui/cậu và nói khoa trương. Người hướng dẫn kỹ năng ACE (3166–3179) xưng tôi/cậu, rõ ràng. Brokkr (3180–3200) xưng ta/cậu, bộc trực. Các đoạn NPC vốn đã dịch từ đợt P (3207, 3208, 3209, 3211, 3212, 3213) được giữ nguyên; đợt Q thêm 6 mục mới (3221, 3225, 3229, 3230, 3231, 3232).
+
+**QA:** 100 tên và 100 mô tả bị động 676–775 được đối chiếu chung; giữ cả các hiệu ứng đánh đổi, các mốc HP 90%/89%, token `{#0}` và chữ số. Các tên chiêu Brandish Spear, Bowling Bash, Two Hand Quicken giữ nguyên trong mô tả để người chơi tra cứu. Bảng gốc có tiếng Nhật tại ID 758 đã dịch. `validate_return.py` PASS 279/279. Chưa kiểm thử bề ngang chữ hoặc đóng gói trên RPCS3/PS3.
