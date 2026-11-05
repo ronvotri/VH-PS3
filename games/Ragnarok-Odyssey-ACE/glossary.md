@@ -301,3 +301,21 @@ NPC 3071–3080 (Yukino) giữ lối xưng tôi/cậu, nói chừng mực; thợ
 **Giọng NPC:** Brokkr xưng ta/cậu, bộc trực và hài hước; Rune lịch sự, xưng tôi/cậu. Giữ nguyên ký hiệu `{#0}` trong tên kỹ năng và mô tả vì đó là token màu ẩn của nguồn.
 
 **QA đợt R:** 83 hội thoại NPC 3233–3315, 124 tên kỹ năng và 124 mô tả kỹ năng 776–899; `validate_return.py` gốc xác thực PASS 331/331. Chưa kiểm thử giao diện và font trong RPCS3/PS3.
+
+
+## Thuật ngữ & nhân vật — đợt S (06/11/2026)
+
+| Gốc | Việt hóa |
+|---|---|
+| Linde's Item Shop | Tiệm Đồ Linde |
+| Rune's Tailor Shop | Tiệm May Rune |
+| Storage Box | Hộp Kho |
+| Soul Sipper / Soul Eater | Kẻ Hút Linh Hồn / Kẻ Nuốt Linh Hồn (phân biệt) |
+| Gigant Energy / Gigant Darkness | Năng Lượng Khổng Lồ / Bóng Tối Khổng Lồ |
+| Crit Attack / Crit Power | Tỉ lệ chí mạng / Lực chí mạng |
+| Underworld Protection | Thần Hộ Mệnh Âm Giới |
+| Orc Fighting Spirit | Ý Chí Chiến Đấu Orc |
+
+**Giọng NPC:** Rune nói nhã nhặn (tôi/cậu), Linde lanh lợi, Lif tinh nghịch (tớ/cậu), Thrasir dễ bối rối; Lod xưng *tui*, nói kiểu say rượu và *HỨC*; Brokkr xưng *ta/cậu*, cộc cằn ấm áp. Giữ các token màu `{#0}` ở cả dòng hội thoại, tên và mô tả kỹ năng.
+
+**QA:** Đợt S có 114 NPC 3316–3429, 110 tên và 110 mô tả kỹ năng 900–1009. Bộ `validate_return.py` chạy với tham chiếu pending hồi phục từ `needs_translation.json` PASS 334/334; bản `all_records.json` trong ZIP bị lỗi local-header khi trích xuất, chưa kiểm được trực tiếp file này. Chưa chạy game hoặc đo độ rộng font trong RPCS3/PS3.
