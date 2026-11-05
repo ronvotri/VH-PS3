@@ -3,14 +3,14 @@
 - **Mã game:** BLUS31386 (US), APP_VER 01.00
 - **Nguồn dữ liệu:** `RagnarokACE-BanGiaoDich-2026-11-04.zip`
 - **Catalog đã kiểm kê:** 25.288 chuỗi / 76 bảng
-- **Đã có bản dịch:** 6.715 (2.175 đã duyệt trong bàn giao + 4.540 dịch sau bàn giao)
-- **Chưa dịch trong danh sách cần xử lý:** 14.934 / 19.474
+- **Đã có bản dịch:** 6.955 (2.175 đã duyệt trong bàn giao + 4.780 dịch sau bàn giao)
+- **Chưa dịch trong danh sách cần xử lý:** 14.694 / 19.474
 - **Cập nhật gần nhất:** 05/11/2026
 - **Tình trạng:** dữ liệu bản dịch; chưa được kiểm thử đóng gói patch PS3.
 
 ## Điểm bắt đầu mỗi lần dịch
 
-1. Mở [`translations/current.json`](translations/current.json): đây là **bản hợp nhất hiện hành duy nhất**, chứa 6.715 cặp `id → target_vi`.
+1. Mở [`translations/current.json`](translations/current.json): đây là **bản hợp nhất hiện hành duy nhất**, chứa 6.955 cặp `id → target_vi`.
 2. Đối chiếu với `01_CAN_DICH/needs_translation.json` từ gói bàn giao gốc, chỉ dịch mục chưa có trong `current.json`.
 3. Không chỉnh ID, file, index, source, source_tagged, attributes, status hoặc source_sha256. Giữ token `{#0}`, `{#1}`, printf như `%u` và số liệu.
 4. Sau mỗi đợt, viết một JSON mới trong `checkpoints/`, kiểm tra, rồi cập nhật `translations/current.json` và tiến độ này.
@@ -36,7 +36,8 @@
 | 05/11 — đợt mới L | 370 | Thoại Lif–Thrasir 2731–2850, 125 tên và 125 mô tả kỹ năng bị động 161–285 |
 | 05/11 — đợt mới M | 350 | Thoại Thrasir 2851–2920; tên và mô tả kỹ năng 286–425 |
 | 05/11 — đợt mới N | 240 | Thoại Thrasir–Yukino 2921–3000, kỹ năng 426–505 (tên và mô tả) |
-| **Tổng** | **6.715** | Không trùng ID |
+| 05/11 — đợt mới O | 240 | NPC 3001–3070, tên và mô tả kỹ năng 506–590 |
+| **Tổng** | **6.955** | Không trùng ID |
 
 ## Cấu trúc
 

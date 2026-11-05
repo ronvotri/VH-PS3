@@ -217,3 +217,26 @@ Chỉ bổ sung mục chưa dịch; checkpoint K gồm 372 ID, không ghi đè b
 **Giọng nhân vật:** Thrasir (2921–2927) xưng tôi/cậu, sắc sảo nhưng ấm áp; Yukino (2928–3000) xưng tôi/cậu, giàu kiến thức, nói điềm tĩnh. Các câu nguồn lặp được dịch cùng một cách.
 
 **Chất lượng:** Giữ token `{#0}`, các số nguyên/cấp `Lv.`, mã `printf` và nhãn HP/AP/SP/ATK/DEF. Mô tả kỹ năng dịch đủ cả lợi ích và đánh đổi. Công cụ `validate_return.py` gốc: PASS 240/240. Chưa thử độ rộng chữ trên RPCS3/PS3.
+
+## Thuật ngữ bổ sung — đợt O (05/11)
+
+| Bản gốc | Bản Việt |
+|---|---|
+| Ymir's Eyebrow | Lông Mày Ymir |
+| Bifrost | Bifrost (cầu vồng nối Nhân Giới và Thần Giới) |
+| Age of the Gods | Thời Đại Chư Thần |
+| Asgard | Asgard |
+| Royal Order | Vương Lệnh |
+| Flame's Blessing | Phúc Lành Lửa |
+| Gaea's Embrace | Vòng Tay Gaea |
+| Mimir's Tears | Nước Mắt Mimir |
+| Aerial Step | Lướt Né Trên Không |
+| Combo Counter | Phản Đòn Liên Hoàn |
+| Over Thrust / Maximum Over Thrust | Đòn Đẩy Mạnh / Đòn Đẩy Tối Đa |
+| Knockback / Launch | Hất lùi / Hất tung |
+
+**Hội thoại:** Yukino tiếp tục xưng *tôi*, gọi *cậu*, diễn giải rõ dữ kiện và giả thuyết. Các câu lặp nguồn được dịch giống nhau. Khi tên người chơi mất khỏi trường `source` nhưng có trong `source_tagged`, giữ `{#0}` trong bản Việt.
+
+**Kỹ năng:** Tên và mô tả số 506–590 được dịch đúng các lợi/hại; giữ Lv., HP/AP/SP, tên riêng và token màu `{#0}`. Các kỹ năng tăng giảm độ ngẫu nhiên sát thương của Chiến binh búa được mô tả là *biên độ sát thương*, không phải tầm đánh.
+
+Đợt O đã qua `validate_return.py` trong gói bàn giao: PASS 240/240. Chưa kiểm thử trực tiếp trên RPCS3 hoặc PS3.
