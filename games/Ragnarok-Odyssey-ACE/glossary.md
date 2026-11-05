@@ -31,3 +31,24 @@ Giữ tên riêng Eadgils, Eirik, Hilda, Rune Midgard, Prontera, Ifing và tên 
 **Xưng hô:** Eadgils xưng “ta”, gọi tân binh là “cậu”; Eirik xưng “tôi”, giọng thân mật; Hilda xưng “tôi”, điềm tĩnh. Hội thoại dùng tiếng Việt tự nhiên, vừa khung, không nói quá trang trọng.
 
 Credit bản dựng phải có nguyên văn **Việt hóa bởi Votri Valley.**.
+
+## Thuật ngữ bổ sung — 05/11 (đợt D)
+
+| Bản gốc | Bản Việt |
+|---|---|
+| Council of Lords | Hội đồng Lãnh chúa |
+| Royal Academy | Học viện Hoàng gia |
+| Royal Knights | Hiệp sĩ Hoàng gia |
+| King's Guard | Cận Vệ Hoàng Gia |
+| Killer Ant | Kiến Sát Thủ |
+| HillGiant / FrostGiant / FlameGiant | Khổng Lồ Đồi / Khổng Lồ Băng / Khổng Lồ Lửa |
+| Frostwolf Hati / Flamewolf Skoll | Sói Băng Hati / Sói Lửa Skoll |
+| Floating Ash Tree | Cây Tần Bì Bay |
+| Freyja's Upturned Pinnacle | Đỉnh Tháp Đảo Ngược Của Freyja |
+| Thor's Volcano | Núi Lửa Của Thor |
+| Idavoll Plains / Ifing River | Đồng Bằng Idavoll / Sông Ifing |
+| Glast Heim Ruins | Phế Tích Glast Heim |
+| Midgard | Midgard (Nhân Giới) |
+| Dainsleif Mode | Chế độ Dainsleif |
+
+**Lưu ý:** Tên riêng và token màu/nhân vật giữ nguyên; chỉ Việt hóa phần chữ hiển thị. Các tên kỹ năng, quái và địa điểm cần thử độ dài khi có patch thử trên RPCS3.
