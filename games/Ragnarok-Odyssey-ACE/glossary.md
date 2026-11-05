@@ -177,3 +177,22 @@ Chỉ bổ sung mục chưa dịch; checkpoint K gồm 372 ID, không ghi đè b
 **Chênh lệch nguồn:** `it_db_name_skill.rmsg::263` tên `Triple Jump`, nhưng `it_db_text_skill.rmsg::263` viết tiếng Nhật `２段ジャンプが可能になる` (cho phép nhảy hai lần). Giữ dịch theo từng trường; cần kiểm thử cơ chế game.
 
 Đã dịch các mô tả kỹ năng TGS 2011 có sẵn tiếng Nhật. Giữ toàn bộ số liệu/khung bất tử/hệ số, không thay ID hay token `{#0}`. Các nhãn kỹ năng cần được thử độ rộng font trong RPCS3 trước khi phát hành.
+
+## Thuật ngữ và lối thoại — đợt M (05/11)
+
+| Gốc | Dịch thống nhất |
+|---|---|
+| Enhanced Mace / Hammer / Bow / Staff / Sword | Chùy / Búa / Cung / Trượng / Kiếm Cường Hóa |
+| Elemental Hammer / Bow / Staff / Sword | Búa / Cung / Trượng / Kiếm Nguyên Tố |
+| Ailment Hammer / Bow / Staff / Sword | Búa / Cung / Trượng / Kiếm Gây Bất Lợi |
+| Berserk / Devotion / Envenom | Cuồng Nộ / Tận Hiến / Tẩm Độc |
+| Adrenaline Rush / Energy Coat | Bùng Nổ Adrenaline / Áo Năng Lượng |
+| Endure / Greed | Kiên Cường / Tham Lam |
+| AP Recovery Up / HP Recovery Up | Tăng Hồi AP / Tăng Hồi HP |
+| Shock / Thrust / Slice | Thuộc tính điện / đâm / chém |
+| Poison / Deadly Poison | Độc / Kịch Độc |
+| Stun / Burn / Bind / Freeze | Choáng / Bỏng / Trói / Đóng Băng |
+
+**Nhân vật:** Thrasir xưng *tôi*, gọi người chơi là *cậu*, nói mạnh miệng nhưng quan tâm Lif. Các câu thoại NPC 2851–2920 giữ nguyên tên người chơi động `{#0}` và không vượt quá 3 dòng ở dữ liệu.
+
+**Kỹ năng:** Đã dịch tên và mô tả số 286–425, gồm 2 mô tả nguồn tiếng Nhật về cự ly lướt (390–391). Giữ tên chiêu gốc như Arrow Shower, Gravity Ball, Sonic Blow để dễ đối chiếu; giữ nguyên `Lv.`, token, số liệu. Chưa đo độ rộng font trong RPCS3/PS3.
