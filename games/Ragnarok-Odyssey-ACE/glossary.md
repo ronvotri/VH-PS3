@@ -196,3 +196,24 @@ Chỉ bổ sung mục chưa dịch; checkpoint K gồm 372 ID, không ghi đè b
 **Nhân vật:** Thrasir xưng *tôi*, gọi người chơi là *cậu*, nói mạnh miệng nhưng quan tâm Lif. Các câu thoại NPC 2851–2920 giữ nguyên tên người chơi động `{#0}` và không vượt quá 3 dòng ở dữ liệu.
 
 **Kỹ năng:** Đã dịch tên và mô tả số 286–425, gồm 2 mô tả nguồn tiếng Nhật về cự ly lướt (390–391). Giữ tên chiêu gốc như Arrow Shower, Gravity Ball, Sonic Blow để dễ đối chiếu; giữ nguyên `Lv.`, token, số liệu. Chưa đo độ rộng font trong RPCS3/PS3.
+
+## Thuật ngữ bổ sung — đợt N (05/11)
+
+| Nguồn gốc | Bản Việt |
+|---|---|
+| Vital sign (giants) | Dấu hiệu sinh lực (khổng lồ) |
+| Killer Ant | Kiến Sát Thủ |
+| Pellet (bird regurgitation) | Viên thức ăn chim nôn ra |
+| Vanir / Aesir | Giữ tên hai hệ thần |
+| Nine Worlds / World Tree | Chín Thế Giới / Cây Thế Giới |
+| Critical Strike / Surprise Attack | Đòn Chí Mạng / Đánh Úp |
+| Target Practice | Luyện Bắn |
+| Tainted Arrow | Tên Tẩm Độc (tùy hiệu ứng) |
+| Aerial Combat | Không Chiến |
+| Oath to Valhalla | Lời Thề Valhalla |
+| Gigant Power | Sức Mạnh Khổng Lồ |
+| Frost's Blessing | Phúc Lành Băng Giá |
+
+**Giọng nhân vật:** Thrasir (2921–2927) xưng tôi/cậu, sắc sảo nhưng ấm áp; Yukino (2928–3000) xưng tôi/cậu, giàu kiến thức, nói điềm tĩnh. Các câu nguồn lặp được dịch cùng một cách.
+
+**Chất lượng:** Giữ token `{#0}`, các số nguyên/cấp `Lv.`, mã `printf` và nhãn HP/AP/SP/ATK/DEF. Mô tả kỹ năng dịch đủ cả lợi ích và đánh đổi. Công cụ `validate_return.py` gốc: PASS 240/240. Chưa thử độ rộng chữ trên RPCS3/PS3.
