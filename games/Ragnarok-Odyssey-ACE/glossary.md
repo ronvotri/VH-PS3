@@ -240,3 +240,22 @@ Chỉ bổ sung mục chưa dịch; checkpoint K gồm 372 ID, không ghi đè b
 **Kỹ năng:** Tên và mô tả số 506–590 được dịch đúng các lợi/hại; giữ Lv., HP/AP/SP, tên riêng và token màu `{#0}`. Các kỹ năng tăng giảm độ ngẫu nhiên sát thương của Chiến binh búa được mô tả là *biên độ sát thương*, không phải tầm đánh.
 
 Đợt O đã qua `validate_return.py` trong gói bàn giao: PASS 240/240. Chưa kiểm thử trực tiếp trên RPCS3 hoặc PS3.
+
+## Thuật ngữ bổ sung — đợt P (05/11)
+
+| Bản gốc | Bản Việt |
+|---|---|
+| Improved/Diminished Stun | Tăng/Giảm Gây Choáng |
+| Quick Step | Bước Né Liên Hoàn |
+| Counterattack | Phản đòn |
+| Strong/Grand/Shrunken Sanctuary | Thánh Địa Mạnh / Đại Thánh Địa / Thánh Địa Thu Nhỏ |
+| Fire Bolt / Heaven's Drive / Jupiter's Thunder / Storm Gust | Giữ tên chiêu quen thuộc để tra cứu |
+| Cleric Only / Hunter Only / Mage Only | Chỉ Giáo sĩ / Chỉ Thợ săn / Chỉ Pháp sư |
+| Knockback / Launch | Hất lùi / Hất tung |
+| Tension / Stagger | Nhiệt huyết / Khựng |
+| Billionaire Pot | Hũ tỷ phú |
+| Potion Counter / Card Counter / Quest Counter | Quầy Thuốc / Quầy Thẻ / Quầy Nhiệm Vụ |
+
+NPC 3071–3080 (Yukino) giữ lối xưng tôi/cậu, nói chừng mực; thợ rèn 3085–3091 bộc trực; người trông Hũ tỷ phú 3127–3141 nói vui, hơi láu cá. Tiếng kêu thú nhỏ 3081–3084 phiên âm Kiu/Kuê. NPC 3090 giữ nguyên bản dịch đã có.
+
+**QA:** Một số câu NPC có token màu/tên nhân vật ẩn chỉ nằm trong `source_tagged` như ID 3083, 3084, 3088; đã giữ nguyên. `validate_return.py` của gói bàn giao PASS 240/240. Chưa xác nhận font hoặc độ rộng chữ trên RPCS3/PS3.
