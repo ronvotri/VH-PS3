@@ -59,3 +59,19 @@ Credit bản dựng phải có nguyên văn **Việt hóa bởi Votri Valley.**.
 - Các mô tả nguyên liệu có token màu `{#0}` ở đầu; tuyệt đối không xóa.
 - Nhãn `{{Dropped by}}` được dịch thành `{{Rơi từ}}` nhưng vẫn giữ dấu ngoặc đôi, cần kiểm thử trong game.
 - Trong thoại, giữ các token tên nhân vật `{#0}` dù trường `source` có chỗ trống; ưu tiên đối chiếu `source_tagged`.
+
+## Thuật ngữ mới — 05/11 (đợt F)
+
+| Bản gốc | Bản Việt |
+|---|---|
+| Mimir's Well | Giếng Mimir |
+| Jotunheim | Jotunheim |
+| Holy Weapons | Thánh Khí |
+| Greater Giants | Đại Khổng Lồ |
+| Flamewolf Skoll | Sói Lửa Skoll |
+| Fenia & Menia | Fenia và Menia |
+| Dragon Blubber | Mỡ Rồng |
+| Mount Hnitbjorg | Núi Hnitbjorg |
+
+Giữ nguyên tên thần, boss, token {#0} và các con số trong lời thoại (Cloud 9 giữ số 9).
+Với nguyên liệu, giữ nguyên tên quái trong nguồn rơi; nhãn {{Dropped by}} hiện chuyển thành {{Rơi từ}} và cần kiểm thử trên PS3/RPCS3.
