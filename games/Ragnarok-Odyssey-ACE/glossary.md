@@ -75,3 +75,21 @@ Credit bản dựng phải có nguyên văn **Việt hóa bởi Votri Valley.**.
 
 Giữ nguyên tên thần, boss, token {#0} và các con số trong lời thoại (Cloud 9 giữ số 9).
 Với nguyên liệu, giữ nguyên tên quái trong nguồn rơi; nhãn {{Dropped by}} hiện chuyển thành {{Rơi từ}} và cần kiểm thử trên PS3/RPCS3.
+
+## Thuật ngữ bổ sung — 05/11 (đợt G)
+
+| Nguyên văn | Bản Việt |
+|---|---|
+| Utgarda Loki | Utgarda Loki (Vua Khổng Lồ) |
+| Utgardar | Utgardar (kinh đô khổng lồ) |
+| Sixth Scale | Cán Cân Thứ Sáu |
+| Heart's Scale | Cán Cân Trái Tim |
+| Bar Mistress | Bà chủ quán |
+| Scales Talisman | Bùa Vảy |
+| Warrior Sage | Chiến Binh Hiền Triết |
+| Devil Hawk | Ma Điểu |
+| Spectrolyte | Spectrolyte (tên khác của Emperium; không tự đổi vật phẩm) |
+
+Các mục `it_db_text_material` tiếp tục giữ nguyên tên nguồn rơi, mã màu `{#0}`, và dấu ngoặc đôi trong `{{Rơi từ}}`. Không tự động đổi tên kẻ địch ở cuối mô tả. Các đoạn NPC đầu (1984–2040) giữ giọng Eadgils (ta/cậu); phần chủ quán và hướng dẫn dùng giọng tôi/cậu.
+
+Chưa có patch game được kiểm thử hiển thị hoặc độ rộng glyph tiếng Việt trên RPCS3/PS3.
