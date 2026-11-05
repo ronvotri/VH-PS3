@@ -110,3 +110,17 @@ Chưa có patch game được kiểm thử hiển thị hoặc độ rộng glyp
 | All Monsters | Mọi quái vật |
 
 Đợt H chỉ đổi từ ngữ trong mô tả vật phẩm và nhãn nguồn rơi/nhận; vẫn giữ tên riêng của quái vật như Orc King, Hraesvelgr, Hjahanir, Grendel. Không sửa ID, token màu `{#0}` hoặc các ký hiệu `{{...}}`. Nhãn cần thử hiển thị trên RPCS3/PS3; tuyệt đối không coi đây là bản patch đã kiểm thử.
+
+## Thuật ngữ và quy tắc — đợt I (05/11)
+
+| Bản gốc | Bản Việt |
+|---|---|
+| Anti-frost cream | Kem chống rét |
+| Outpost | Tiền đồn |
+| Surt | Surt (thủ lĩnh Khổng Lồ Lửa) |
+| Utgardar | Utgardar (kinh đô khổng lồ) |
+| Utgarda Loki | Utgarda Loki (vua khổng lồ) |
+| Hall of the Dead | Đại Sảnh Người Chết |
+| Norn Exchange | Giữ tên Norn Exchange ở nhãn nơi đổi vật phẩm |
+
+Đợt I đã dịch đủ hội thoại 2351–2520 và mô tả nguyên liệu 360–410. Các nguồn rơi riêng, tên quái vật, token {#0}, và nhãn {{...}} được giữ đúng cấu trúc. Có thể cần rút gọn dòng Việt sau khi thử trên RPCS3.
