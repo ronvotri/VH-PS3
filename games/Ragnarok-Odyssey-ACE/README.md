@@ -25,7 +25,8 @@
 | 05/11 — đợt mới A | 131 | Bình thuốc, mô tả, biểu cảm |
 | 05/11 — đợt mới B | 123 | DLC, nhật ký trận đấu, xếp hạng |
 | 05/11 — đợt mới C | 385 | Lịch sử chiến đấu, bách khoa, phòng mạng, hội thoại NPC |
-| 05/11 — đợt mới D | 410 | Lời thoại NPC, mô tả và tên nhiệm vụ, địa điểm, bộ phận quái vật |\n| 05/11 — đợt mới E | 347 | Lời thoại NPC, mô tả nguyên liệu, dấu ngoặc/nhãn rơi vật phẩm |
+| 05/11 — đợt mới D | 410 | Lời thoại NPC, mô tả và tên nhiệm vụ, địa điểm, bộ phận quái vật |
+| 05/11 — đợt mới E | 347 | Lời thoại NPC, mô tả nguyên liệu, dấu ngoặc/nhãn rơi vật phẩm |
 | **Tổng** | **4.005** | Không trùng ID |
 
 ## Cấu trúc
