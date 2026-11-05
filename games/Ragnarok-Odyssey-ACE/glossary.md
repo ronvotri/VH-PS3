@@ -124,3 +124,21 @@ Chưa có patch game được kiểm thử hiển thị hoặc độ rộng glyp
 | Norn Exchange | Giữ tên Norn Exchange ở nhãn nơi đổi vật phẩm |
 
 Đợt I đã dịch đủ hội thoại 2351–2520 và mô tả nguyên liệu 360–410. Các nguồn rơi riêng, tên quái vật, token {#0}, và nhãn {{...}} được giữ đúng cấu trúc. Có thể cần rút gọn dòng Việt sau khi thử trên RPCS3.
+
+## Thuật ngữ bổ sung — đợt J (05/11)
+
+| Tên gốc | Bản Việt |
+|---|---|
+| Soul Breaker | Phá Hồn |
+| Heal / Blessing | Hồi Máu / Ban Phước |
+| Sanctuary | Thánh Địa |
+| Gloria / Kyrie Eleison / Coluceo Heal | Giữ tên kỹ năng quen thuộc |
+| Tension | Nhiệt huyết |
+| Fury Stance / Guard Stance | Thế Cuồng Nộ / Thế Phòng Thủ |
+| Provoke / Hard Provoke | Khiêu Khích / Đại Khiêu Khích |
+| Stun / Burn / Freeze | Choáng / Bỏng / Đóng băng |
+| Attack / Defense Up or Down (passive) | Tăng/Giảm ATK, Tăng/Giảm DEF (giữ Lv. và số) |
+| Emperium / Spectrolyte | Giữ tên; Spectrolyte là dạng Emperium đặc biệt |
+| Con / Ottar | Giữ tên; Con xưng tôi, Ottar xưng ta, giọng khoa trương |
+
+Lời thoại 2521–2640 giới thiệu hợp đồng môi giới Prontera; các tên riêng và token `{#0}`...`{#6}` được giữ. Riêng tên kỹ năng dài phải kiểm thử trên màn hình PS3; chưa được xác nhận có đủ bề ngang tiếng Việt.
