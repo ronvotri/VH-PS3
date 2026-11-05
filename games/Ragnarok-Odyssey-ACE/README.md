@@ -3,14 +3,14 @@
 - **Mã game:** BLUS31386 (US), APP_VER 01.00
 - **Nguồn dữ liệu:** `RagnarokACE-BanGiaoDich-2026-11-04.zip`
 - **Catalog đã kiểm kê:** 25.288 chuỗi / 76 bảng
-- **Đã có bản dịch:** 5.383 (2.175 đã duyệt trong bàn giao + 3.208 dịch sau bàn giao)
-- **Chưa dịch trong danh sách cần xử lý:** 16.266 / 19.474
+- **Đã có bản dịch:** 5.755 (2.175 đã duyệt trong bàn giao + 3.580 dịch sau bàn giao)
+- **Chưa dịch trong danh sách cần xử lý:** 15.894 / 19.474
 - **Cập nhật gần nhất:** 05/11/2026
 - **Tình trạng:** dữ liệu bản dịch; chưa được kiểm thử đóng gói patch PS3.
 
 ## Điểm bắt đầu mỗi lần dịch
 
-1. Mở [`translations/current.json`](translations/current.json): đây là **bản hợp nhất hiện hành duy nhất**, chứa 5.383 cặp `id → target_vi`.
+1. Mở [`translations/current.json`](translations/current.json): đây là **bản hợp nhất hiện hành duy nhất**, chứa 5.755 cặp `id → target_vi`.
 2. Đối chiếu với `01_CAN_DICH/needs_translation.json` từ gói bàn giao gốc, chỉ dịch mục chưa có trong `current.json`.
 3. Không chỉnh ID, file, index, source, source_tagged, attributes, status hoặc source_sha256. Giữ token `{#0}`, `{#1}`, printf như `%u` và số liệu.
 4. Sau mỗi đợt, viết một JSON mới trong `checkpoints/`, kiểm tra, rồi cập nhật `translations/current.json` và tiến độ này.
@@ -32,7 +32,8 @@
 | 05/11 — đợt mới H | 204 | Thoại NPC 2207–2350, mô tả nguyên liệu 300–359 |
 | 05/11 — đợt mới I | 221 | Hội thoại NPC 2351–2520, nguyên liệu 360–410 |
 | 05/11 — đợt mới J | 244 | Thoại NPC 2521–2640; tên và mô tả ACE; tên kỹ năng bị động 0–39 |
-| **Tổng** | **5.383** | Không trùng ID |
+| 05/11 — đợt mới K | 372 | Thoại Lod 2641–2730; 121 tên và 161 mô tả kỹ năng bị động |
+| **Tổng** | **5.755** | Không trùng ID |
 
 ## Cấu trúc
 

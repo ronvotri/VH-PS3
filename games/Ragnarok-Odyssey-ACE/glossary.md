@@ -142,3 +142,20 @@ Chưa có patch game được kiểm thử hiển thị hoặc độ rộng glyp
 | Con / Ottar | Giữ tên; Con xưng tôi, Ottar xưng ta, giọng khoa trương |
 
 Lời thoại 2521–2640 giới thiệu hợp đồng môi giới Prontera; các tên riêng và token `{#0}`...`{#6}` được giữ. Riêng tên kỹ năng dài phải kiểm thử trên màn hình PS3; chưa được xác nhận có đủ bề ngang tiếng Việt.
+
+## Thuật ngữ và nhân vật — đợt K (05/11)
+
+| Thuật ngữ gốc | Bản Việt |
+|---|---|
+| Crit Attack | Tỉ lệ chí mạng |
+| Crit Power | Lực chí mạng (sát thương chí mạng) |
+| Stun Resist | Kháng Choáng |
+| Stagger | Khựng |
+| Knockback / Launch | Hất lùi / Hất tung |
+| Dash / Aerial Step | Lướt né / Lướt né trên không |
+| Ground / Aerial Aptitude | Thạo đòn mặt đất / Trên không |
+| Dainsleif Mode | Chế độ Dainsleif |
+
+**Giọng thoại:** Lod là tay nhậu, xưng `tui`, gọi `cậu`; dấu say rượu `*HIC*` được chuyển thành `*HỨC*`, tiếng nôn `*HURK*` thành `*ỌE!*`. Không áp dụng giọng này cho các NPC khác. Ở đợt K giữ kỹ năng riêng (Back Stab, Spinning Slash, Sonic Blow, Dance Attack), chỉ Việt hóa phần hiệu ứng. Tên hiển thị ngắn gọn để giảm nguy cơ tràn khung, nhưng chưa có xác nhận trong RPCS3.
+
+Chỉ bổ sung mục chưa dịch; checkpoint K gồm 372 ID, không ghi đè bất kỳ mục nào đã có.
