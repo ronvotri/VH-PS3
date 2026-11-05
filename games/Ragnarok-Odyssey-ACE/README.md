@@ -3,14 +3,14 @@
 - **Mã game:** BLUS31386 (US), APP_VER 01.00
 - **Nguồn dữ liệu:** `RagnarokACE-BanGiaoDich-2026-11-04.zip`
 - **Catalog đã kiểm kê:** 25.288 chuỗi / 76 bảng
-- **Đã có bản dịch:** 7.805 (2.175 đã duyệt trong bàn giao + 5.630 dịch sau bàn giao)
-- **Chưa dịch trong danh sách cần xử lý:** 13.844 / 19.474
+- **Đã có bản dịch:** 8.139 (2.175 đã duyệt trong bàn giao + 5.964 dịch sau bàn giao)
+- **Chưa dịch trong danh sách cần xử lý:** 13.510 / 19.474
 - **Cập nhật gần nhất:** 06/11/2026
 - **Tình trạng:** dữ liệu bản dịch; chưa được kiểm thử đóng gói patch PS3.
 
 ## Điểm bắt đầu mỗi lần dịch
 
-1. Mở [`translations/current.json`](translations/current.json): đây là **bản hợp nhất hiện hành duy nhất**, chứa 7.805 cặp `id → target_vi`.
+1. Mở [`translations/current.json`](translations/current.json): đây là **bản hợp nhất hiện hành duy nhất**, chứa 8.139 cặp `id → target_vi`.
 2. Đối chiếu với `01_CAN_DICH/needs_translation.json` từ gói bàn giao gốc, chỉ dịch mục chưa có trong `current.json`.
 3. Không chỉnh ID, file, index, source, source_tagged, attributes, status hoặc source_sha256. Giữ token `{#0}`, `{#1}`, printf như `%u` và số liệu.
 4. Sau mỗi đợt, viết một JSON mới trong `checkpoints/`, kiểm tra, rồi cập nhật `translations/current.json` và tiến độ này.
@@ -40,7 +40,8 @@
 | 05/11 — đợt mới P | 240 | NPC 3071–3141 (bỏ 3090 đã dịch), tên và mô tả kỹ năng 591–675 |
 | 05/11 — đợt mới Q | 279 | Hội thoại 3142–3232 (bỏ 6 ID đã có), tên/mô tả kỹ năng 676–775 |
 | 06/11 — đợt mới R | 331 | NPC Brokkr/Rune 3233–3315, tên và mô tả kỹ năng 776–899; QA 331/331 |
-| **Tổng** | **7.805** | Không trùng ID |
+| 06/11 — đợt mới S | 334 | NPC 3316–3429 (Rune, Linde, Lif, Thrasir, Lod, Brokkr), tên/mô tả kỹ năng 900–1009 |
+| **Tổng** | **8.139** | Không trùng ID |
 
 ## Cấu trúc
 
@@ -63,3 +64,5 @@ Bước này chỉ điền các mục trong danh sách cần dịch. Để chu�
 **Lưu ý:** 25.288 mục chỉ là kiểm kê 76 bảng TXT, chưa bảo đảm mọi chữ trong ảnh, phim, EBOOT, DLC hoặc bản cập nhật đều đã được phát hiện. Không tải ISO/PKG/CPK có bản quyền hay font thương mại lên repo.
 
 **QA đợt L:** Bản gốc tên `Triple Jump` (kỹ năng 263), nhưng mô tả tiếng Nhật ghi nhảy hai lần. Chưa tự sửa bất đồng này; cần kiểm thử game trước khi thống nhất. Đã xác minh cấu trúc 370/370 mục mới.
+
+**QA đợt S:** 334 ID chưa dịch từ `needs_translation.json`, bộ `validate_return.py` chuẩn PASS 334/334 với bản tham chiếu pending khôi phục từ cùng gói. Bản sao `02_TOAN_BO/all_records.json` trong ZIP không giải nén được (bad file header); chưa chạy được đối chiếu trực tiếp với toàn bộ `all_records.json`. Dữ liệu nguồn, token, số và placeholder được đối chiếu với `needs_translation.json`; không có va chạm với `current.json`.
