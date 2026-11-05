@@ -159,3 +159,21 @@ Lời thoại 2521–2640 giới thiệu hợp đồng môi giới Prontera; cá
 **Giọng thoại:** Lod là tay nhậu, xưng `tui`, gọi `cậu`; dấu say rượu `*HIC*` được chuyển thành `*HỨC*`, tiếng nôn `*HURK*` thành `*ỌE!*`. Không áp dụng giọng này cho các NPC khác. Ở đợt K giữ kỹ năng riêng (Back Stab, Spinning Slash, Sonic Blow, Dance Attack), chỉ Việt hóa phần hiệu ứng. Tên hiển thị ngắn gọn để giảm nguy cơ tràn khung, nhưng chưa có xác nhận trong RPCS3.
 
 Chỉ bổ sung mục chưa dịch; checkpoint K gồm 372 ID, không ghi đè bất kỳ mục nào đã có.
+
+## Thuật ngữ và nhân vật — đợt L (05/11)
+
+| Bản gốc | Bản Việt |
+|---|---|
+| Poison / Deadly Poison | Độc / Kịch Độc |
+| Bind / Freeze / Burn | Trói / Đóng Băng / Bỏng |
+| Nervous / Apathy / Tired | Bồn Chồn / Thờ Ơ / Mệt Mỏi |
+| Feeble / Ailment | Suy Yếu / Bất Lợi |
+| AP Efficiency / AP Inefficiency | Tiết Kiệm AP / Hao Phí AP |
+| Double Attack | Đánh Kép |
+| Green Gem / Red Gem / Star Gem | Ngọc Lục / Ngọc Đỏ / Ngọc Sao |
+| Lif | Giữ tên; xưng tớ/cậu, hào hứng và có kiểu đùa hơi rợn |
+| Thrasir | Giữ tên; xưng tôi/cậu, nói gắt nhưng quan tâm Lif |
+
+**Chênh lệch nguồn:** `it_db_name_skill.rmsg::263` tên `Triple Jump`, nhưng `it_db_text_skill.rmsg::263` viết tiếng Nhật `２段ジャンプが可能になる` (cho phép nhảy hai lần). Giữ dịch theo từng trường; cần kiểm thử cơ chế game.
+
+Đã dịch các mô tả kỹ năng TGS 2011 có sẵn tiếng Nhật. Giữ toàn bộ số liệu/khung bất tử/hệ số, không thay ID hay token `{#0}`. Các nhãn kỹ năng cần được thử độ rộng font trong RPCS3 trước khi phát hành.
