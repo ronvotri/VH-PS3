@@ -3,14 +3,14 @@
 - **Mã game:** BLUS31386 (US), APP_VER 01.00
 - **Nguồn dữ liệu:** `RagnarokACE-BanGiaoDich-2026-11-04.zip`
 - **Catalog đã kiểm kê:** 25.288 chuỗi / 76 bảng
-- **Đã có bản dịch:** 3.658 (2.175 đã duyệt trong bàn giao + 1.483 dịch sau bàn giao)
-- **Chưa dịch trong danh sách cần xử lý:** 17.991 / 19.474
+- **Đã có bản dịch:** 4.005 (2.175 đã duyệt trong bàn giao + 1.830 dịch sau bàn giao)
+- **Chưa dịch trong danh sách cần xử lý:** 17.644 / 19.474
 - **Cập nhật gần nhất:** 05/11/2026
 - **Tình trạng:** dữ liệu bản dịch; chưa được kiểm thử đóng gói patch PS3.
 
 ## Điểm bắt đầu mỗi lần dịch
 
-1. Mở [`translations/current.json`](translations/current.json): đây là **bản hợp nhất hiện hành duy nhất**, chứa 3.658 cặp `id → target_vi`.
+1. Mở [`translations/current.json`](translations/current.json): đây là **bản hợp nhất hiện hành duy nhất**, chứa 4.005 cặp `id → target_vi`.
 2. Đối chiếu với `01_CAN_DICH/needs_translation.json` từ gói bàn giao gốc, chỉ dịch mục chưa có trong `current.json`.
 3. Không chỉnh ID, file, index, source, source_tagged, attributes, status hoặc source_sha256. Giữ token `{#0}`, `{#1}`, printf như `%u` và số liệu.
 4. Sau mỗi đợt, viết một JSON mới trong `checkpoints/`, kiểm tra, rồi cập nhật `translations/current.json` và tiến độ này.
@@ -24,7 +24,9 @@
 | 05/11 — checkpoint trước | 434 | Mẹo tải màn, NPC, chế độ, giao diện |
 | 05/11 — đợt mới A | 131 | Bình thuốc, mô tả, biểu cảm |
 | 05/11 — đợt mới B | 123 | DLC, nhật ký trận đấu, xếp hạng |
-| 05/11 — đợt mới C | 385 | Lịch sử chiến đấu, bách khoa, phòng mạng, hội thoại NPC |\n| 05/11 — đợt mới D | 410 | Lời thoại NPC, mô tả và tên nhiệm vụ, địa điểm, bộ phận quái vật |\n| **Tổng** | **3.658** | Không trùng ID |
+| 05/11 — đợt mới C | 385 | Lịch sử chiến đấu, bách khoa, phòng mạng, hội thoại NPC |
+| 05/11 — đợt mới D | 410 | Lời thoại NPC, mô tả và tên nhiệm vụ, địa điểm, bộ phận quái vật |\n| 05/11 — đợt mới E | 347 | Lời thoại NPC, mô tả nguyên liệu, dấu ngoặc/nhãn rơi vật phẩm |
+| **Tổng** | **4.005** | Không trùng ID |
 
 ## Cấu trúc
 

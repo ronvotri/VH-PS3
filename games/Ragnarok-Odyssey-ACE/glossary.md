@@ -52,3 +52,10 @@ Credit bản dựng phải có nguyên văn **Việt hóa bởi Votri Valley.**.
 | Dainsleif Mode | Chế độ Dainsleif |
 
 **Lưu ý:** Tên riêng và token màu/nhân vật giữ nguyên; chỉ Việt hóa phần chữ hiển thị. Các tên kỹ năng, quái và địa điểm cần thử độ dài khi có patch thử trên RPCS3.
+
+## Nguyên liệu — đợt E
+
+- Giữ tên quái vật gốc trong dòng nguồn rơi để dễ tra cứu, chỉ Việt hóa câu miêu tả.
+- Các mô tả nguyên liệu có token màu `{#0}` ở đầu; tuyệt đối không xóa.
+- Nhãn `{{Dropped by}}` được dịch thành `{{Rơi từ}}` nhưng vẫn giữ dấu ngoặc đôi, cần kiểm thử trong game.
+- Trong thoại, giữ các token tên nhân vật `{#0}` dù trường `source` có chỗ trống; ưu tiên đối chiếu `source_tagged`.
