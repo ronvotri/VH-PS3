@@ -281,3 +281,23 @@ NPC 3071–3080 (Yukino) giữ lối xưng tôi/cậu, nói chừng mực; thợ
 **Xưng hô:** Người quản lý Hũ tỷ phú (3142–3165) xưng tui/cậu và nói khoa trương. Người hướng dẫn kỹ năng ACE (3166–3179) xưng tôi/cậu, rõ ràng. Brokkr (3180–3200) xưng ta/cậu, bộc trực. Các đoạn NPC vốn đã dịch từ đợt P (3207, 3208, 3209, 3211, 3212, 3213) được giữ nguyên; đợt Q thêm 6 mục mới (3221, 3225, 3229, 3230, 3231, 3232).
 
 **QA:** 100 tên và 100 mô tả bị động 676–775 được đối chiếu chung; giữ cả các hiệu ứng đánh đổi, các mốc HP 90%/89%, token `{#0}` và chữ số. Các tên chiêu Brandish Spear, Bowling Bash, Two Hand Quicken giữ nguyên trong mô tả để người chơi tra cứu. Bảng gốc có tiếng Nhật tại ID 758 đã dịch. `validate_return.py` PASS 279/279. Chưa kiểm thử bề ngang chữ hoặc đóng gói trên RPCS3/PS3.
+
+
+## Thuật ngữ bổ sung — đợt R (06/11/2026)
+
+| Nguyên văn | Bản Việt |
+|---|---|
+| Rune's Tailor Shop | Tiệm May Rune |
+| Blacksmith Shop | Lò rèn (Brokkr) |
+| Storage Box | Hộp Kho |
+| Closet | Tủ Đồ |
+| Paralysis Injection | Tiêm Tê Liệt |
+| Bloodsucker Sword | Kiếm Hút Máu |
+| Ice Burn Sword | Kiếm Băng Hỏa |
+| Sanctuary Boost | Cường Hóa Thánh Địa |
+| SP Link / AP Link | Liên Kết SP / Liên Kết AP |
+| Soul Breaker Boost | Cường Hóa Phá Hồn |
+
+**Giọng NPC:** Brokkr xưng ta/cậu, bộc trực và hài hước; Rune lịch sự, xưng tôi/cậu. Giữ nguyên ký hiệu `{#0}` trong tên kỹ năng và mô tả vì đó là token màu ẩn của nguồn.
+
+**QA đợt R:** 83 hội thoại NPC 3233–3315, 124 tên kỹ năng và 124 mô tả kỹ năng 776–899; `validate_return.py` gốc xác thực PASS 331/331. Chưa kiểm thử giao diện và font trong RPCS3/PS3.
