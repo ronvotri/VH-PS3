@@ -93,3 +93,20 @@ Với nguyên liệu, giữ nguyên tên quái trong nguồn rơi; nhãn {{Dropp
 Các mục `it_db_text_material` tiếp tục giữ nguyên tên nguồn rơi, mã màu `{#0}`, và dấu ngoặc đôi trong `{{Rơi từ}}`. Không tự động đổi tên kẻ địch ở cuối mô tả. Các đoạn NPC đầu (1984–2040) giữ giọng Eadgils (ta/cậu); phần chủ quán và hướng dẫn dùng giọng tôi/cậu.
 
 Chưa có patch game được kiểm thử hiển thị hoặc độ rộng glyph tiếng Việt trên RPCS3/PS3.
+
+## Thuật ngữ bổ sung — 05/11 (đợt H)
+
+| Nguyên văn | Bản Việt |
+|---|---|
+| Quest Counter | Quầy Nhiệm Vụ |
+| Thor's Volcano | Núi Lửa Của Thor |
+| Mjollnir | Mjollnir |
+| Kona Hraesvelgr | Kona Hraesvelgr |
+| Glast Heim Ruins | Phế Tích Glast Heim |
+| Floating Temple | Ngôi đền bay |
+| Quest Reward | Thưởng nhiệm vụ |
+| Acquired from / Dropped by | Nhận từ / Rơi từ |
+| Boxes, Barrels, etc. | Hộp, thùng, v.v. |
+| All Monsters | Mọi quái vật |
+
+Đợt H chỉ đổi từ ngữ trong mô tả vật phẩm và nhãn nguồn rơi/nhận; vẫn giữ tên riêng của quái vật như Orc King, Hraesvelgr, Hjahanir, Grendel. Không sửa ID, token màu `{#0}` hoặc các ký hiệu `{{...}}`. Nhãn cần thử hiển thị trên RPCS3/PS3; tuyệt đối không coi đây là bản patch đã kiểm thử.
