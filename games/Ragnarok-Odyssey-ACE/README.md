@@ -3,14 +3,14 @@
 - **Mã game:** BLUS31386 (US), APP_VER 01.00
 - **Nguồn dữ liệu:** `RagnarokACE-BanGiaoDich-2026-11-04.zip`
 - **Catalog đã kiểm kê:** 25.288 chuỗi / 76 bảng
-- **Đã có bản dịch:** 9.972 (2.175 đã duyệt trong bàn giao + 7.797 dịch sau bàn giao)
-- **Chưa dịch trong danh sách cần xử lý:** 11.677 / 19.474
+- **Đã có bản dịch:** 10.472 (2.175 đã duyệt trong bàn giao + 8.297 dịch sau bàn giao)
+- **Chưa dịch trong danh sách cần xử lý:** 11.177 / 19.474
 - **Cập nhật gần nhất:** 06/11/2026
 - **Tình trạng:** dữ liệu bản dịch; chưa được kiểm thử đóng gói patch PS3.
 
 ## Điểm bắt đầu mỗi lần dịch
 
-1. Mở [`translations/current.json`](translations/current.json): đây là **bản hợp nhất hiện hành duy nhất**, chứa 9.972 cặp `id → target_vi`.
+1. Mở [`translations/current.json`](translations/current.json): đây là **bản hợp nhất hiện hành duy nhất**, chứa 10.472 cặp `id → target_vi`.
 2. Đối chiếu với `01_CAN_DICH/needs_translation.json` từ gói bàn giao gốc, chỉ dịch mục chưa có trong `current.json`.
 3. Không chỉnh ID, file, index, source, source_tagged, attributes, status hoặc source_sha256. Giữ token `{#0}`, `{#1}`, printf như `%u` và số liệu.
 4. Sau mỗi đợt, viết một JSON mới trong `checkpoints/`, kiểm tra, rồi cập nhật `translations/current.json` và tiến độ này.
@@ -45,7 +45,8 @@
 | 06/11 — đợt mới U | 495 | NPC 3611–3705 (95), tên thẻ quái 0–299 (300), mô tả thẻ 0–99 (100) |
 | 06/11 — đợt mới V | 500 | NPC 3706–3765 (60), tên thẻ 300–599 (300), mô tả thẻ 100–239 (140) |
 | 06/11 — đợt mới W | 500 | NPC 3766–3815 (50), tên thẻ/trang bị/kỹ năng 600–849 (250), mô tả thẻ 240–439 (200) |
-| **Tổng** | **9.972** | Không trùng ID |
+| 06/11 — đợt mới X | 500 | NPC 3816–3865 (50), nhãn thẻ/kỹ năng 850–1099 (250), mô tả thẻ 440–639 (200) |
+| **Tổng** | **10.472** | Không trùng ID |
 
 ## Cấu trúc
 
@@ -78,3 +79,5 @@ Bước này chỉ điền các mục trong danh sách cần dịch. Để chu�
 **QA đợt V:** 500 bản dịch nguồn từ ZIP 04/11; `validate_return.py` gốc PASS 500/500, 0 trống (tham chiếu là 500 bản ghi pending nguyên trạng trích từ `01_CAN_DICH/needs_translation.json`). Giữ token nhân vật `{#0}`, số, mã `[Card No.xxx-C/U/R]`, định dạng printf và ID; 0 va chạm trong `current.json`. Mỗi dòng NPC tối đa 38 ký tự, tối đa 3 dòng. Tệp `02_TOAN_BO/all_records.json` của ZIP lỗi local-header nên chưa xác nhận trực tiếp toàn bộ catalog. Chưa test game/patch/font trên RPCS3/PS3.
 
 **QA đợt W:** 500 bản dịch gốc từ ZIP bàn giao; `validate_return.py` nguyên bản PASS 500/500 với bảng tham chiếu tái tạo từ 500 bản ghi `needs_translation.json` nguyên gốc. Bảo toàn ID, token màu/nhân vật `{#0}`, printf và chữ số; NPC không quá 3 dòng hoặc 38 ký tự/dòng; 0 va chạm với `current.json`. Tệp `02_TOAN_BO/all_records.json` bên trong ZIP lỗi `BadZipFile: Bad magic number for file header`, nên không được tuyên bố đã kiểm tra trực tiếp toàn bộ catalog. `it_db_name_card` ID 780–792 và 829–849 thực chất là tên kỹ năng (không tự thêm chữ Thẻ). Chưa thử bản patch/font trên RPCS3/PS3.
+
+**QA đợt X:** `validate_return.py` gốc PASS 500/500 với bảng tham chiếu pending tái tạo từ 500 dòng nguồn `01_CAN_DICH/needs_translation.json` trong ZIP; không có ID trùng, lỗi token/printf/chữ số. NPC dịch tối đa 3 dòng, mỗi dòng tối đa 38 ký tự. Danh mục thẻ tên 850–930 là tên **kỹ năng**, 931–1099 là tên thẻ; mô tả thẻ 440–639 dựa trên bản dịch tên thẻ đã có của đợt V–W. Tệp `all_records.json` trong ZIP lỗi local-header nên không thể xác nhận trực tiếp toàn catalog; chưa thử patch, font và độ rộng trên RPCS3/PS3.
