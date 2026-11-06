@@ -319,3 +319,26 @@ NPC 3071–3080 (Yukino) giữ lối xưng tôi/cậu, nói chừng mực; thợ
 **Giọng NPC:** Rune nói nhã nhặn (tôi/cậu), Linde lanh lợi, Lif tinh nghịch (tớ/cậu), Thrasir dễ bối rối; Lod xưng *tui*, nói kiểu say rượu và *HỨC*; Brokkr xưng *ta/cậu*, cộc cằn ấm áp. Giữ các token màu `{#0}` ở cả dòng hội thoại, tên và mô tả kỹ năng.
 
 **QA:** Đợt S có 114 NPC 3316–3429, 110 tên và 110 mô tả kỹ năng 900–1009. Bộ `validate_return.py` chạy với tham chiếu pending hồi phục từ `needs_translation.json` PASS 334/334; bản `all_records.json` trong ZIP bị lỗi local-header khi trích xuất, chưa kiểm được trực tiếp file này. Chưa chạy game hoặc đo độ rộng font trong RPCS3/PS3.
+
+
+## Thuật ngữ & giọng nhân vật — đợt T (06/11/2026)
+
+| Gốc | Việt hóa |
+|---|---|
+| Tower of Yggdrasil | Tháp Yggdrasil |
+| Stone gate | Cánh cổng đá |
+| Sundered Lands | Vùng Đất Chia Cắt |
+| Iriey | Giữ tên Iriey (pháo thủ) |
+| Cannoner / Side Cannon | Pháo thủ / Khẩu pháo bên hông |
+| King of the Giants | Vua Khổng Lồ |
+| Forest/Forseti | Giữ tên Forseti |
+| Truffle Search | Săn Nấm Truffle |
+| Dainsleif Mode | Chế độ Dainsleif |
+| Wolf Nagel | Móng Sói Nagel (loạt kỹ năng riêng) |
+| Aerial Step | Lướt Né Trên Không |
+| Knockback / Launch / Stun | Hất lùi / Hất tung / Choáng |
+| Max HP / Max AP | HP tối đa / AP tối đa |
+
+**Giọng nhân vật:** Lod vẫn xưng *tui*, nói tiếng nhậu vui nhộn và dùng *HỨC*; nhóm lính pháo thủ thân mật, tự hào được thăng cấp; Yukino xưng *tôi/cậu*, nói có lý luận, đôi lúc lỡ lời về tình cảm. Giữ đúng các token tên nhân vật `{#0}`, `{#1}` trong `source_tagged` ngay cả khi `source` trống tên.
+
+**QA đợt T:** 338 ID mới gồm 176 thoại NPC (vùng 3430–3610) và 81 tên + 81 mô tả kỹ năng (1010–1090); kiểm tra nguyên bản với pending-source reference PASS 338/338. Tệp `all_records.json` trong ZIP có header lỗi, nên chưa thể kiểm tra trên toàn catalog; chưa có kiểm thử RPCS3/PS3. Các nhãn kỳ lạ giữ tên riêng hoặc diễn giải theo hiệu ứng thay vì tự thêm tác dụng không có trong nguồn.
