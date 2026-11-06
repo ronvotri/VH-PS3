@@ -471,3 +471,26 @@ NPC 3071–3080 (Yukino) giữ lối xưng tôi/cậu, nói chừng mực; thợ
 **NPC 3958–4039:** Eadgils quyết đoán (ta/cậu); Eirik trò chuyện thân mật nhưng xưng tôi/cậu; người nghiên cứu nói tôi/cậu; hội thoại thời trang sinh động nhưng không biến ngôi xưng tùy tiện. Giữ tên Lindwurm, Tháp Yggdrasil, Đại Khổng Lồ, Emperium, Gungnir, Vidarr; token `{#0}` giữ nguyên vị trí chức năng. Đợt Z dịch tên mẫu vũ khí trong trang bị/đơn chế tạo, khác bảng thẻ U–Y hiện giữ tên mẫu tiếng Anh; **cần thống nhất liên bảng sau khi QA giao diện, tuyệt đối không thay mã rune/ID để ép trùng**.
 
 **QA:** `validate_return.py` gốc PASS 500/500 với `02_TOAN_BO/all_records.json` gốc đã đọc thành công; chưa test patch trên RPCS3/PS3.
+
+
+## Thuật ngữ — đợt AA (06/11/2026)
+
+| Gốc | Cách dùng |
+|---|---|
+| Galdrabok | Giữ Galdrabok (tên sách phép) |
+| Kenning | Giữ kenning (lối viết ẩn dụ trong cổ tự) |
+| Domovoi | Giữ Domovoi (tên sinh vật) |
+| Vanir / Aesir | Giữ Vanir / Aesir (thần tộc) |
+| Hermit Claw / Sporangium | Vuốt Ẩn Sĩ / Sporangium |
+| Scorpion Hammer / Willow Wand / Legbiter | Búa Bọ Cạp / Trượng Liễu / Kẻ Cắn Chân |
+| Sword Mace / Morning Star / Horn Bow | Chùy Lưỡi Kiếm / Chùy Sao Mai / Cung Sừng |
+| Arc Wand / Pole-Axe / Blood Axe | Trượng Hồ Quang / Rìu Cán Dài / Rìu Máu |
+| Minstrel's Bow / Bone Staff / Crescent Scythe | Cung Nhạc Sĩ / Trượng Xương / Lưỡi Hái Trăng Khuyết |
+| Sun Sword / Golden Mace / Staff of Distraction | Kiếm Mặt Trời / Chùy Vàng / Trượng Nhiễu Loạn |
+| Various Jur / Khaz Dryer / Muramasa | Giữ nguyên tên riêng / tên mẫu đặc biệt |
+| Rune of destiny | Rune số mệnh (mô tả vũ khí Wyadd) |
+| Gouten / Yasha Jokulsnaut | Giữ tên riêng, hậu tố `: Final` → `: Tối Hậu` |
+
+**Xưng hô:** Lod nói **tui/cậu** và *HỨC*; Yukino và các học giả dùng **tôi/cậu**; Eadgils **ta/cậu**. Không tùy tiện chuyển sang xưng “mày/tao” hay meme hiện đại. Thoại ngắn, có dấu, giữ token, dấu # và số phiên bản nhánh. Không dịch đổi các mã rune Wyadd, Ullr, Feoh, Hagal, Eoh, Peorth, v.v. Trước khi xuất patch rà tính đồng nhất tên mẫu vũ khí giữa tên/mô tả/chế tạo/thẻ.
+
+**QA:** `validate_return.py` gốc PASS 500/500 dựa trên `all_records.json` thực từ ZIP; chưa kiểm thử patch game RPCS3/PS3.
