@@ -3,14 +3,14 @@
 - **Mã game:** BLUS31386 (US), APP_VER 01.00
 - **Nguồn dữ liệu:** `RagnarokACE-BanGiaoDich-2026-11-04.zip`
 - **Catalog đã kiểm kê:** 25.288 chuỗi / 76 bảng
-- **Đã có bản dịch:** 16.450 (2.175 đã duyệt trong bàn giao + 14.275 dịch sau bàn giao)
-- **Chưa dịch trong danh sách cần xử lý:** 5.199 / 19.474
+- **Đã có bản dịch:** 16.528 (2.175 đã duyệt trong bàn giao + 14.353 dịch sau bàn giao)
+- **Chưa dịch trong danh sách cần xử lý:** 5.121 / 19.474
 - **Cập nhật gần nhất:** 06/11/2026
 - **Tình trạng:** dữ liệu bản dịch; chưa được kiểm thử đóng gói patch PS3.
 
 ## Điểm bắt đầu mỗi lần dịch
 
-1. Mở [`translations/current.json`](translations/current.json): đây là **bản hợp nhất hiện hành duy nhất**, chứa 16.450 cặp `id → target_vi`.
+1. Mở [`translations/current.json`](translations/current.json): đây là **bản hợp nhất hiện hành duy nhất**, chứa 16.528 cặp `id → target_vi`.
 2. Đối chiếu với `01_CAN_DICH/needs_translation.json` từ gói bàn giao gốc, chỉ dịch mục chưa có trong `current.json`.
 3. Không chỉnh ID, file, index, source, source_tagged, attributes, status hoặc source_sha256. Giữ token `{#0}`, `{#1}`, printf như `%u` và số liệu.
 4. Sau mỗi đợt, viết một JSON mới trong `checkpoints/`, kiểm tra, rồi cập nhật `translations/current.json` và tiến độ này.
@@ -60,7 +60,8 @@
 | 06/11 — đợt mới AJ | 314 | 79 NPC 4723–4802, 235 đơn chế tạo 2928–3162 |
 | 06/11 — đợt mới AK | 84 | 84 NPC 4803–4886 |
 | 06/11 — đợt mới AL | 80 | 80 NPC 4887–4968, giữ nguyên 4895 và 4929 |
-| **Tổng** | **16.450** | Không trùng ID |
+| 06/11 — đợt mới AM | 78 | 78 NPC 4969–5049, giữ 4979, 4991, 5023 |
+| **Tổng** | **16.528** | Không trùng ID |
 
 ## Cấu trúc
 
@@ -170,3 +171,8 @@ Bước này chỉ điền các mục trong danh sách cần dịch. Để chu�
 **QA đợt AL (06/11/2026):** `validate_return.py` gốc với `all_records.json` PASS 80/80. ID 4895 chỉ có dấu ba chấm, ID 4929 đã có bản dịch. Chưa thử patch/font trên RPCS3/PS3.
 
 **Đợt AM tiếp theo:** Tiếp thoại NPC từ **4969**, đối chiếu danh sách nguồn và bản hợp nhất.
+
+
+**QA đợt AM (06/11/2026):** `validate_return.py` gốc với `all_records.json` PASS 78/78. Giữ ba ID chỉ có dấu câu 4979, 4991, 5023. Chưa thử patch/font trên RPCS3/PS3.
+
+**Đợt AN tiếp theo:** Tiếp thoại NPC từ **5050**, đối chiếu danh sách nguồn và bản hợp nhất.

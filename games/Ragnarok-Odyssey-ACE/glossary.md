@@ -668,3 +668,8 @@ Moonshadow Giant → Khổng Lồ Bóng Trăng. Giữ Loli Ruri, Fenia, Menia v�
 ## Thuật ngữ đợt AL (06/11/2026)
 
 Giữ Khổng Lồ Bóng Trăng, Khổng Lồ Hắc Ám, Loli Ruri và Ymir. Illusion dịch là ảo ảnh, medium là vật dẫn trong đoạn phân tích phép thuật.
+
+
+## Thuật ngữ đợt AM (06/11/2026)
+
+Blood moon → trăng máu. Moonlight Serenade → Dạ Khúc Ánh Trăng (tên bộ mẫu mũ). Giữ Đại Khổng Lồ, Kafra ma quái và vật dẫn theo ngữ cảnh trước đó.
