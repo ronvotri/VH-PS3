@@ -3,14 +3,14 @@
 - **Mã game:** BLUS31386 (US), APP_VER 01.00
 - **Nguồn dữ liệu:** `RagnarokACE-BanGiaoDich-2026-11-04.zip`
 - **Catalog đã kiểm kê:** 25.288 chuỗi / 76 bảng
-- **Đã có bản dịch:** 15.972 (2.175 đã duyệt trong bàn giao + 13.797 dịch sau bàn giao)
-- **Chưa dịch trong danh sách cần xử lý:** 5.677 / 19.474
+- **Đã có bản dịch:** 16.286 (2.175 đã duyệt trong bàn giao + 14.111 dịch sau bàn giao)
+- **Chưa dịch trong danh sách cần xử lý:** 5.363 / 19.474
 - **Cập nhật gần nhất:** 06/11/2026
 - **Tình trạng:** dữ liệu bản dịch; chưa được kiểm thử đóng gói patch PS3.
 
 ## Điểm bắt đầu mỗi lần dịch
 
-1. Mở [`translations/current.json`](translations/current.json): đây là **bản hợp nhất hiện hành duy nhất**, chứa 15.972 cặp `id → target_vi`.
+1. Mở [`translations/current.json`](translations/current.json): đây là **bản hợp nhất hiện hành duy nhất**, chứa 16.286 cặp `id → target_vi`.
 2. Đối chiếu với `01_CAN_DICH/needs_translation.json` từ gói bàn giao gốc, chỉ dịch mục chưa có trong `current.json`.
 3. Không chỉnh ID, file, index, source, source_tagged, attributes, status hoặc source_sha256. Giữ token `{#0}`, `{#1}`, printf như `%u` và số liệu.
 4. Sau mỗi đợt, viết một JSON mới trong `checkpoints/`, kiểm tra, rồi cập nhật `translations/current.json` và tiến độ này.
@@ -57,7 +57,8 @@
 | 06/11 — đợt mới AG | 500 | 80 NPC 4481–4560, 151 tên nguyên liệu 260–410, 269 đơn chế tạo 1819–2087 |
 | 06/11 — đợt mới AH | 500 | 79 NPC 4561–4641 (giữ 4563 và 4619), 421 đơn chế tạo 2088–2508 |
 | 06/11 — đợt mới AI | 500 | 81 NPC 4642–4722, 419 đơn chế tạo 2509–2927 |
-| **Tổng** | **15.972** | Không trùng ID |
+| 06/11 — đợt mới AJ | 314 | 79 NPC 4723–4802, 235 đơn chế tạo 2928–3162 |
+| **Tổng** | **16.286** | Không trùng ID |
 
 ## Cấu trúc
 
@@ -152,3 +153,8 @@ Bước này chỉ điền các mục trong danh sách cần dịch. Để chu�
 **QA đợt AI (06/11/2026):** `validate_return.py` gốc đối chiếu `all_records.json` gốc PASS 500/500. Giữ token, số liệu, mã nhánh và NPC tối đa 3 dòng/38 ký tự. Chưa kiểm thử patch/font trên RPCS3/PS3.
 
 **Đợt AJ tiếp theo:** NPC từ **4723** và đơn chế tạo từ **2928**, sau khi lọc ID đã dịch.
+
+
+**QA đợt AJ (06/11/2026):** `validate_return.py` gốc với `all_records.json` PASS 314/314. NPC 4775 là `!?`, giữ nguyên. Đã có bản dịch cho toàn bộ 3.163 tên đơn chế tạo. Chưa thử patch/font trên RPCS3/PS3.
+
+**Đợt AK tiếp theo:** Tiếp thoại NPC từ **4803**. Có thể bắt đầu bảng `msg_quest.bin` sau khi lọc ID đã dịch.

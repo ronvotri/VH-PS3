@@ -653,3 +653,8 @@ Brokkr giữ ta/cậu, gọi người chơi là nhóc khi thân tình. Đơn ch�
 | Halomonas Morning Star | Halomonas Chùy Sao Mai |
 
 Giữ Einherjar, Gimli, Helheim và Asgard. Iriey xưng tôi/cậu, Lod xưng tui/cậu, Ottar xưng ta/cậu.
+
+
+## Thuật ngữ đợt AJ (06/11/2026)
+
+Tên Halomonas dùng đúng bảng vũ khí, gồm Chùy Sao Mai, Cung Phản Khúc, Trượng Hồ Quang, Cung Nhạc Sĩ và Lưỡi Liềm. Giữ Kafra, Pavianne, Zeny. Con và nhóm nghiên cứu xưng tôi/cậu; Eadgils xưng ta/cậu.
