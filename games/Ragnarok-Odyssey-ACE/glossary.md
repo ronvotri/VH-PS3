@@ -521,3 +521,27 @@ NPC 3071–3080 (Yukino) giữ lối xưng tôi/cậu, nói chừng mực; thợ
 **Giọng NPC:** Lod xưng *tui*, gọi người chơi *cậu*, ngắt câu bằng *HỨC*; những nhân vật nghiên cứu Galdrabok dùng tôi/cậu. Không đổi cấu trúc token tên người chơi `{#0}`/`{#1}` trong đoạn NPC 4122. Chỉ viết tắt lời thoại để gọn khung khi không làm mất điều kiện/ý chính của nguồn. Giữ phiên bản số, mã rune và chữ hoa riêng của tên thần thoại.
 
 **Cần rà khi có patch:** các tên vũ khí với thẻ cũ và tên đơn chế tạo chưa đồng nhất 100%; kiểm tra hiển thị trong game trước khi chuẩn hóa thêm. `validate_return.py` gốc PASS 500/500; chưa thử game RPCS3/PS3.
+
+
+## Thuật ngữ — đợt AC (06/11/2026)
+
+| Gốc | Cách dùng tiếng Việt |
+|---|---|
+| Glast Heim Ruins | Phế tích Glast Heim |
+| Golden apple charm | Bùa hình táo vàng / bùa táo vàng |
+| Galdrabok cover's ornaments | Họa tiết trang trí trên bìa Galdrabok |
+| Puzzle box | Hộp câu đố |
+| Domovoi Thief | Domovoi Trộm Cắp |
+| Fallen Fairy | Tiên Sa Ngã (chủ đề mũ) |
+| Oceanic Traitor / Brinicle Edge | Kẻ Phản Bội Đại Dương / Lưỡi Băng Giá |
+| Geo Impact / Falcon Strike | Địa Chấn / Đòn Chim Ưng |
+| Sadistic Mind/Scream/Impulse/Desire | Tâm Trí / Tiếng Thét / Xung Động / Dục Vọng Cuồng Bạo |
+| Slash Mace | Chùy Trảm |
+| Mince Mania / Mince Collector | Máy Băm Cuồng Loạn / Máy Băm Thu Gom |
+| Drill Ignition/Explosion/Catastrophe/Supernova | Mũi Khoan Khởi Hỏa / Bùng Nổ / Tai Ương / Siêu Tân Tinh |
+| Steel Dragon Blade / King Dragon Blade | Long Đao Thép / Long Đao Vương |
+| Halomonas Katar / Mace / Hammer | Halomonas Dao Katar / Chùy / Búa |
+| Nordri / Sudri / Vestri / Austri | Giữ tên riêng thần thoại của bốn phương |
+| Vidofnir / Shiranui / Jokulsnaut / Ishikirimaru | Giữ tên riêng, dịch danh từ chỉ loại vũ khí nếu có |
+
+**QA:** Các bản ghi AC đã được kiểm đúng token, số, UTF-8 NFC, độ dài mềm và validator gốc **PASS 500/500**. Quy tắc trong bản dựng vẫn cần kiểm trực tiếp trên RPCS3/PS3 (độ rộng Unicode, ngắt dòng, font). Khi chuẩn hóa tên vũ khí qua bảng thẻ–đơn chế tạo, phải sửa có đối chiếu source cùng ID, không được thay mã hoặc dịch nhầm tên rune.
