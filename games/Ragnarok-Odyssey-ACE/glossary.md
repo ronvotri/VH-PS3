@@ -626,3 +626,17 @@ Giữ tên riêng Galdrabok, Niflheim, Nidhoggr, Shiranui và các nhãn trong d
 | Glanzen Katar | Glanzen Dao Katar |
 
 Tên vũ khí chế tạo lấy theo bảng tên vũ khí đã Việt hóa. Hvergelmir và Yggdrasil giữ nguyên.
+
+
+## Thuật ngữ đợt AH (06/11/2026)
+
+| Nguồn | Bản Việt |
+|---|---|
+| Glanzen Staff | Glanzen Trượng |
+| Shadow Staff | Trượng Bóng Tối |
+| Shadow Katar | Dao Katar Bóng Tối |
+| Glanzen Mace | Glanzen Chùy |
+| Black Wing Mantle | Áo Choàng Cánh Đen |
+| Bearer of the Dragon’s Horn | Người Mang Sừng Rồng |
+
+Brokkr giữ ta/cậu, gọi người chơi là nhóc khi thân tình. Đơn chế tạo giữ mã nhánh và nâng cấp.
