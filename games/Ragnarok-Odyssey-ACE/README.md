@@ -215,3 +215,12 @@ Bước này chỉ điền các mục trong danh sách cần dịch. Để chu�
 
 
 **QA bố cục NPC — 07/11/2026:** Đã kiểm tra 5.388 NPC trong `translations/current.json`. Phát hiện 652 mục vượt 3 dòng/38 ký tự; chỉnh ngắt dòng 500 câu và biên tập ngắn 152 câu, hiện còn **0** mục vượt giới hạn ký tự. Hai delta biên tập nằm tại `checkpoints/2026-11-07-NPC-layout-manual-A-60.json` và `checkpoints/2026-11-07-NPC-layout-manual-B-92.json`; báo cáo trước/sau tại `checkpoints/2026-11-07-NPC-layout-QA-500.md`. Đây là sửa QA, **không tăng số câu đã dịch**: vẫn **16.877 / 25.288**, còn 4.772 trong danh sách cần dịch. Việc đối chiếu nguyên bản tiếng Anh và `validate_return.py` cho 152 câu đã biên tập, cùng kiểm thử font/khung hình trên RPCS3/PS3, vẫn cần thực hiện trước khi phát hành patch. Đợt AT bắt đầu từ NPC **5403**, nên chuẩn bị danh sách khoảng 500 ID chưa dịch bằng `prepare_next_batch.py` khi đọc được `RagnarokACE-BanGiaoDich-2026-11-04.zip`.
+
+
+## Checkpoint AT — 07/11/2026
+
+- Dịch **500 NPC mới** từ ID **5403–5909**, bỏ 6 ID đã dịch và ID 5901 vắng khỏi danh sách pending.
+- Tổng đã dịch **17.377 / 25.288 (68,7%)**, còn **4.272** trong danh sách cần dịch.
+- QA gốc `validate_return.py` / `all_records.json` **PASS 500/500**; 3 dòng × 38 ký tự là chuẩn QA tĩnh, **chưa xác nhận hiển thị RPCS3**.
+- Delta: `checkpoints/2026-11-07-batch-500-AT.json`; bàn giao: `checkpoints/2026-11-07-AT-handoff.md`.
+- Tiếp theo **AU**: NPC từ **5910**, dùng `NPC_SOURCE_NEXT_5910-6138.json` trong ZIP checkpoint AT, sau đó chuyển sang bảng khác còn thiếu để đủ đợt lớn.
