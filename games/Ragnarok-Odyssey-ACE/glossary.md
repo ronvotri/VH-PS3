@@ -683,3 +683,8 @@ Summoning device → thiết bị triệu hồi. Queen of the Dead → Nữ Vư�
 ## Thuật ngữ đợt AO (07/11/2026)
 
 Lord of Death → Chúa Tể Tử Thần, thống nhất với bảng vật phẩm. Giữ Galdrabok, Gungnir và Nữ Vương Hel. Diversionary attack → đánh nghi binh.
+
+
+## Thuật ngữ đợt AP (07/11/2026)
+
+Giữ pháo thủ chính thức cho vai trò của Iriey, Đền Trên Trời theo lời thoại về Lod, và Chúa Tể Tử Thần theo bảng vật phẩm. Lod xưng tui/cậu, giữ tiếng nấc *HỨC*.
