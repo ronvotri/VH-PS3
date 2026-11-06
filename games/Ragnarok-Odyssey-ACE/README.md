@@ -3,14 +3,14 @@
 - **Mã game:** BLUS31386 (US), APP_VER 01.00
 - **Nguồn dữ liệu:** `RagnarokACE-BanGiaoDich-2026-11-04.zip`
 - **Catalog đã kiểm kê:** 25.288 chuỗi / 76 bảng
-- **Đã có bản dịch:** 10.972 (2.175 đã duyệt trong bàn giao + 8.797 dịch sau bàn giao)
-- **Chưa dịch trong danh sách cần xử lý:** 10.677 / 19.474
+- **Đã có bản dịch:** 11.472 (2.175 đã duyệt trong bàn giao + 9.297 dịch sau bàn giao)
+- **Chưa dịch trong danh sách cần xử lý:** 10.177 / 19.474
 - **Cập nhật gần nhất:** 06/11/2026
 - **Tình trạng:** dữ liệu bản dịch; chưa được kiểm thử đóng gói patch PS3.
 
 ## Điểm bắt đầu mỗi lần dịch
 
-1. Mở [`translations/current.json`](translations/current.json): đây là **bản hợp nhất hiện hành duy nhất**, chứa 10.972 cặp `id → target_vi`.
+1. Mở [`translations/current.json`](translations/current.json): đây là **bản hợp nhất hiện hành duy nhất**, chứa 11.472 cặp `id → target_vi`.
 2. Đối chiếu với `01_CAN_DICH/needs_translation.json` từ gói bàn giao gốc, chỉ dịch mục chưa có trong `current.json`.
 3. Không chỉnh ID, file, index, source, source_tagged, attributes, status hoặc source_sha256. Giữ token `{#0}`, `{#1}`, printf như `%u` và số liệu.
 4. Sau mỗi đợt, viết một JSON mới trong `checkpoints/`, kiểm tra, rồi cập nhật `translations/current.json` và tiến độ này.
@@ -47,7 +47,8 @@
 | 06/11 — đợt mới W | 500 | NPC 3766–3815 (50), tên thẻ/trang bị/kỹ năng 600–849 (250), mô tả thẻ 240–439 (200) |
 | 06/11 — đợt mới X | 500 | NPC 3816–3865 (50), nhãn thẻ/kỹ năng 850–1099 (250), mô tả thẻ 440–639 (200) |
 | 06/11 — đợt mới Y | 500 | NPC 3866–3957 (92); toàn bộ tên thẻ còn lại 1100–1470 (371) và mô tả thẻ 640–676 (37) |
-| **Tổng** | **10.972** | Không trùng ID |
+| 06/11 — đợt mới Z | 500 | NPC 3958–4039 (80 ID, bỏ 3963/4002 đã có); 120 tên + 120 mô tả vũ khí 0–119; 180 tên đơn chế tạo 0–179 |
+| **Tổng** | **11.472** | Không trùng ID |
 
 ## Cấu trúc
 
@@ -92,3 +93,8 @@ Bước này chỉ điền các mục trong danh sách cần dịch. Để chu�
 - Thêm `prepare_batch_z.py` để chọn an toàn các mục chưa dịch: NPC **3958+**, `it_db_name_weapon`, `it_db_text_weapon`, `it_db_name_myorder`. Công cụ chỉ đọc ZIP gốc và snapshot, xuất worklist ở máy cục bộ, không tự dịch và không ghi đè. Đã kiểm thử trên source mô phỏng từ checkpoint Y: không chọn lại ID đã dịch.
 - **Chưa dịch được ID mới đợt Z:** ZIP gốc `RagnarokACE-BanGiaoDich-2026-11-04.zip` đã được tìm thấy trong thư viện nhưng phiên làm việc hiện tại không lấy được bytes của file. Không bịa nội dung source, không tạo checkpoint Z rỗng, không báo tăng tiến độ.
 - Khi có lại ZIP nguồn gốc đọc được, tiếp tục theo script trên rồi dịch thủ công + QA `validate_return.py` trước khi hợp nhất. Chưa build/QA patch RPCS3/PS3.
+
+
+**QA đợt Z (06/11/2026):** Đã đọc thành công `02_TOAN_BO/all_records.json` gốc (12.548.481 bytes) từ ZIP bàn giao và chạy nguyên bản `validate_return.py` trên 500 dòng nguồn tương ứng: **PASS 500/500, 0 mục rỗng**. Giữ ID, file/index, `source`, `source_tagged`, `source_sha256`, `attributes`, token, printf và chữ số. Giới hạn mềm NPC và mô tả vũ khí không quá 3 dòng, 38 ký tự/dòng. GitHub xác nhận 500/500 mục hợp nhất, 0 trùng ID. Tên rune giữ nguyên, loại vũ khí và tên các nhánh Halomonas được Việt hóa. **Chưa build/test patch RPCS3/PS3**; cần QA tên hiển thị giữa bảng vũ khí và thẻ do bảng thẻ cũ giữ tên mẫu bằng tiếng Anh.
+
+**Đợt AA kế tiếp:** NPC từ **4040**, `it_db_name_weapon` từ **120**, `it_db_text_weapon` từ **120**, `it_db_name_myorder` từ **180**. Chọn theo danh sách nguồn `needs_translation.json`, loại ID có trong `translations/current.json` trước khi dịch. Không ghi đè mục đã dịch.
