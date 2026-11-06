@@ -84,3 +84,11 @@ Bước này chỉ điền các mục trong danh sách cần dịch. Để chu�
 **QA đợt X:** `validate_return.py` gốc PASS 500/500 với bảng tham chiếu pending tái tạo từ 500 dòng nguồn `01_CAN_DICH/needs_translation.json` trong ZIP; không có ID trùng, lỗi token/printf/chữ số. NPC dịch tối đa 3 dòng, mỗi dòng tối đa 38 ký tự. Danh mục thẻ tên 850–930 là tên **kỹ năng**, 931–1099 là tên thẻ; mô tả thẻ 440–639 dựa trên bản dịch tên thẻ đã có của đợt V–W. Tệp `all_records.json` trong ZIP lỗi local-header nên không thể xác nhận trực tiếp toàn catalog; chưa thử patch, font và độ rộng trên RPCS3/PS3.
 
 **QA đợt Y:** `validate_return.py` nguyên bản PASS 500/500 với 500 bản ghi pending gốc trích từ `01_CAN_DICH/needs_translation.json`. Không có ID trùng, bản ghi rỗng, sai token `{#0}`, `{#1}`, mã printf hoặc chữ số. NPC tối đa 3 dòng, giới hạn mềm 38 ký tự/dòng. Hai bảng `it_db_name_card.rmsg` (0–1470) và `it_db_text_card.rmsg` (0–676) đã được điền đủ theo checkpoint U–Y. Riêng `02_TOAN_BO/all_records.json` trong ZIP bị lỗi local header, nên chưa đối chiếu trực tiếp toàn bộ catalog và chưa kiểm thử bản patch/font trong RPCS3.
+
+
+## Bổ sung 06/11/2026 — QA sau checkpoint Y / chuẩn bị đợt Z
+- Đã đọc lại 500 bản ghi nguồn trong ZIP checkpoint Y và sửa cách diễn đạt NPC **3881, 3953**; token, chữ số, NFC và giới hạn tối đa 3 dòng / 38 ký tự mỗi dòng đều PASS (2/2).
+- Lưu delta hiệu đính riêng tại `checkpoints/2026-11-06-Y-editorial-corrections.json`, đã cập nhật `translations/current.json`. **Đây không phải bản dịch ID mới:** tổng vẫn **10.972/25.288**, còn **10.677** mục trong `needs_translation.json`.
+- Thêm `prepare_batch_z.py` để chọn an toàn các mục chưa dịch: NPC **3958+**, `it_db_name_weapon`, `it_db_text_weapon`, `it_db_name_myorder`. Công cụ chỉ đọc ZIP gốc và snapshot, xuất worklist ở máy cục bộ, không tự dịch và không ghi đè. Đã kiểm thử trên source mô phỏng từ checkpoint Y: không chọn lại ID đã dịch.
+- **Chưa dịch được ID mới đợt Z:** ZIP gốc `RagnarokACE-BanGiaoDich-2026-11-04.zip` đã được tìm thấy trong thư viện nhưng phiên làm việc hiện tại không lấy được bytes của file. Không bịa nội dung source, không tạo checkpoint Z rỗng, không báo tăng tiến độ.
+- Khi có lại ZIP nguồn gốc đọc được, tiếp tục theo script trên rồi dịch thủ công + QA `validate_return.py` trước khi hợp nhất. Chưa build/QA patch RPCS3/PS3.
