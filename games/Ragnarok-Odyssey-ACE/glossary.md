@@ -594,3 +594,20 @@ NPC 3071–3080 (Yukino) giữ lối xưng tôi/cậu, nói chừng mực; thợ
 | Valhalla Helm / Expeditionary Force Badge | Mũ Trụ Valhalla / Huy Hiệu Đội Viễn Chinh |
 
 **QA đợt AE:** stock `validate_return.py` **PASS 500/500** từ nguyên bản `all_records.json`. 80 NPC ≤3 dòng/38 ký tự; không mất mã màu, tên người chơi hay số nâng cấp. Phần mô tả nguyên liệu đã dịch trước nên đợt này chỉ thêm tên nguyên liệu; cần QA hiển thị tên + mô tả đồng nhất khi patch. Chưa đo kích thước chữ Unicode trong RPCS3/PS3.
+
+
+## Thuật ngữ đợt AF (06/11/2026)
+
+| Nguồn | Bản Việt |
+|---|---|
+| Black Dragon Nidhoggr | Hắc Long Nidhoggr |
+| City of the Dead | Thành phố người chết |
+| Confusing mist | Sương mù gây rối giác quan |
+| Tacky Mucus | Chất Nhầy Dính |
+| Flamewolf / Frostwolf | Sói Lửa / Sói Băng |
+| Photophore | Cơ Quan Phát Sáng |
+| Hama Azusa Bow | Cung Hama Azusa |
+| Glanzen Sword | Glanzen Kiếm |
+| Shadow Sword | Kiếm Bóng Tối |
+
+Giữ tên riêng Galdrabok, Niflheim, Nidhoggr, Shiranui và các nhãn trong dấu ngoặc. Đơn chế tạo giữ mã A1-1, B2-2; nhãn Route dịch Nhánh, Final dịch Tối Hậu. NPC: Eadgils ta/cậu, học giả tôi/cậu, nhân viên tớ/cậu. QA AF PASS 500/500; chưa thử patch trên RPCS3/PS3.
