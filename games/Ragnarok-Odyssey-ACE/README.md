@@ -3,14 +3,14 @@
 - **Mã game:** BLUS31386 (US), APP_VER 01.00
 - **Nguồn dữ liệu:** `RagnarokACE-BanGiaoDich-2026-11-04.zip`
 - **Catalog đã kiểm kê:** 25.288 chuỗi / 76 bảng
-- **Đã có bản dịch:** 16.598 (2.175 đã duyệt trong bàn giao + 14.423 dịch sau bàn giao)
-- **Chưa dịch trong danh sách cần xử lý:** 5.051 / 19.474
+- **Đã có bản dịch:** 16.660 (2.175 đã duyệt trong bàn giao + 14.485 dịch sau bàn giao)
+- **Chưa dịch trong danh sách cần xử lý:** 4.989 / 19.474
 - **Cập nhật gần nhất:** 06/11/2026
 - **Tình trạng:** dữ liệu bản dịch; chưa được kiểm thử đóng gói patch PS3.
 
 ## Điểm bắt đầu mỗi lần dịch
 
-1. Mở [`translations/current.json`](translations/current.json): đây là **bản hợp nhất hiện hành duy nhất**, chứa 16.598 cặp `id → target_vi`.
+1. Mở [`translations/current.json`](translations/current.json): đây là **bản hợp nhất hiện hành duy nhất**, chứa 16.660 cặp `id → target_vi`.
 2. Đối chiếu với `01_CAN_DICH/needs_translation.json` từ gói bàn giao gốc, chỉ dịch mục chưa có trong `current.json`.
 3. Không chỉnh ID, file, index, source, source_tagged, attributes, status hoặc source_sha256. Giữ token `{#0}`, `{#1}`, printf như `%u` và số liệu.
 4. Sau mỗi đợt, viết một JSON mới trong `checkpoints/`, kiểm tra, rồi cập nhật `translations/current.json` và tiến độ này.
@@ -62,7 +62,8 @@
 | 06/11 — đợt mới AL | 80 | 80 NPC 4887–4968, giữ nguyên 4895 và 4929 |
 | 06/11 — đợt mới AM | 78 | 78 NPC 4969–5049, giữ 4979, 4991, 5023 |
 | 06/11 — đợt mới AN | 70 | 70 NPC 5050–5119 |
-| **Tổng** | **16.598** | Không trùng ID |
+| 07/11 — đợt mới AO | 62 | NPC 5120–5182, giữ bản dịch cũ ở 5149 |
+| **Tổng** | **16.660** | Không trùng ID |
 
 ## Cấu trúc
 
@@ -182,3 +183,8 @@ Bước này chỉ điền các mục trong danh sách cần dịch. Để chu�
 **QA đợt AN (06/11/2026):** `validate_return.py` gốc với `all_records.json` PASS 70/70. Giữ mã chèn và giới hạn 3 dòng, 38 ký tự mỗi dòng. Chưa thử patch/font trên RPCS3/PS3.
 
 **Đợt AO tiếp theo:** NPC từ **5120**, nối ghi chép của hiệp sĩ Glast Heim.
+
+
+**QA đợt AO (07/11/2026):** `validate_return.py` gốc với `all_records.json` PASS 62/62. Giữ mã chèn và giới hạn 3 dòng, 38 ký tự mỗi dòng. Chưa thử patch/font trên RPCS3/PS3.
+
+**Đợt AP tiếp theo:** NPC từ **5183**.

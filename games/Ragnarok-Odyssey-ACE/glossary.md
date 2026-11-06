@@ -678,3 +678,8 @@ Blood moon → trăng máu. Moonlight Serenade → Dạ Khúc Ánh Trăng (tên 
 ## Thuật ngữ đợt AN (06/11/2026)
 
 Summoning device → thiết bị triệu hồi. Queen of the Dead → Nữ Vương Cõi Chết. Giữ Vùng Đất Chia Cắt, Helheim và Glast Heim. Ottar xưng ta/cậu, Con xưng tôi/cậu.
+
+
+## Thuật ngữ đợt AO (07/11/2026)
+
+Lord of Death → Chúa Tể Tử Thần, thống nhất với bảng vật phẩm. Giữ Galdrabok, Gungnir và Nữ Vương Hel. Diversionary attack → đánh nghi binh.
