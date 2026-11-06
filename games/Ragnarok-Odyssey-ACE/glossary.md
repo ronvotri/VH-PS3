@@ -640,3 +640,16 @@ Tên vũ khí chế tạo lấy theo bảng tên vũ khí đã Việt hóa. Hver
 | Bearer of the Dragon’s Horn | Người Mang Sừng Rồng |
 
 Brokkr giữ ta/cậu, gọi người chơi là nhóc khi thân tình. Đơn chế tạo giữ mã nhánh và nâng cấp.
+
+
+## Thuật ngữ đợt AI (06/11/2026)
+
+| Nguồn | Bản Việt |
+|---|---|
+| Shadow Mace | Chùy Bóng Tối |
+| Glanzen Bow | Glanzen Cung |
+| Shadow Bow | Cung Bóng Tối |
+| Halomonas Pole-Axe | Halomonas Rìu Cán Dài |
+| Halomonas Morning Star | Halomonas Chùy Sao Mai |
+
+Giữ Einherjar, Gimli, Helheim và Asgard. Iriey xưng tôi/cậu, Lod xưng tui/cậu, Ottar xưng ta/cậu.
