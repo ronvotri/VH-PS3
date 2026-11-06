@@ -3,14 +3,14 @@
 - **Mã game:** BLUS31386 (US), APP_VER 01.00
 - **Nguồn dữ liệu:** `RagnarokACE-BanGiaoDich-2026-11-04.zip`
 - **Catalog đã kiểm kê:** 25.288 chuỗi / 76 bảng
-- **Đã có bản dịch:** 12.972 (2.175 đã duyệt trong bàn giao + 10.797 dịch sau bàn giao)
-- **Chưa dịch trong danh sách cần xử lý:** 8.677 / 19.474
+- **Đã có bản dịch:** 13.472 (2.175 đã duyệt trong bàn giao + 11.297 dịch sau bàn giao)
+- **Chưa dịch trong danh sách cần xử lý:** 8.177 / 19.474
 - **Cập nhật gần nhất:** 06/11/2026
 - **Tình trạng:** dữ liệu bản dịch; chưa được kiểm thử đóng gói patch PS3.
 
 ## Điểm bắt đầu mỗi lần dịch
 
-1. Mở [`translations/current.json`](translations/current.json): đây là **bản hợp nhất hiện hành duy nhất**, chứa 12.972 cặp `id → target_vi`.
+1. Mở [`translations/current.json`](translations/current.json): đây là **bản hợp nhất hiện hành duy nhất**, chứa 13.472 cặp `id → target_vi`.
 2. Đối chiếu với `01_CAN_DICH/needs_translation.json` từ gói bàn giao gốc, chỉ dịch mục chưa có trong `current.json`.
 3. Không chỉnh ID, file, index, source, source_tagged, attributes, status hoặc source_sha256. Giữ token `{#0}`, `{#1}`, printf như `%u` và số liệu.
 4. Sau mỗi đợt, viết một JSON mới trong `checkpoints/`, kiểm tra, rồi cập nhật `translations/current.json` và tiến độ này.
@@ -51,7 +51,8 @@
 | 06/11 — đợt mới AA | 500 | NPC 4040–4105 (66); 100 tên + 100 mô tả vũ khí 120–219; 234 tên đơn chế tạo 180–413 |
 | 06/11 — đợt mới AB | 500 | NPC 4106–4165 (60); 100 tên + 100 mô tả vũ khí 220–319; 240 đơn chế tạo 414–653 |
 | 06/11 — đợt mới AC | 500 | NPC 4166–4240 (75); 100 tên + 100 mô tả vũ khí 320–419; 225 đơn chế tạo 654–878 |
-| **Tổng** | **12.972** | Không trùng ID |
+| 06/11 — đợt mới AD | 500 | 80 NPC 4241–4320; 30 tên + 30 mô tả vũ khí 420–449 (hoàn tất 450/450 mỗi bảng); 360 đơn chế tạo 879–1238 |
+| **Tổng** | **13.472** | Không trùng ID |
 
 ## Cấu trúc
 
@@ -116,3 +117,8 @@ Bước này chỉ điền các mục trong danh sách cần dịch. Để chu�
 **QA đợt AC (06/11/2026):** Dịch 500 ID trực tiếp từ `01_CAN_DICH/needs_translation.json`, kiểm lại nguyên bản trong `02_TOAN_BO/all_records.json`; chạy `validate_return.py` gốc **PASS 500/500**, không bản ghi rỗng. Các chuỗi giữ ID, token `{#0}`, printf, chữ số, mã nâng cấp `5-4`, mã tên riêng và thứ tự bảng. Kiểm tra thêm NFC tiếng Việt và tối đa 3 dòng, 38 ký tự/dòng cho NPC và mô tả vũ khí. Truyện: táo vàng là họa tiết tháo lắp trên bìa Galdrabok, dẫn tới trang ẩn; đơn chế tạo: Mince, Drill, Halomonas và Sadistic. Chưa đóng patch hoặc thử giao diện/font RPCS3/PS3.
 
 **Đợt AD tiếp theo:** NPC chưa dịch từ **4241**, `it_db_name_weapon.rmsg`/`it_db_text_weapon.rmsg` từ **420**, `it_db_name_myorder.rmsg` từ **879**. Lọc theo ID thực tế chưa dịch; tránh ghi đè hoặc tự dịch tên riêng thần thoại.
+
+
+**QA đợt AD (06/11/2026):** Đã dịch 500 ID từ `needs_translation.json` và chạy `validate_return.py` gốc với `all_records.json` nguyên bản (25.288 record): **PASS 500/500**, 0 bản ghi trống. Kiểm thêm UTF-8 NFC, token `{#0}`, mã số nâng cấp, 0 ID trùng và giới hạn 3 dòng/38 ký tự cho NPC và mô tả. Nội dung Niflheim, vợ hiệp sĩ Glast Heim, các linh hồn Helheim, vùng Sograt, bí thuật tách hồn khỏi xác, 450/450 tên và mô tả vũ khí đã hoàn tất. Cần kiểm lại tên mẫu vũ khí với tên thẻ/đơn chế tạo khi patch. Chưa build/test patch hoặc font thật trên RPCS3/PS3.
+
+**Đợt AE tiếp theo:** NPC từ **4321**; `it_db_name_myorder.rmsg` từ **1239**. Hai bảng `it_db_name_weapon.rmsg` và `it_db_text_weapon.rmsg` đã hết ID (0–449). Có thể chuyển thêm sang bảng vật liệu, trang bị hoặc từ điển sau khi lọc ID chưa dịch. Bảo đảm giữ nguyên mọi token và trạng thái save/credit **Việt hóa bởi Votri Valley.**
