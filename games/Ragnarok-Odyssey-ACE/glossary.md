@@ -688,3 +688,8 @@ Lord of Death → Chúa Tể Tử Thần, thống nhất với bảng vật ph�
 ## Thuật ngữ đợt AP (07/11/2026)
 
 Giữ pháo thủ chính thức cho vai trò của Iriey, Đền Trên Trời theo lời thoại về Lod, và Chúa Tể Tử Thần theo bảng vật phẩm. Lod xưng tui/cậu, giữ tiếng nấc *HỨC*.
+
+
+## Thuật ngữ đợt AQ (07/11/2026)
+
+Armed Kafra → Kafra vũ trang. Giữ Dịch vụ Kafra, Kafra ma quái, Hũ tỷ phú và Chúa Tể Tử Thần.
