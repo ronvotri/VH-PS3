@@ -429,3 +429,24 @@ NPC 3071–3080 (Yukino) giữ lối xưng tôi/cậu, nói chừng mực; thợ
 **Phân loại tệp trộn:** `it_db_name_card.rmsg` 850–930 là tên kỹ năng (không thêm 'Thẻ'), 931–1099 là tên thẻ. Mục 934 nguyên bản tiếng Nhật `深紅のエプロンドレスｄカード` được chuyển thành `Thẻ Váy Tạp Dề Đỏ Thẫm d` (giữ hậu tố d để đối chiếu). Mục mô tả 634 có gốc `Grivdarvol` khác tên `Gridarvol` ở bảng tên thẻ; bản Việt thống nhất tên `Gridarvol` và cần QA trong game.
 
 **QA:** 500/500 khớp mã nguồn từ `needs_translation.json`, token, printf và chữ số. `all_records.json` trong ZIP bị lỗi giải nén; chưa kiểm thử patch/RPCS3.
+
+
+## Thuật ngữ và giọng NPC — đợt Y (06/11/2026)
+
+| Bản gốc | Dịch / quy tắc |
+|---|---|
+| Lindwurm / Green Dragon | Giữ Lindwurm / Rồng Xanh |
+| Age of the Gods | Thời Đại Chư Thần |
+| The Strongest Mercenary | Lính Thuê Mạnh Nhất |
+| Dragon Claw / Dragon Wing / Dragon Slayer | Móng Rồng / Cánh Rồng / Diệt Rồng |
+| Dragon Spirits / Dragon Crystal / Dragon Vernier | Linh Hồn Rồng / Pha Lê Rồng / Bộ Đẩy Rồng |
+| Mind Reaper / Soul Destructor | Gặt Hồn Trí / Hủy Diệt Linh Hồn |
+| Rune prefix Hagal, Eohl, Eolh, Sigel, Nide, Ing, Tyr, Peorth, Wyadd, Beorc, Geofu | Giữ nguyên tên rune và vị trí tiền tố trước tên thẻ |
+| Card A / Card F | Thẻ ... A / Thẻ ... F (giữ nguyên mã phiên bản) |
+| Tower of Yggdrasil | Tháp Yggdrasil |
+
+**Giọng NPC:** Eirik thân mật, nói tự nhiên; Eadgils quyết đoán, xưng ta/cậu; Yukino điềm tĩnh, tò mò trước Lindwurm; Thrasir xưng tôi/cậu và sợ thằn lằn; Lif động viên, nhắc Thrasir đừng nói hớ. Nội dung 3866–3957 giới thiệu Rồng Xanh Lindwurm ở gần tầng 100, kế hoạch tập kích hai bên cánh và chuyến trinh sát của Lif–Thrasir.
+
+**Bảng thẻ:** Đợt Y hoàn tất toàn bộ ID 1100–1470 của `it_db_name_card.rmsg` và ID 640–676 của `it_db_text_card.rmsg`. Giữ tên riêng và mã rune/A/F; các bản lặp cùng nguồn dùng cùng bản dịch. Mô tả thẻ lấy theo tên đã dịch trong checkpoint U–W, tránh lệch tên nghề. Chưa đo độ rộng font trong game.
+
+**QA:** PASS 500/500 bằng validator gốc với bản tham chiếu pending trích từ ZIP. `all_records.json` của ZIP không giải nén được nên chưa QA toàn catalog; chưa tạo bản patch đã kiểm thử.
