@@ -212,3 +212,6 @@ Bước này chỉ điền các mục trong danh sách cần dịch. Để chu�
 **QA đợt AS (07/11/2026):** `validate_return.py` gốc với `all_records.json` PASS 49/49. Chưa thử patch/font trên RPCS3/PS3.
 
 **Đợt AT tiếp theo:** NPC từ **5403**.
+
+
+**QA bố cục NPC — 07/11/2026:** Đã kiểm tra 5.388 NPC trong `translations/current.json`. Phát hiện 652 mục vượt 3 dòng/38 ký tự; chỉnh ngắt dòng 500 câu và biên tập ngắn 152 câu, hiện còn **0** mục vượt giới hạn ký tự. Hai delta biên tập nằm tại `checkpoints/2026-11-07-NPC-layout-manual-A-60.json` và `checkpoints/2026-11-07-NPC-layout-manual-B-92.json`; báo cáo trước/sau tại `checkpoints/2026-11-07-NPC-layout-QA-500.md`. Đây là sửa QA, **không tăng số câu đã dịch**: vẫn **16.877 / 25.288**, còn 4.772 trong danh sách cần dịch. Việc đối chiếu nguyên bản tiếng Anh và `validate_return.py` cho 152 câu đã biên tập, cùng kiểm thử font/khung hình trên RPCS3/PS3, vẫn cần thực hiện trước khi phát hành patch. Đợt AT bắt đầu từ NPC **5403**, nên chuẩn bị danh sách khoảng 500 ID chưa dịch bằng `prepare_next_batch.py` khi đọc được `RagnarokACE-BanGiaoDich-2026-11-04.zip`.
