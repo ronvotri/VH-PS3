@@ -545,3 +545,27 @@ NPC 3071–3080 (Yukino) giữ lối xưng tôi/cậu, nói chừng mực; thợ
 | Vidofnir / Shiranui / Jokulsnaut / Ishikirimaru | Giữ tên riêng, dịch danh từ chỉ loại vũ khí nếu có |
 
 **QA:** Các bản ghi AC đã được kiểm đúng token, số, UTF-8 NFC, độ dài mềm và validator gốc **PASS 500/500**. Quy tắc trong bản dựng vẫn cần kiểm trực tiếp trên RPCS3/PS3 (độ rộng Unicode, ngắt dòng, font). Khi chuẩn hóa tên vũ khí qua bảng thẻ–đơn chế tạo, phải sửa có đối chiếu source cùng ID, không được thay mã hoặc dịch nhầm tên rune.
+
+
+## Thuật ngữ — đợt AD (06/11/2026)
+
+| Gốc | Việt hóa/Quy tắc |
+|---|---|
+| Niflheim | Giữ tên Niflheim (vùng sương mù và cõi chờ của linh hồn) |
+| Valhalla / Gimli / Helheim / Asgard | Giữ nguyên tên vùng đất thần thoại |
+| Ymir | Giữ nguyên tên thủy tổ khổng lồ và chư thần |
+| Sograt Desert | Sa mạc Sograt |
+| Sundered Lands | Vùng Đất Chia Cắt |
+| Glast Heim | Giữ tên Glast Heim |
+| Galdrabok | Giữ tên sách phép Galdrabok |
+| DarkGiants | Khổng Lồ Hắc Ám |
+| Glanzen Katar/Mace/Hammer/Bow/Staff/Sword | Glanzen Dao Katar/Chùy/Búa/Cung/Trượng/Kiếm |
+| Shadow Katar/Mace/Hammer/Bow/Staff/Sword | Dao Katar/Chùy/Búa/Cung/Trượng/Kiếm Bóng Tối |
+| Rytha | Giữ Rytha ở tiền tố tên vũ khí được Valkyrie ban phúc |
+| Fake Sun Sword F | Kiếm Mặt Trời Giả F (giữ mã phiên bản F) |
+| Halomonas spirits | Linh thể Halomonas (riêng trường hợp spirit bacteria: vi khuẩn linh thể) |
+| Winged/Snake/Golden/Holy Bird Vidofnir | Chim Cánh/Xà Điểu/Kim Điểu/Thánh Điểu Vidofnir |
+| Sky Pillar Staff Nordri/Sudri/Vestri/Austri | Trượng Trụ Trời Nordri/Sudri/Vestri/Austri |
+| Steel/King/Valkyrie/War God Dragon Blade | Long Đao Thép/Vương/Valkyrie/Chiến Thần |
+
+**Ngôi xưng:** Eadgils xưng *ta/cậu*, học giả và Yukino *tôi/cậu*, Eirik *tôi/cậu* tự nhiên. Giữ nguyên token `{#0}` và mã nâng cấp như `10-3`, hậu tố `: Tối Hậu`; không dịch lẫn tên riêng thần thoại. **QA 500/500 PASS** trên `all_records.json` gốc. Đã hoàn tất tất cả 450 tên + 450 mô tả vũ khí; đợt AE chuyển nguồn lực sang nhóm khác. Chưa kiểm font/hiển thị RPCS3/PS3.
