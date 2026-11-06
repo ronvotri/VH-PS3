@@ -3,14 +3,14 @@
 - **Mã game:** BLUS31386 (US), APP_VER 01.00
 - **Nguồn dữ liệu:** `RagnarokACE-BanGiaoDich-2026-11-04.zip`
 - **Catalog đã kiểm kê:** 25.288 chuỗi / 76 bảng
-- **Đã có bản dịch:** 16.776 (2.175 đã duyệt trong bàn giao + 14.601 dịch sau bàn giao)
-- **Chưa dịch trong danh sách cần xử lý:** 4.873 / 19.474
+- **Đã có bản dịch:** 16.828 (2.175 đã duyệt trong bàn giao + 14.653 dịch sau bàn giao)
+- **Chưa dịch trong danh sách cần xử lý:** 4.821 / 19.474
 - **Cập nhật gần nhất:** 06/11/2026
 - **Tình trạng:** dữ liệu bản dịch; chưa được kiểm thử đóng gói patch PS3.
 
 ## Điểm bắt đầu mỗi lần dịch
 
-1. Mở [`translations/current.json`](translations/current.json): đây là **bản hợp nhất hiện hành duy nhất**, chứa 16.776 cặp `id → target_vi`.
+1. Mở [`translations/current.json`](translations/current.json): đây là **bản hợp nhất hiện hành duy nhất**, chứa 16.828 cặp `id → target_vi`.
 2. Đối chiếu với `01_CAN_DICH/needs_translation.json` từ gói bàn giao gốc, chỉ dịch mục chưa có trong `current.json`.
 3. Không chỉnh ID, file, index, source, source_tagged, attributes, status hoặc source_sha256. Giữ token `{#0}`, `{#1}`, printf như `%u` và số liệu.
 4. Sau mỗi đợt, viết một JSON mới trong `checkpoints/`, kiểm tra, rồi cập nhật `translations/current.json` và tiến độ này.
@@ -65,7 +65,8 @@
 | 07/11 — đợt mới AO | 62 | NPC 5120–5182, giữ bản dịch cũ ở 5149 |
 | 07/11 — đợt mới AP | 56 | NPC 5183–5240, giữ 5190 và 5198 |
 | 07/11 — đợt mới AQ | 60 | NPC 5241–5300 |
-| **Tổng** | **16.776** | Không trùng ID |
+| 07/11 — đợt mới AR | 52 | NPC 5301–5353, giữ 5347 |
+| **Tổng** | **16.828** | Không trùng ID |
 
 ## Cấu trúc
 
@@ -200,3 +201,8 @@ Bước này chỉ điền các mục trong danh sách cần dịch. Để chu�
 **QA đợt AQ (07/11/2026):** `validate_return.py` gốc với `all_records.json` PASS 60/60. Chưa thử patch/font trên RPCS3/PS3.
 
 **Đợt AR tiếp theo:** NPC từ **5301**.
+
+
+**QA đợt AR (07/11/2026):** `validate_return.py` gốc với `all_records.json` PASS 52/52. ID 5347 giữ dấu câu và mã chèn. Chưa thử patch/font trên RPCS3/PS3.
+
+**Đợt AS tiếp theo:** NPC từ **5354**.

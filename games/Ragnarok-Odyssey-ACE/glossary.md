@@ -693,3 +693,8 @@ Giữ pháo thủ chính thức cho vai trò của Iriey, Đền Trên Trời th
 ## Thuật ngữ đợt AQ (07/11/2026)
 
 Armed Kafra → Kafra vũ trang. Giữ Dịch vụ Kafra, Kafra ma quái, Hũ tỷ phú và Chúa Tể Tử Thần.
+
+
+## Thuật ngữ đợt AR (07/11/2026)
+
+Giữ Cán Cân Trái Tim, Lính Thuê Mạnh Nhất và Chúa Tể Tử Thần trong lời hiệu triệu. Tháp Ảo Ảnh dùng cho Tower of Mirage.
