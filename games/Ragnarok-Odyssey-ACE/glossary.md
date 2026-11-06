@@ -381,3 +381,27 @@ NPC 3071–3080 (Yukino) giữ lối xưng tôi/cậu, nói chừng mực; thợ
 **Giọng thoại:** Các câu 3706–3712 về Norn bộc trực, sốt ruột; người phát yêu cầu 3713–3719 thân mật, dí dỏm; Eadgils ở 3720–3734 xưng ta/cậu; Yukino phân tích nguồn gốc và cơ cấu triệu hồi ở 3739–3760, xưng tôi/cậu. Giữ đầy đủ token tên nhân vật như `{#0}` trong bản `source_tagged`.
 
 **QA đợt V:** 60 NPC 3706–3765, 300 tên thẻ 300–599 và 140 mô tả 100–239. PASS 500/500 từ validator gốc với bản tham chiếu đúng pending-row trong ZIP. Chưa kiểm thử patch và độ rộng chữ thực tế trong RPCS3/PS3.
+
+
+## Thuật ngữ & giọng NPC — đợt W (06/11/2026)
+
+| Nguồn | Việt hóa/Quy tắc |
+|---|---|
+| Tower of Mirage / Endless Tower | Tháp Ảo Ảnh / Tháp Vô Tận |
+| Ancient Vanir gods | Các vị thần Vanir cổ đại |
+| Summoning devices | Thiết bị triệu hồi |
+| Vanir's Treasure | Bảo Vật Vanir |
+| Greater Giants | Đại Khổng Lồ |
+| Kafra | Giữ nguyên Kafra |
+| Staff Boost / Bow Boost | Cường Hóa Trượng / Cường Hóa Cung |
+| Staff Training / Bow Training | Luyện Trượng / Luyện Cung |
+| Ground / Air training | Luyện tập Mặt Đất / Trên Không |
+| Step Optimization | Tối Ưu Bước Né |
+| Aerial Step Optimization | Tối Ưu Bước Né Trên Không |
+| Card | Thẻ (chỉ khi nội dung nguồn là thẻ) |
+
+**Hội thoại:** 3766–3778: nhận định tháp triệu hồi quái vật và nghĩa vụ với vương quốc; 3782–3796: nghiên cứu Tháp Ảo Ảnh theo giọng học giả, xưng tôi/cậu; 3797–3815: đồng nghiệp Kafra trêu Pavianne, giữ giọng tự nhiên dí dỏm, có đoạn ngượng ngùng. Đối chiếu `source_tagged` để giữ tên người chơi `{#0}`.
+
+**Cảnh báo cấu trúc:** Bảng `it_db_name_card.rmsg` pha lẫn tên thẻ, nhãn trang bị và kỹ năng. ID 600–779 chủ yếu là thẻ (mã rune và tên riêng giữ nguyên); ID 780–792, 829–849 là tên kỹ năng, KHÔNG thêm `Thẻ`; ID 793–828 trở lại là thẻ trang bị. Giữ token `{#0}` trong chuỗi có token. Bảng `it_db_text_card.rmsg` 240–439 là những mô tả ngắn dạng `X card`, dịch thống nhất thành `Thẻ X.`.
+
+**QA:** PASS 500/500 với validator gốc và 500 pending rows nguyên bản từ `needs_translation.json`. ZIP lỗi header ở `all_records.json` nên chưa đối chiếu toàn bộ catalog. Chưa test font/patch trên RPCS3/PS3.
