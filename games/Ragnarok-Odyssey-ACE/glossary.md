@@ -450,3 +450,24 @@ NPC 3071–3080 (Yukino) giữ lối xưng tôi/cậu, nói chừng mực; thợ
 **Bảng thẻ:** Đợt Y hoàn tất toàn bộ ID 1100–1470 của `it_db_name_card.rmsg` và ID 640–676 của `it_db_text_card.rmsg`. Giữ tên riêng và mã rune/A/F; các bản lặp cùng nguồn dùng cùng bản dịch. Mô tả thẻ lấy theo tên đã dịch trong checkpoint U–W, tránh lệch tên nghề. Chưa đo độ rộng font trong game.
 
 **QA:** PASS 500/500 bằng validator gốc với bản tham chiếu pending trích từ ZIP. `all_records.json` của ZIP không giải nén được nên chưa QA toàn catalog; chưa tạo bản patch đã kiểm thử.
+
+
+## Thuật ngữ bổ sung — đợt Z (06/11/2026)
+
+| Nguyên văn | Tên Việt áp dụng cho bảng vũ khí/đơn chế tạo |
+|---|---|
+| Katar / War Mace / War Hammer | Dao Katar / Chùy Chiến / Búa Chiến |
+| Hunter Bow / Long Staff / Two-Handed Sword | Cung Thợ Săn / Trượng Dài / Đại Kiếm |
+| Sharp Edge / Brilliant Spike / Aesir Hammer | Lưỡi Sắc / Chùy Ánh Sáng / Búa Aesir |
+| Luna Bow / Soul Staff / Executioner | Cung Trăng / Trượng Hồn / Kiếm Hành Quyết |
+| Bloody Roar / Grand Cross | Huyết Gầm / Thập Tự Thần |
+| Bradium Hammer / Elfin Bow | Búa Bradium / Cung Tiên |
+| Farbauti / Gleipnir / Mjollnir / Ganbantein / Mysteltainn | Giữ tên riêng thần thoại |
+| Halomonas A Route / B Route | Halomonas [mẫu] Nhánh A / Nhánh B |
+| Rune for legacy / bravery / defense | Rune truyền thừa / dũng khí / phòng thủ |
+| Rune for self / motion / bounty | Rune bản ngã / chuyển động / bội thu |
+| Rune for victory / protection / knowledge | Rune chiến thắng / bảo hộ / tri thức |
+
+**NPC 3958–4039:** Eadgils quyết đoán (ta/cậu); Eirik trò chuyện thân mật nhưng xưng tôi/cậu; người nghiên cứu nói tôi/cậu; hội thoại thời trang sinh động nhưng không biến ngôi xưng tùy tiện. Giữ tên Lindwurm, Tháp Yggdrasil, Đại Khổng Lồ, Emperium, Gungnir, Vidarr; token `{#0}` giữ nguyên vị trí chức năng. Đợt Z dịch tên mẫu vũ khí trong trang bị/đơn chế tạo, khác bảng thẻ U–Y hiện giữ tên mẫu tiếng Anh; **cần thống nhất liên bảng sau khi QA giao diện, tuyệt đối không thay mã rune/ID để ép trùng**.
+
+**QA:** `validate_return.py` gốc PASS 500/500 với `02_TOAN_BO/all_records.json` gốc đã đọc thành công; chưa test patch trên RPCS3/PS3.
