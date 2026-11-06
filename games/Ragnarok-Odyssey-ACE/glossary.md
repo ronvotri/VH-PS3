@@ -698,3 +698,22 @@ Armed Kafra → Kafra vũ trang. Giữ Dịch vụ Kafra, Kafra ma quái, Hũ t�
 ## Thuật ngữ đợt AR (07/11/2026)
 
 Giữ Cán Cân Trái Tim, Lính Thuê Mạnh Nhất và Chúa Tể Tử Thần trong lời hiệu triệu. Tháp Ảo Ảnh dùng cho Tower of Mirage.
+
+
+## Thuật ngữ bổ sung — đợt AU (07/11/2026)
+
+| Bản gốc | Bản Việt / cách dùng |
+|---|---|
+| Moira Company | Hãng Moira |
+| Norn Exchange | Giữ tên riêng **Norn Exchange**, kể cả trong lời thoại |
+| ACE skill | kỹ năng ACE |
+| Card Counter | Quầy Thẻ |
+| Tailor Shop | Tiệm May |
+| Blacksmith Shop | Tiệm Rèn |
+| Storage Box | Hòm chứa |
+| Closet | Tủ đồ |
+| Blossom Card / Leilah Card | Thẻ Blossom / Thẻ Leilah |
+| Proof of Expertise | Giữ tên gốc đến khi chuẩn hóa tên vật phẩm |
+| Mercenary Helper | lính đánh thuê hỗ trợ (khi giải thích cơ chế thuê đồng đội) |
+
+Tên bản nhạc trong bảng `it_db_name_bgm.rmsg` Việt hóa theo sắc thái ca khúc; giữ nguyên các tên riêng, lối chơi chữ khó chuyển ngữ và tên sản phẩm/tác phẩm khác (ví dụ `GRANDIA`, `TeMPoison`).
