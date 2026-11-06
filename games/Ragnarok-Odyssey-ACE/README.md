@@ -3,14 +3,14 @@
 - **Mã game:** BLUS31386 (US), APP_VER 01.00
 - **Nguồn dữ liệu:** `RagnarokACE-BanGiaoDich-2026-11-04.zip`
 - **Catalog đã kiểm kê:** 25.288 chuỗi / 76 bảng
-- **Đã có bản dịch:** 8.139 (2.175 đã duyệt trong bàn giao + 5.964 dịch sau bàn giao)
-- **Chưa dịch trong danh sách cần xử lý:** 13.510 / 19.474
+- **Đã có bản dịch:** 8.477 (2.175 đã duyệt trong bàn giao + 6.302 dịch sau bàn giao)
+- **Chưa dịch trong danh sách cần xử lý:** 13.172 / 19.474
 - **Cập nhật gần nhất:** 06/11/2026
 - **Tình trạng:** dữ liệu bản dịch; chưa được kiểm thử đóng gói patch PS3.
 
 ## Điểm bắt đầu mỗi lần dịch
 
-1. Mở [`translations/current.json`](translations/current.json): đây là **bản hợp nhất hiện hành duy nhất**, chứa 8.139 cặp `id → target_vi`.
+1. Mở [`translations/current.json`](translations/current.json): đây là **bản hợp nhất hiện hành duy nhất**, chứa 8.477 cặp `id → target_vi`.
 2. Đối chiếu với `01_CAN_DICH/needs_translation.json` từ gói bàn giao gốc, chỉ dịch mục chưa có trong `current.json`.
 3. Không chỉnh ID, file, index, source, source_tagged, attributes, status hoặc source_sha256. Giữ token `{#0}`, `{#1}`, printf như `%u` và số liệu.
 4. Sau mỗi đợt, viết một JSON mới trong `checkpoints/`, kiểm tra, rồi cập nhật `translations/current.json` và tiến độ này.
@@ -41,7 +41,8 @@
 | 05/11 — đợt mới Q | 279 | Hội thoại 3142–3232 (bỏ 6 ID đã có), tên/mô tả kỹ năng 676–775 |
 | 06/11 — đợt mới R | 331 | NPC Brokkr/Rune 3233–3315, tên và mô tả kỹ năng 776–899; QA 331/331 |
 | 06/11 — đợt mới S | 334 | NPC 3316–3429 (Rune, Linde, Lif, Thrasir, Lod, Brokkr), tên/mô tả kỹ năng 900–1009 |
-| **Tổng** | **8.139** | Không trùng ID |
+| 06/11 — đợt mới T | 338 | NPC 3430–3610 (176 ID mới); tên và mô tả kỹ năng 1010–1090 (81 cặp) |
+| **Tổng** | **8.477** | Không trùng ID |
 
 ## Cấu trúc
 
@@ -66,3 +67,5 @@ Bước này chỉ điền các mục trong danh sách cần dịch. Để chu�
 **QA đợt L:** Bản gốc tên `Triple Jump` (kỹ năng 263), nhưng mô tả tiếng Nhật ghi nhảy hai lần. Chưa tự sửa bất đồng này; cần kiểm thử game trước khi thống nhất. Đã xác minh cấu trúc 370/370 mục mới.
 
 **QA đợt S:** 334 ID chưa dịch từ `needs_translation.json`, bộ `validate_return.py` chuẩn PASS 334/334 với bản tham chiếu pending khôi phục từ cùng gói. Bản sao `02_TOAN_BO/all_records.json` trong ZIP không giải nén được (bad file header); chưa chạy được đối chiếu trực tiếp với toàn bộ `all_records.json`. Dữ liệu nguồn, token, số và placeholder được đối chiếu với `needs_translation.json`; không có va chạm với `current.json`.
+
+**QA đợt T:** `validate_return.py` nguyên bản PASS 338/338 khi dùng danh sách tham chiếu tái tạo từ `01_CAN_DICH/needs_translation.json` (19.474 mục), do `all_records.json` trong ZIP báo BadZipFile header. Các ID 3448/3452/3454/3469 đã có ở bản tổng hợp được bỏ qua, 3522 vắng trong danh sách cần dịch. 0 va chạm và 0 lỗi token/printf/chữ số. Chưa thử patch/độ rộng font trên RPCS3/PS3. Bảng kỹ năng bị động kết thúc tại ID 1090; đợt tiếp theo ưu tiên NPC 3611+ và các bảng khác chưa dịch, không giả định có kỹ năng 1091.
