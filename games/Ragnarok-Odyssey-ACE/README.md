@@ -3,14 +3,14 @@
 - **Mã game:** BLUS31386 (US), APP_VER 01.00
 - **Nguồn dữ liệu:** `RagnarokACE-BanGiaoDich-2026-11-04.zip`
 - **Catalog đã kiểm kê:** 25.288 chuỗi / 76 bảng
-- **Đã có bản dịch:** 16.286 (2.175 đã duyệt trong bàn giao + 14.111 dịch sau bàn giao)
-- **Chưa dịch trong danh sách cần xử lý:** 5.363 / 19.474
+- **Đã có bản dịch:** 16.370 (2.175 đã duyệt trong bàn giao + 14.195 dịch sau bàn giao)
+- **Chưa dịch trong danh sách cần xử lý:** 5.279 / 19.474
 - **Cập nhật gần nhất:** 06/11/2026
 - **Tình trạng:** dữ liệu bản dịch; chưa được kiểm thử đóng gói patch PS3.
 
 ## Điểm bắt đầu mỗi lần dịch
 
-1. Mở [`translations/current.json`](translations/current.json): đây là **bản hợp nhất hiện hành duy nhất**, chứa 16.286 cặp `id → target_vi`.
+1. Mở [`translations/current.json`](translations/current.json): đây là **bản hợp nhất hiện hành duy nhất**, chứa 16.370 cặp `id → target_vi`.
 2. Đối chiếu với `01_CAN_DICH/needs_translation.json` từ gói bàn giao gốc, chỉ dịch mục chưa có trong `current.json`.
 3. Không chỉnh ID, file, index, source, source_tagged, attributes, status hoặc source_sha256. Giữ token `{#0}`, `{#1}`, printf như `%u` và số liệu.
 4. Sau mỗi đợt, viết một JSON mới trong `checkpoints/`, kiểm tra, rồi cập nhật `translations/current.json` và tiến độ này.
@@ -58,7 +58,8 @@
 | 06/11 — đợt mới AH | 500 | 79 NPC 4561–4641 (giữ 4563 và 4619), 421 đơn chế tạo 2088–2508 |
 | 06/11 — đợt mới AI | 500 | 81 NPC 4642–4722, 419 đơn chế tạo 2509–2927 |
 | 06/11 — đợt mới AJ | 314 | 79 NPC 4723–4802, 235 đơn chế tạo 2928–3162 |
-| **Tổng** | **16.286** | Không trùng ID |
+| 06/11 — đợt mới AK | 84 | 84 NPC 4803–4886 |
+| **Tổng** | **16.370** | Không trùng ID |
 
 ## Cấu trúc
 
@@ -158,3 +159,8 @@ Bước này chỉ điền các mục trong danh sách cần dịch. Để chu�
 **QA đợt AJ (06/11/2026):** `validate_return.py` gốc với `all_records.json` PASS 314/314. NPC 4775 là `!?`, giữ nguyên. Đã có bản dịch cho toàn bộ 3.163 tên đơn chế tạo. Chưa thử patch/font trên RPCS3/PS3.
 
 **Đợt AK tiếp theo:** Tiếp thoại NPC từ **4803**. Có thể bắt đầu bảng `msg_quest.bin` sau khi lọc ID đã dịch.
+
+
+**QA đợt AK (06/11/2026):** `validate_return.py` gốc với `all_records.json` PASS 84/84. Hội thoại về vong hồn giả dạng Pavianne và Loli Ruri. Chưa thử patch/font trên RPCS3/PS3.
+
+**Đợt AL tiếp theo:** Tiếp thoại NPC từ **4887**, đối chiếu danh sách nguồn và bản hợp nhất.

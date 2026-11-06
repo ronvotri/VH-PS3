@@ -658,3 +658,8 @@ Giữ Einherjar, Gimli, Helheim và Asgard. Iriey xưng tôi/cậu, Lod xưng tu
 ## Thuật ngữ đợt AJ (06/11/2026)
 
 Tên Halomonas dùng đúng bảng vũ khí, gồm Chùy Sao Mai, Cung Phản Khúc, Trượng Hồ Quang, Cung Nhạc Sĩ và Lưỡi Liềm. Giữ Kafra, Pavianne, Zeny. Con và nhóm nghiên cứu xưng tôi/cậu; Eadgils xưng ta/cậu.
+
+
+## Thuật ngữ đợt AK (06/11/2026)
+
+Moonshadow Giant → Khổng Lồ Bóng Trăng. Giữ Loli Ruri, Fenia, Menia và Utgardar. DarkGiants tiếp tục dùng Khổng Lồ Hắc Ám. Pavianne xưng tớ/cậu trong đoạn nói về Kafra giả dạng mình.
