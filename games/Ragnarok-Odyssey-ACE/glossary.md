@@ -494,3 +494,30 @@ NPC 3071–3080 (Yukino) giữ lối xưng tôi/cậu, nói chừng mực; thợ
 **Xưng hô:** Lod nói **tui/cậu** và *HỨC*; Yukino và các học giả dùng **tôi/cậu**; Eadgils **ta/cậu**. Không tùy tiện chuyển sang xưng “mày/tao” hay meme hiện đại. Thoại ngắn, có dấu, giữ token, dấu # và số phiên bản nhánh. Không dịch đổi các mã rune Wyadd, Ullr, Feoh, Hagal, Eoh, Peorth, v.v. Trước khi xuất patch rà tính đồng nhất tên mẫu vũ khí giữa tên/mô tả/chế tạo/thẻ.
 
 **QA:** `validate_return.py` gốc PASS 500/500 dựa trên `all_records.json` thực từ ZIP; chưa kiểm thử patch game RPCS3/PS3.
+
+
+## Thuật ngữ — đợt AB (06/11/2026)
+
+| Gốc | Việt hóa/Quy tắc |
+|---|---|
+| Domovoi Thief | Domovoi Trộm Cắp |
+| Vanir's Treasure | Bảo Vật Vanir |
+| Galdrabok | Giữ Galdrabok |
+| Glyph of fusion/combination | Glyph dung hợp/kết hợp (giữ tên thuật ngữ glyph) |
+| Dragon Claw / Dragon Spirits | Móng Rồng / Linh Hồn Rồng |
+| Dragon Vernier / Dragon Wing | Bộ Đẩy Rồng / Cánh Rồng |
+| Dragon Crystal / Dragon Slayer | Pha Lê Rồng / Diệt Rồng |
+| Yggdrasil Katar / Mace / Hammer | Dao Katar Yggdrasil / Chùy Yggdrasil / Búa Yggdrasil |
+| Mind Reaper / Soul Destructor | Gặt Hồn Trí / Hủy Diệt Linh Hồn |
+| Deadly Needles / Napalm Death | Kim Châm Tử Thần / Hỏa Tử Thần |
+| Abyss Torture / Doom Slayer | Tra Tấn Vực Sâu / Diệt Tận Thế |
+| Fake [Weapon] | [Tên vũ khí] Giả |
+| Mince Maker / Creator / Collector | Máy Băm / Máy Băm Tạo Tác / Máy Băm Thu Gom |
+| Gleaming Fang / God's Might Jokulsnaut | Nanh Sáng / Thần Lực Jokulsnaut (giữ Jokulsnaut) |
+| Onikui / Hajin / Somezuki / Rougoku | Giữ nguyên trong các nhãn `<...>` của Ishikirimaru |
+| Destiny rune | Rune số mệnh |
+| Greed / Fertility rune | Rune tham lam / sinh sôi |
+
+**Giọng NPC:** Lod xưng *tui*, gọi người chơi *cậu*, ngắt câu bằng *HỨC*; những nhân vật nghiên cứu Galdrabok dùng tôi/cậu. Không đổi cấu trúc token tên người chơi `{#0}`/`{#1}` trong đoạn NPC 4122. Chỉ viết tắt lời thoại để gọn khung khi không làm mất điều kiện/ý chính của nguồn. Giữ phiên bản số, mã rune và chữ hoa riêng của tên thần thoại.
+
+**Cần rà khi có patch:** các tên vũ khí với thẻ cũ và tên đơn chế tạo chưa đồng nhất 100%; kiểm tra hiển thị trong game trước khi chuẩn hóa thêm. `validate_return.py` gốc PASS 500/500; chưa thử game RPCS3/PS3.
