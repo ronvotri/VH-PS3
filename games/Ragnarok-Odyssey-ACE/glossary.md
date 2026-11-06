@@ -360,3 +360,24 @@ NPC 3071–3080 (Yukino) giữ lối xưng tôi/cậu, nói chừng mực; thợ
 **NPC:** Hội thoại 3611–3705 tiếp nối Lif–Thrasir (tớ/cậu), Brokkr, Eadgils, Yukino; bảo toàn tên riêng và token nhân vật `{#0}`. Phần thư mục thẻ: 300 tên đầu và 100 mô tả đầu, gồm 30 mẫu văn bản được dịch và áp dụng cho các biến thể cùng loài; tất cả đều đối chiếu nguyên văn nguồn.
 
 **QA:** PASS 495/495 với bản tham chiếu pending từ `needs_translation.json`. ZIP gốc bị lỗi phần `all_records.json` nên chưa xác nhận qua toàn bộ catalog. Chưa kiểm thử patch, font có dấu và độ rộng chuỗi trên RPCS3/PS3.
+
+
+## Thuật ngữ đợt V — 06/11/2026
+
+| Gốc | Cách dùng nhất quán |
+|---|---|
+| Marin / Leshy / Alp Leshy | Giữ nguyên tên quái trên thẻ |
+| HillGiant / FrostGiant / FlameGiant | Giữ tên nguyên văn trong nhãn thẻ; lời thoại dùng Khổng Lồ Đồi/Băng/Lửa |
+| Orc King / Orc Hero | Giữ nguyên trong tên thẻ |
+| Skoll / Hati / Fafnir / Hraesvelgr | Giữ tên riêng trên thẻ |
+| C-U-R (card quality codes) | Giữ nguyên mã trong `[Card No.xxx-C/U/R]` |
+| Uncommon / Rare | Loại ít gặp / Loại hiếm |
+| Red-furred Fire Wolf / Blue-furred Wolf | Sói Lửa Lông Đỏ / Sói Lông Xanh (trong mô tả thẻ) |
+| Hell Hound | Chó Địa Ngục (trong mô tả thẻ) |
+| Ancient Vanir / Vanaheim | Thần Vanir cổ đại / Vanaheim cổ đại |
+| Valzrok Chant | Chú Ca Valzrok |
+| Rune Ingots | Thỏi Rune |
+
+**Giọng thoại:** Các câu 3706–3712 về Norn bộc trực, sốt ruột; người phát yêu cầu 3713–3719 thân mật, dí dỏm; Eadgils ở 3720–3734 xưng ta/cậu; Yukino phân tích nguồn gốc và cơ cấu triệu hồi ở 3739–3760, xưng tôi/cậu. Giữ đầy đủ token tên nhân vật như `{#0}` trong bản `source_tagged`.
+
+**QA đợt V:** 60 NPC 3706–3765, 300 tên thẻ 300–599 và 140 mô tả 100–239. PASS 500/500 từ validator gốc với bản tham chiếu đúng pending-row trong ZIP. Chưa kiểm thử patch và độ rộng chữ thực tế trong RPCS3/PS3.
