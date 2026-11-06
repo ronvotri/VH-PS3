@@ -611,3 +611,18 @@ NPC 3071–3080 (Yukino) giữ lối xưng tôi/cậu, nói chừng mực; thợ
 | Shadow Sword | Kiếm Bóng Tối |
 
 Giữ tên riêng Galdrabok, Niflheim, Nidhoggr, Shiranui và các nhãn trong dấu ngoặc. Đơn chế tạo giữ mã A1-1, B2-2; nhãn Route dịch Nhánh, Final dịch Tối Hậu. NPC: Eadgils ta/cậu, học giả tôi/cậu, nhân viên tớ/cậu. QA AF PASS 500/500; chưa thử patch trên RPCS3/PS3.
+
+
+## Thuật ngữ đợt AG (06/11/2026)
+
+| Nguồn | Bản Việt |
+|---|---|
+| Allfather's Eye! | Mắt Đấng Toàn Phụ ơi! |
+| Green Dragon | Lục Long |
+| Corpse Lord | Chúa Tể Tử Thần |
+| Dark Lord | Chúa Tể Bóng Tối |
+| Glanzen Hammer | Glanzen Búa |
+| Shadow Hammer | Búa Bóng Tối |
+| Glanzen Katar | Glanzen Dao Katar |
+
+Tên vũ khí chế tạo lấy theo bảng tên vũ khí đã Việt hóa. Hvergelmir và Yggdrasil giữ nguyên.

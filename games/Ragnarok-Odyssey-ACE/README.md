@@ -3,14 +3,14 @@
 - **Mã game:** BLUS31386 (US), APP_VER 01.00
 - **Nguồn dữ liệu:** `RagnarokACE-BanGiaoDich-2026-11-04.zip`
 - **Catalog đã kiểm kê:** 25.288 chuỗi / 76 bảng
-- **Đã có bản dịch:** 14.472 (2.175 đã duyệt trong bàn giao + 12.297 dịch sau bàn giao)
-- **Chưa dịch trong danh sách cần xử lý:** 7.177 / 19.474
+- **Đã có bản dịch:** 14.972 (2.175 đã duyệt trong bàn giao + 12.797 dịch sau bàn giao)
+- **Chưa dịch trong danh sách cần xử lý:** 6.677 / 19.474
 - **Cập nhật gần nhất:** 06/11/2026
 - **Tình trạng:** dữ liệu bản dịch; chưa được kiểm thử đóng gói patch PS3.
 
 ## Điểm bắt đầu mỗi lần dịch
 
-1. Mở [`translations/current.json`](translations/current.json): đây là **bản hợp nhất hiện hành duy nhất**, chứa 14.472 cặp `id → target_vi`.
+1. Mở [`translations/current.json`](translations/current.json): đây là **bản hợp nhất hiện hành duy nhất**, chứa 14.972 cặp `id → target_vi`.
 2. Đối chiếu với `01_CAN_DICH/needs_translation.json` từ gói bàn giao gốc, chỉ dịch mục chưa có trong `current.json`.
 3. Không chỉnh ID, file, index, source, source_tagged, attributes, status hoặc source_sha256. Giữ token `{#0}`, `{#1}`, printf như `%u` và số liệu.
 4. Sau mỗi đợt, viết một JSON mới trong `checkpoints/`, kiểm tra, rồi cập nhật `translations/current.json` và tiến độ này.
@@ -54,7 +54,8 @@
 | 06/11 — đợt mới AD | 500 | 80 NPC 4241–4320; 30 tên + 30 mô tả vũ khí 420–449 (hoàn tất 450/450 mỗi bảng); 360 đơn chế tạo 879–1238 |
 | 06/11 — đợt mới AE | 500 | 80 NPC 4321–4400; 320 đơn chế tạo 1239–1558; 100 tên nguyên liệu 0–99 (mô tả nguyên liệu đã dịch) |
 | 06/11 — đợt mới AF | 500 | 80 NPC 4401–4480; 160 tên nguyên liệu 100–259; 260 đơn chế tạo 1559–1818 |
-| **Tổng** | **14.472** | Không trùng ID |
+| 06/11 — đợt mới AG | 500 | 80 NPC 4481–4560, 151 tên nguyên liệu 260–410, 269 đơn chế tạo 1819–2087 |
+| **Tổng** | **14.972** | Không trùng ID |
 
 ## Cấu trúc
 
@@ -134,3 +135,8 @@ Bước này chỉ điền các mục trong danh sách cần dịch. Để chu�
 **QA đợt AF (06/11/2026):** Thêm 500 mục từ ZIP nguồn thật: NPC 4401–4480 (80), `it_db_name_material` 100–259 (160), `it_db_name_myorder` 1559–1818 (260). Chạy `validate_return.py` gốc đối chiếu `02_TOAN_BO/all_records.json` **PASS 500/500**, không có bản ghi rỗng. Kiểm thêm token `{#0}`, printf, chữ số (kể cả mã nhánh), Unicode NFC và NPC tối đa 3 dòng/38 ký tự mỗi dòng. Nội dung: Tháp Ảo Ảnh, Niflheim và màn sương của Hắc Long Nidhoggr. Tên vũ khí Hama Azusa <Misogi/Kannagi/Magami/Amaterasu>, Glanzen Kiếm và Kiếm Bóng Tối giữ mã `A1-1`, các nhánh A–E, hậu tố `: Tối Hậu`. Mô tả nguyên liệu đã dịch từ trước, không ghi đè. Chưa đóng gói hoặc kiểm thử patch/font trên RPCS3/PS3.
 
 **Đợt AG tiếp theo:** NPC chưa dịch từ **4481**, tên nguyên liệu từ **260**, đơn chế tạo từ **1819**; ưu tiên dịch thực tế theo `needs_translation.json` và loại ID đã tồn tại trong snapshot.
+
+
+**QA đợt AG (06/11/2026):** `validate_return.py` gốc với `all_records.json` gốc PASS 500/500. Không trùng ID, giữ token, số liệu và mã nhánh. NPC tối đa 3 dòng, 38 ký tự/dòng. Bảng tên nguyên liệu đã hoàn tất 411/411. Chưa thử patch hoặc font trên RPCS3/PS3.
+
+**Đợt AH tiếp theo:** Tiếp tuyến NPC từ **4561** và đơn chế tạo từ **2088**. Lọc ID qua `translations/current.json` và `needs_translation.json`. NPC 353–354 cũng còn trong danh sách cần dịch, có thể rà theo cảnh riêng.
