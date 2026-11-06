@@ -342,3 +342,21 @@ NPC 3071–3080 (Yukino) giữ lối xưng tôi/cậu, nói chừng mực; thợ
 **Giọng nhân vật:** Lod vẫn xưng *tui*, nói tiếng nhậu vui nhộn và dùng *HỨC*; nhóm lính pháo thủ thân mật, tự hào được thăng cấp; Yukino xưng *tôi/cậu*, nói có lý luận, đôi lúc lỡ lời về tình cảm. Giữ đúng các token tên nhân vật `{#0}`, `{#1}` trong `source_tagged` ngay cả khi `source` trống tên.
 
 **QA đợt T:** 338 ID mới gồm 176 thoại NPC (vùng 3430–3610) và 81 tên + 81 mô tả kỹ năng (1010–1090); kiểm tra nguyên bản với pending-source reference PASS 338/338. Tệp `all_records.json` trong ZIP có header lỗi, nên chưa thể kiểm tra trên toàn catalog; chưa có kiểm thử RPCS3/PS3. Các nhãn kỳ lạ giữ tên riêng hoặc diễn giải theo hiệu ứng thay vì tự thêm tác dụng không có trong nguồn.
+
+
+## Thẻ quái & hội thoại — đợt U (06/11/2026)
+
+| Gốc | Việt hóa / quy tắc |
+|---|---|
+| Orc Card / Orc Chief Card / High Orc Card | Thẻ Orc / Thẻ Orc Chief / Thẻ High Orc |
+| Spore / Poison Spore / Spore Hazel | Giữ nguyên tên loài quái trong tên thẻ |
+| Card No.001-C / -U / -R | Giữ nguyên mã định danh `[Card No.xxx-C/U/R]` để thuận tiện đối chiếu; không dịch C/U/R |
+| Uncommon / Rare | Loại ít gặp / Loại hiếm (không dùng lẫn nhau) |
+| Souls card / Card sealed with soul | Thẻ chứa linh hồn / Thẻ phong ấn linh hồn |
+| Tower of Yggdrasil | Tháp Yggdrasil |
+| Royal Academy / Sundered Lands | Học viện Hoàng gia / Vùng Đất Chia Cắt |
+| Halomonas Weapon | Vũ khí Halomonas |
+
+**NPC:** Hội thoại 3611–3705 tiếp nối Lif–Thrasir (tớ/cậu), Brokkr, Eadgils, Yukino; bảo toàn tên riêng và token nhân vật `{#0}`. Phần thư mục thẻ: 300 tên đầu và 100 mô tả đầu, gồm 30 mẫu văn bản được dịch và áp dụng cho các biến thể cùng loài; tất cả đều đối chiếu nguyên văn nguồn.
+
+**QA:** PASS 495/495 với bản tham chiếu pending từ `needs_translation.json`. ZIP gốc bị lỗi phần `all_records.json` nên chưa xác nhận qua toàn bộ catalog. Chưa kiểm thử patch, font có dấu và độ rộng chuỗi trên RPCS3/PS3.
