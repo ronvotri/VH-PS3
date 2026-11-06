@@ -405,3 +405,27 @@ NPC 3071–3080 (Yukino) giữ lối xưng tôi/cậu, nói chừng mực; thợ
 **Cảnh báo cấu trúc:** Bảng `it_db_name_card.rmsg` pha lẫn tên thẻ, nhãn trang bị và kỹ năng. ID 600–779 chủ yếu là thẻ (mã rune và tên riêng giữ nguyên); ID 780–792, 829–849 là tên kỹ năng, KHÔNG thêm `Thẻ`; ID 793–828 trở lại là thẻ trang bị. Giữ token `{#0}` trong chuỗi có token. Bảng `it_db_text_card.rmsg` 240–439 là những mô tả ngắn dạng `X card`, dịch thống nhất thành `Thẻ X.`.
 
 **QA:** PASS 500/500 với validator gốc và 500 pending rows nguyên bản từ `needs_translation.json`. ZIP lỗi header ở `all_records.json` nên chưa đối chiếu toàn bộ catalog. Chưa test font/patch trên RPCS3/PS3.
+
+
+## Thuật ngữ và giọng NPC — đợt X (06/11/2026)
+
+| Nguồn | Bản Việt / quy ước |
+|---|---|
+| Tower of Yggdrasil | Tháp Yggdrasil |
+| Sundered Lands | Vùng Đất Chia Cắt |
+| Age of the Gods | Thời Đại Chư Thần |
+| Ancient magical chant | Chú thuật cổ |
+| Summoning device | Thiết bị triệu hồi |
+| Soul Drain / True Sight / Hallucination Walk | Hút Linh Hồn / Thị Giác Chân Thật / Bước Ảo Ảnh |
+| SP Recovery Up / Down | Tăng Hồi SP / Giảm Hồi SP |
+| D.Poison Attack / Poison Attack | Đòn Đánh Gây Kịch Độc / Đòn Đánh Gây Độc |
+| Eucharistica / Meditatio | Giữ nguyên tên kỹ năng |
+| DarkGiant / DarkGiant Chief | Khổng Lồ Hắc Ám / Thủ Lĩnh Khổng Lồ Hắc Ám (tên thẻ) |
+| Nidhoggr / Lindwurm / Ygg Drake | Giữ nguyên tên riêng trên thẻ |
+| Card / Lv. | Thẻ / Giữ định dạng Lv. |
+
+**Hội thoại đợt X:** NPC 3816–3822 nửa giận dỗi nửa tình cảm của đồng nghiệp Kafra; 3823–3831 chuyến thám hiểm hầm Tháp Yggdrasil, 3832–3855 giả thuyết thiết bị triệu hồi sinh vật thời chư thần, và 3856–3865 yêu cầu tạm hoãn vào tháp. Eirik được nhắc với giọng thoải mái; lời kể về tiếng gầm bí ẩn vẫn giữ cảm giác bất an.
+
+**Phân loại tệp trộn:** `it_db_name_card.rmsg` 850–930 là tên kỹ năng (không thêm 'Thẻ'), 931–1099 là tên thẻ. Mục 934 nguyên bản tiếng Nhật `深紅のエプロンドレスｄカード` được chuyển thành `Thẻ Váy Tạp Dề Đỏ Thẫm d` (giữ hậu tố d để đối chiếu). Mục mô tả 634 có gốc `Grivdarvol` khác tên `Gridarvol` ở bảng tên thẻ; bản Việt thống nhất tên `Gridarvol` và cần QA trong game.
+
+**QA:** 500/500 khớp mã nguồn từ `needs_translation.json`, token, printf và chữ số. `all_records.json` trong ZIP bị lỗi giải nén; chưa kiểm thử patch/RPCS3.
