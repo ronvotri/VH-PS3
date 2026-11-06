@@ -663,3 +663,8 @@ Tên Halomonas dùng đúng bảng vũ khí, gồm Chùy Sao Mai, Cung Phản Kh
 ## Thuật ngữ đợt AK (06/11/2026)
 
 Moonshadow Giant → Khổng Lồ Bóng Trăng. Giữ Loli Ruri, Fenia, Menia và Utgardar. DarkGiants tiếp tục dùng Khổng Lồ Hắc Ám. Pavianne xưng tớ/cậu trong đoạn nói về Kafra giả dạng mình.
+
+
+## Thuật ngữ đợt AL (06/11/2026)
+
+Giữ Khổng Lồ Bóng Trăng, Khổng Lồ Hắc Ám, Loli Ruri và Ymir. Illusion dịch là ảo ảnh, medium là vật dẫn trong đoạn phân tích phép thuật.
