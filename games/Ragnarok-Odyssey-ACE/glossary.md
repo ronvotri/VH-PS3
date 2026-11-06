@@ -569,3 +569,28 @@ NPC 3071–3080 (Yukino) giữ lối xưng tôi/cậu, nói chừng mực; thợ
 | Steel/King/Valkyrie/War God Dragon Blade | Long Đao Thép/Vương/Valkyrie/Chiến Thần |
 
 **Ngôi xưng:** Eadgils xưng *ta/cậu*, học giả và Yukino *tôi/cậu*, Eirik *tôi/cậu* tự nhiên. Giữ nguyên token `{#0}` và mã nâng cấp như `10-3`, hậu tố `: Tối Hậu`; không dịch lẫn tên riêng thần thoại. **QA 500/500 PASS** trên `all_records.json` gốc. Đã hoàn tất tất cả 450 tên + 450 mô tả vũ khí; đợt AE chuyển nguồn lực sang nhóm khác. Chưa kiểm font/hiển thị RPCS3/PS3.
+
+
+## Thuật ngữ — đợt AE (06/11/2026)
+
+| Gốc | Việt hóa / quy tắc |
+|---|---|
+| Niflheim / Galdrabok / Tower of Mirage | Giữ Niflheim / Galdrabok / Tháp Ảo Ảnh |
+| Royal Knights / Royal Council | Hiệp sĩ Hoàng gia / Hội đồng Hoàng gia (nói gọn: Hội đồng) |
+| Glast Heim knight / Vanir | Hiệp sĩ Glast Heim / Vanir |
+| Sograt Desert / Sundered Lands | Sa mạc Sograt / Vùng Đất Chia Cắt |
+| Slash Mace <Snowstorm> | Chùy Trảm <Bão Tuyết> |
+| Slash Mace <Whirlwind> | Chùy Trảm <Lốc Xoáy> |
+| Slash Mace <Lightning> | Chùy Trảm <Sấm Sét> |
+| Slash Mace <Sky Fang> | Chùy Trảm <Nanh Trời> |
+| Healing Mace / Healing Sprinkler | Chùy Trị Thương / Vòi Phun Trị Thương |
+| Healing Circle / Healing Feather | Vòng Hồi Phục / Lông Vũ Hồi Phục |
+| Halomonas Mace / Bow | Halomonas Chùy / Halomonas Cung |
+| Shiranui <Kiri/Madara/Sumeragi> | Giữ nguyên các danh xưng trong dấu ngoặc |
+| Kamui Shiranui / Hama Azusa Bow <Misogi> | Kamui Shiranui / Cung Hama Azusa <Misogi> |
+| Orc Claw / Broken Helmet / Cracked Staff | Móng Vuốt Orc / Mũ Trụ Vỡ / Trượng Nứt |
+| Scorpion's Stinger / Desert Wolf Fang | Ngòi Độc Bọ Cạp / Nanh Sói Sa Mạc |
+| Horo Horo / Cuppie / Jellopy / Scell | Giữ tên riêng vật liệu/quái |
+| Valhalla Helm / Expeditionary Force Badge | Mũ Trụ Valhalla / Huy Hiệu Đội Viễn Chinh |
+
+**QA đợt AE:** stock `validate_return.py` **PASS 500/500** từ nguyên bản `all_records.json`. 80 NPC ≤3 dòng/38 ký tự; không mất mã màu, tên người chơi hay số nâng cấp. Phần mô tả nguyên liệu đã dịch trước nên đợt này chỉ thêm tên nguyên liệu; cần QA hiển thị tên + mô tả đồng nhất khi patch. Chưa đo kích thước chữ Unicode trong RPCS3/PS3.
