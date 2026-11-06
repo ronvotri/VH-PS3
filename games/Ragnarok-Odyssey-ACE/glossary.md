@@ -673,3 +673,8 @@ Giữ Khổng Lồ Bóng Trăng, Khổng Lồ Hắc Ám, Loli Ruri và Ymir. Ill
 ## Thuật ngữ đợt AM (06/11/2026)
 
 Blood moon → trăng máu. Moonlight Serenade → Dạ Khúc Ánh Trăng (tên bộ mẫu mũ). Giữ Đại Khổng Lồ, Kafra ma quái và vật dẫn theo ngữ cảnh trước đó.
+
+
+## Thuật ngữ đợt AN (06/11/2026)
+
+Summoning device → thiết bị triệu hồi. Queen of the Dead → Nữ Vương Cõi Chết. Giữ Vùng Đất Chia Cắt, Helheim và Glast Heim. Ottar xưng ta/cậu, Con xưng tôi/cậu.
