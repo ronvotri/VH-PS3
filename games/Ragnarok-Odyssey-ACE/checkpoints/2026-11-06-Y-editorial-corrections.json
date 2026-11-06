@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-06",
+  "kind": "editorial_corrections_existing_ids",
+  "baseline": "2026-11-06-batch-500-Y.json",
+  "new_ids": 0,
+  "changed_existing_ids": 2,
+  "notes": "Polish natural Vietnamese dialogue using the original English in completed_Y.json. Verified source tokens/printf/numbers, NFC and max 3 lines at 38 chars. Translation count remains 10972; this is not batch Z.",
+  "entries": {
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::3881": "Tôi RẤT muốn nghe mọi chi tiết\nvề trận tử chiến của cậu với rồng,\nloài quái vật hung hãn bậc nhất!",
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::3953": "Nhưng nếu Yukino nói đúng,\nthì đó chính là thứ chúng ta\nđang phải đối mặt."
+  }
+}
