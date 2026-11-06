@@ -3,14 +3,14 @@
 - **Mã game:** BLUS31386 (US), APP_VER 01.00
 - **Nguồn dữ liệu:** `RagnarokACE-BanGiaoDich-2026-11-04.zip`
 - **Catalog đã kiểm kê:** 25.288 chuỗi / 76 bảng
-- **Đã có bản dịch:** 11.972 (2.175 đã duyệt trong bàn giao + 9.797 dịch sau bàn giao)
-- **Chưa dịch trong danh sách cần xử lý:** 9.677 / 19.474
+- **Đã có bản dịch:** 12.472 (2.175 đã duyệt trong bàn giao + 10.297 dịch sau bàn giao)
+- **Chưa dịch trong danh sách cần xử lý:** 9.177 / 19.474
 - **Cập nhật gần nhất:** 06/11/2026
 - **Tình trạng:** dữ liệu bản dịch; chưa được kiểm thử đóng gói patch PS3.
 
 ## Điểm bắt đầu mỗi lần dịch
 
-1. Mở [`translations/current.json`](translations/current.json): đây là **bản hợp nhất hiện hành duy nhất**, chứa 11.972 cặp `id → target_vi`.
+1. Mở [`translations/current.json`](translations/current.json): đây là **bản hợp nhất hiện hành duy nhất**, chứa 12.472 cặp `id → target_vi`.
 2. Đối chiếu với `01_CAN_DICH/needs_translation.json` từ gói bàn giao gốc, chỉ dịch mục chưa có trong `current.json`.
 3. Không chỉnh ID, file, index, source, source_tagged, attributes, status hoặc source_sha256. Giữ token `{#0}`, `{#1}`, printf như `%u` và số liệu.
 4. Sau mỗi đợt, viết một JSON mới trong `checkpoints/`, kiểm tra, rồi cập nhật `translations/current.json` và tiến độ này.
@@ -49,7 +49,8 @@
 | 06/11 — đợt mới Y | 500 | NPC 3866–3957 (92); toàn bộ tên thẻ còn lại 1100–1470 (371) và mô tả thẻ 640–676 (37) |
 | 06/11 — đợt mới Z | 500 | NPC 3958–4039 (80 ID, bỏ 3963/4002 đã có); 120 tên + 120 mô tả vũ khí 0–119; 180 tên đơn chế tạo 0–179 |
 | 06/11 — đợt mới AA | 500 | NPC 4040–4105 (66); 100 tên + 100 mô tả vũ khí 120–219; 234 tên đơn chế tạo 180–413 |
-| **Tổng** | **11.972** | Không trùng ID |
+| 06/11 — đợt mới AB | 500 | NPC 4106–4165 (60); 100 tên + 100 mô tả vũ khí 220–319; 240 đơn chế tạo 414–653 |
+| **Tổng** | **12.472** | Không trùng ID |
 
 ## Cấu trúc
 
@@ -104,3 +105,8 @@ Bước này chỉ điền các mục trong danh sách cần dịch. Để chu�
 **QA đợt AA (06/11/2026):** Bản nguồn `needs_translation.json` đối chiếu với `all_records.json` toàn bộ, `validate_return.py` gốc **PASS 500/500**, 0 dòng rỗng. 66 NPC, 100 tên + 100 mô tả vũ khí, 234 đơn chế tạo. Các câu NPC / mô tả vũ khí tối đa 3 dòng, 38 ký tự/dòng; kiểm tra token, chữ số, UTF-8 NFC, 0 ID trùng/ghi đè. Kiểm tra kết quả hợp nhất `current.json` sau commit; chưa kiểm thử patch/font/khung hình trên RPCS3/PS3. Giữ nguyên tên riêng Galdrabok, Domovoi, Vanir/Aesir, các tiền tố rune Wyadd/Feoh/Ullr... và mã nhánh đơn chế tạo; các tên cụ thể của vũ khí có thể cần soát đồng bộ với thẻ.
 
 **Đợt AB kế tiếp:** NPC từ **4106**, `it_db_name_weapon` từ **220**, `it_db_text_weapon` từ **220**, `it_db_name_myorder` từ **414** (luôn lọc ID có trong `translations/current.json`).
+
+
+**QA đợt AB (06/11/2026):** 500 ID mới từ nguồn `needs_translation.json`; `validate_return.py` gốc đối chiếu `all_records.json` gốc: **PASS 500/500, 0 bản ghi rỗng**. Bảo toàn ID/file/index, `source`, `source_tagged`, `source_sha256`, thuộc tính, mã token, printf, chữ số (kể cả mã nhánh/tier như `5-4`). 60 lời thoại NPC và 100 mô tả vũ khí không quá 3 dòng và 38 ký tự/dòng; kiểm tra NFC và không ghi đè dữ liệu cũ. Chưa kiểm thử bản patch, font và độ rộng hiển thị trong RPCS3/PS3. Bảng tên đơn chế tạo nhiều nhánh có mã `<Onikui>`/`<Hajin>`/`<Somezuki>`/`<Rougoku>`: giữ nguyên các nhãn này; các tên mẫu đã dịch cần soát nhất quán với bảng tên vũ khí/thẻ khi patch.
+
+**Đợt AC tiếp theo:** NPC chưa dịch từ **4166**, `it_db_name_weapon`/`it_db_text_weapon` từ **320**, `it_db_name_myorder` từ **654**. Lấy từng ID thực tế từ nguồn và bỏ các ID đã nằm trong `current.json`.
