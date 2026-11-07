@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-07",
+  "batch": "BD",
+  "kind": "source_checked_editorial_changes",
+  "source": "NPC_SOURCE_5403-6138.json",
+  "source_records": 733,
+  "source_sha256_revalidated_local_python": 733,
+  "changed_existing_ids": 14,
+  "new_ids": 0,
+  "deleted_ids": 0,
+  "current_entries": 19161,
+  "reported_catalog_total": 25288,
+  "source_rows_for_edits": 14,
+  "qa_failed": 0,
+  "qa_errors": [],
+  "checks": {
+    "global_current_count_matches_actual": true,
+    "global_empty_values": 0,
+    "global_nfc_mismatches": 0,
+    "global_cr_nul": 0,
+    "global_over_38_visible_chars": 0,
+    "no_duplicate_ids": true,
+    "source_zip_raw_accessible": false,
+    "original_validator_run": false,
+    "render_on_PS3_or_RPCS3": false
+  }
+}
