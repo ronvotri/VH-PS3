@@ -717,3 +717,22 @@ Giữ Cán Cân Trái Tim, Lính Thuê Mạnh Nhất và Chúa Tể Tử Thần 
 | Mercenary Helper | lính đánh thuê hỗ trợ (khi giải thích cơ chế thuê đồng đội) |
 
 Tên bản nhạc trong bảng `it_db_name_bgm.rmsg` Việt hóa theo sắc thái ca khúc; giữ nguyên các tên riêng, lối chơi chữ khó chuyển ngữ và tên sản phẩm/tác phẩm khác (ví dụ `GRANDIA`, `TeMPoison`).
+
+
+## Thuật ngữ bổ sung — đợt AV (07/11/2026)
+
+| Tiếng Anh / game | Quy ước tiếng Việt |
+|---|---|
+| Odin's Sky Temple | Đền Trời Odin |
+| Ancient City of Utgardar | Cổ Thành Utgardar |
+| Twilight Chamber | Gian Phòng Hoàng Hôn |
+| Mount Hnitbjorg | Núi Hnitbjorg |
+| Ruins of Glast Heim | Phế Tích Glast Heim |
+| HillGiant / FrostGiant / FlameGiant | Khổng Lồ Đồi / Khổng Lồ Băng / Khổng Lồ Lửa |
+| HillGiant Chief / FrostGiant Chief / FlameGiant Chief | Thủ Lĩnh Khổng Lồ Đồi / Băng / Lửa |
+| Poison Cuppie / Poison Spore | Cuppie Độc / Spore Độc |
+| EnemyA Name / EnemyB Name | Tên Địch A / Tên Địch B (nhãn debug) |
+| BGM No.001…No.141 | Nhạc Ragnarok Online, Số 001…Số 141 (giữ mã ba chữ số) |
+| Arr. by / Composed by | Phối: / Sáng tác: (giữ đúng tên nghệ sĩ) |
+
+Trong `msg_quest.bin`, trường lời giao nhiệm vụ có thể dài nhiều dòng; không cắt còn 3 dòng vì dễ mất thông tin nhiệm vụ và mã màu. Chỉ thoại `msg_npc_talk.bin` mới giữ nguyên hạn mức 3 dòng.
