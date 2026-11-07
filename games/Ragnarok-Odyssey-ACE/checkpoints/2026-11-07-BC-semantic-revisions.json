@@ -1,0 +1,52 @@
+{
+  "date": "2026-11-07",
+  "batch": "BC",
+  "kind": "semantic_translation_revision",
+  "source_basis": "733 original NPC records already translated + source-preserving tutorial revision + existing item translation",
+  "total": 18,
+  "new_translations": 0,
+  "groups": {
+    "npc_talk": 17,
+    "tutorial": 1
+  },
+  "entries": {
+    "menu.cpk::msg_field.en.pac::msg_tutorial.bin::137": "Quầy thẻ\n- Mua thẻ quái vật và kỹ năng ACE,\n  hoặc trao đổi thẻ quái vật tại đây.\n- Hàng mới mở dần theo tiến trình,\n  vì vậy hãy ghé lại thường xuyên.\n- Cần Chứng Nhận Thành Thạo\n  để mua kỹ năng ACE.\n- Thẻ đổi thay đổi mỗi lần ghé.\n  {#0}* Phải mang đúng thẻ quái vật\n    cần thiết để trao đổi.",
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::6025": "Hạ càng nhiều quái, cậu càng\nsưu tầm thêm nhiều thẻ và có\nthêm cách ghép kỹ năng để thử.",
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::3174": "Muốn học kỹ năng ACE, cậu cần\n\"Chứng Nhận Thành Thạo\", thứ\nchứng tỏ cậu đã thạo nghề.",
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::3175": "Kỹ năng ACE càng mạnh càng cần\nnhiều Chứng Nhận Thành Thạo.\nNên tích góp từ bây giờ.",
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::5423": "Nhưng nhìn từ phía lão rắn,\nhẳn hắn còn lâu mới biết\nchuyện gì đang diễn ra.",
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::5518": "Tôi đang điều tra xem tòa\nbiệt thự có dẫn tới trung tâm\nlãnh địa Chúa Tể Bóng Tối.",
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::5604": "Bắt đầu Chiến dịch \"Hoàng Hôn\nYggdrasil\"! Khu vực: \"Niflheim\"!\nMục tiêu: \"Chúa Tể Tử Thần\"!!",
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::5712": "Thử nghĩ trận cậu vừa trải qua!\nGan lì thế mà chẳng hề nao núng!",
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::6013": "Muốn học kỹ năng ACE mới, cậu cần\nChứng Nhận Thành Thạo đúng nghề.",
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::6014": "Kỹ năng ACE càng mạnh càng\ntốn Chứng Nhận Thành Thạo.\nCậu nên tích góp từ bây giờ.",
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::6030": "Vậy ta học tiếp như kỹ năng ACE\nnhé! Lần này tôi giúp cậu mở\nrộng trang phục và gắn nhiều thẻ.",
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::6048": "{#0}Hãy tập thói quen xem và đổi\nbộ thẻ khi gặp quái khó đánh.",
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::6060": "Tuyệt! Tôi vừa ghi tên cậu vào sổ\nkhách hàng ưu tiên. Mong cậu ghé nhé!",
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::6110": "{#0}Phải trả phí, nhưng được trừ\nvào thưởng cuối nhiệm vụ. Giờ\ncạn tiền cũng chẳng sao!",
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::6118": "Này {#0}! Nghe nói ta sắp\ndốc sức diệt sạch lũ Orc ngoài kia.",
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::6121": "{#0}Có phí, nhưng trừ từ thưởng\ncuối nhiệm vụ. Giờ hết tiền vẫn ổn.",
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::6125": "Muốn đi cùng họ một hai nhiệm vụ,\nhãy nhận việc từ Pavianne ở tổng dinh!",
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::6128": "Cậu hãy vào Tủ đồ thay sang bộ\nvẫn còn có thể mở rộng nhé?"
+  },
+  "before": {
+    "menu.cpk::msg_field.en.pac::msg_tutorial.bin::137": "Quầy thẻ\n- Mua thẻ quái vật và kỹ năng ACE,\n  hoặc trao đổi thẻ quái vật tại đây.\n- Hàng mới mở dần theo tiến trình,\n  vì vậy hãy ghé lại thường xuyên.\n- Cần Proof of Expertise\n  để mua kỹ năng ACE.\n- Thẻ đổi thay đổi mỗi lần ghé.\n  {#0}* Phải mang đúng thẻ quái vật\n    cần thiết để trao đổi.",
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::6025": "Hạ càng nhiều quái vật, bạn càng\ncó thêm thẻ trong bộ sưu tập\nvà thêm tổ hợp kỹ năng để thử.",
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::3174": "Muốn học kỹ năng ACE, cậu cần\n\"Proof of Expertise\", bằng chứng\nđã thành thạo một nghề.",
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::3175": "Kỹ năng ACE càng mạnh thì càng cần\nnhiều Proof of Expertise.\nNên tích góp ngay từ bây giờ.",
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::5423": "Nhưng nhìn từ phía lão rắn,\nhẳn còn lâu hắn mới biết\nta đã đoán ra kế hoạch.",
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::5518": "Tôi đang điều tra xem tòa\nnhà có phải lối vào trung\ntâm lãnh địa Chúa Tể Tử Thần.",
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::5604": "Bắt đầu Chiến dịch \"Hoàng Hôn\nYggdrasil\"! Khu vực \"Niflheim\"!\nMục tiêu \"Chúa Tể Tử Thần\"!!",
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::5712": "Sau trận cậu trải qua, sự gan dạ đứng\ntrước hiểm nguy của cậu đã mở mắt tôi!",
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::6013": "Muốn học kỹ năng ACE tiếp theo, cậu\nphải có Proof of Expertise đúng nghề.",
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::6014": "Kỹ năng ACE càng mạnh càng\ntốn Proof of Expertise. Cậu\nnên bắt đầu tích lũy ngay.",
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::6030": "Vậy ta học tiếp như kỹ năng ACE\nnhé! Lần này tôi giúp cậu mở\nrộng áo và trang bị nhiều thẻ.",
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::6048": "{#0}Khi gặp quái khó đánh, cậu nên tập\nthói quen xem lại và đổi tổ hợp thẻ.",
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::6060": "Tuyệt! Tôi vừa ghi cậu vào danh sách\nkhách VIP. Mong cậu ghé thường xuyên!",
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::6110": "{#0}Có trả phí, nhưng trừ\ntừ thưởng cuối trận. Giờ\nhết tiền cũng không sao!",
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::6118": "Này {#0}! Nghe nói ta sắp quyết\ntâm diệt hết lũ Orc ngoài kia.",
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::6121": "{#0}Có phí đấy, nhưng trừ từ thưởng\ncuối trận. Giờ hết tiền cũng không lo.",
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::6125": "Muốn thử đi cùng họ thì tới tổng hành\ndinh, nhận nhiệm vụ từ Pavianne nhé!",
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::6128": "Phiền cậu tới Tủ đồ thay sang bộ\ncòn chỗ mở rộng được không?"
+  }
+}
