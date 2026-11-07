@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-07",
+  "batch": "AY",
+  "kind": "QA_AUDIT_ONLY_NO_NEW_TRANSLATIONS",
+  "current_count": 19161,
+  "catalog_total": 25288,
+  "untranslated_worklist_remaining": 2488,
+  "new_translations": 0,
+  "known_source_datasets": [
+    {
+      "name": "NPC_SOURCE_5403-6138.json",
+      "records": 733,
+      "source_sha256_pass": 733,
+      "mapped_ids_verified": 733,
+      "tag_number_layout_errors": 0
+    },
+    {
+      "name": "completed_AW_plus_AX",
+      "records": 784,
+      "source_sha256_pass": 784,
+      "mapped_ids_verified": 784,
+      "technical_qa_errors": 0
+    }
+  ],
+  "global_mapping_static_qa": {
+    "entries": 19161,
+    "empty": 0,
+    "broken_tags": 0,
+    "invalid_cr_or_null": 0,
+    "non_nfc": 0,
+    "longer_than_38_review_only": 141
+  },
+  "test_audit_known_sources": "5/5 PASS",
+  "limitations": [
+    "Original handoff ZIP bytes inaccessible from Library",
+    "Full original all_records.json validator not run",
+    "No RPCS3 or PS3 render test",
+    "Long-line count is a review signal, not confirmed bug"
+  ],
+  "checkpoint_only": true
+}

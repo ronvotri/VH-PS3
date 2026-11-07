@@ -261,3 +261,11 @@ Bước này chỉ điền các mục trong danh sách cần dịch. Để chu�
 - PASS nội bộ 284/284: SHA-256 chuỗi nguồn, mã màu, thông số, NFC, giới hạn 38 ký tự/dòng và tối đa 5 dòng.
 - **Chưa chạy validator toàn bộ gốc**, chưa có patch PS3 hoặc kiểm thử RPCS3. Checkpoint AX nằm ở Library `/RagnarokACE/`.
 - AY cần nạp tiếp dữ liệu nguồn chưa dịch từ kho bàn giao gốc; file `SOURCE_NEXT_AX.json` đã được xử lý hết.
+
+## AY — Bảo đảm chất lượng nguồn đã có (07/11/2026)
+
+- Tiến độ Việt hóa **giữ nguyên 19.161 / 25.288 (75,77%)**; AY chưa có bản dịch mới do nguồn chưa đọc được.
+- Kiểm định lại **1.517** cặp nguồn–dịch có thể truy xuất (733 NPC và 784 mục AW–AX): **0 lỗi** theo SHA-256, ID, mã màu, chữ số và bố cục áp dụng.
+- Quét tĩnh 19.161 bản dịch: không có chuỗi rỗng, mã màu sai cú pháp, NUL/CR hay Unicode chưa chuẩn NFC. **141 chuỗi dài hơn 38 ký tự/dòng** cần rà hiển thị theo từng màn hình, không tự sửa hàng loạt.
+- Báo cáo: [`checkpoints/2026-11-07-AY-QA-source-audit.md`](checkpoints/2026-11-07-AY-QA-source-audit.md); công cụ chạy lại: [`audit_known_sources.py`](audit_known_sources.py). Unit test 5/5 PASS.
+- ZIP nguồn gốc vẫn chưa cấp quyền trích xuất; cần phục hồi `needs_translation.json` để bắt đầu nhóm AY chưa dịch. Chưa chạy bộ validator gốc trên toàn bộ 19.161 mục và chưa kiểm thử PS3/RPCS3.
