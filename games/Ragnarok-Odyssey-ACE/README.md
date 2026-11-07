@@ -3,14 +3,14 @@
 - **Mã game:** BLUS31386 (US), APP_VER 01.00
 - **Nguồn dữ liệu:** `RagnarokACE-BanGiaoDich-2026-11-04.zip`
 - **Catalog đã kiểm kê:** 25.288 chuỗi / 76 bảng
-- **Đã có bản dịch:** 18.877 (2.175 bản nền đã duyệt + 16.702 bản dịch bổ sung)
-- **Chưa dịch trong danh sách cần xử lý:** 2.772 / 19.474
+- **Đã có bản dịch:** 19.161 (2.175 bản nền đã duyệt + 16.986 bản dịch bổ sung)
+- **Chưa dịch trong danh sách cần xử lý:** 2.488 / 19.474
 - **Cập nhật gần nhất:** 07/11/2026
 - **Tình trạng:** dữ liệu bản dịch; chưa được kiểm thử đóng gói patch PS3.
 
 ## Điểm bắt đầu mỗi lần dịch
 
-1. Mở [`translations/current.json`](translations/current.json): đây là **bản hợp nhất hiện hành duy nhất**, chứa 18.877 cặp `id → target_vi`.
+1. Mở [`translations/current.json`](translations/current.json): đây là **bản hợp nhất hiện hành duy nhất**, chứa 19.161 cặp `id → target_vi`.
 2. Đối chiếu với `01_CAN_DICH/needs_translation.json` từ gói bàn giao gốc, chỉ dịch mục chưa có trong `current.json`.
 3. Không chỉnh ID, file, index, source, source_tagged, attributes, status hoặc source_sha256. Giữ token `{#0}`, `{#1}`, printf như `%u` và số liệu.
 4. Sau mỗi đợt, viết một JSON mới trong `checkpoints/`, kiểm tra, rồi cập nhật `translations/current.json` và tiến độ này.
@@ -252,3 +252,12 @@ Bước này chỉ điền các mục trong danh sách cần dịch. Để chu�
 - Delta: [`checkpoints/2026-11-07-batch-500-AW.json`](checkpoints/2026-11-07-batch-500-AW.json). Bàn giao: [`checkpoints/2026-11-07-AW-handoff.md`](checkpoints/2026-11-07-AW-handoff.md).
 - Đã kiểm tra nguồn SHA-256, ID, mã màu, chữ số, giới hạn 38 ký tự/dòng và tối đa 5 dòng cho mô tả nhiệm vụ. **Chưa test patch/render PS3 hay RPCS3**.
 - Checkpoint ZIP AW lưu trong Library `/RagnarokACE/`, kèm **284** mục nguồn nhiệm vụ để dịch tiếp AX.
+
+## Cập nhật AX — 07/11/2026
+
+- Hoàn tất thêm **284 mục `msg_quest.bin`** (ID **1039–1322**), tổng hợp nhất **19.161 / 25.288 (75,77%)**. Còn **2.488** mục trong danh sách gốc cần dịch.
+- Khép lại toàn bộ **784** mục nhiệm vụ của AW+AX, gồm 16 nhiệm vụ đặc biệt loại `A`, chuỗi thử thách nghề, phần thưởng, tên địa điểm và nhiệm vụ đối đầu trùm.
+- Delta: [`checkpoints/2026-11-07-batch-284-AX.json`](checkpoints/2026-11-07-batch-284-AX.json). Bàn giao: [`checkpoints/2026-11-07-AX-handoff.md`](checkpoints/2026-11-07-AX-handoff.md). QA nội bộ: [`checkpoints/2026-11-07-AX-QA.json`](checkpoints/2026-11-07-AX-QA.json).
+- PASS nội bộ 284/284: SHA-256 chuỗi nguồn, mã màu, thông số, NFC, giới hạn 38 ký tự/dòng và tối đa 5 dòng.
+- **Chưa chạy validator toàn bộ gốc**, chưa có patch PS3 hoặc kiểm thử RPCS3. Checkpoint AX nằm ở Library `/RagnarokACE/`.
+- AY cần nạp tiếp dữ liệu nguồn chưa dịch từ kho bàn giao gốc; file `SOURCE_NEXT_AX.json` đã được xử lý hết.

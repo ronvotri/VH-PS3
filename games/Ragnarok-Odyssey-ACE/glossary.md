@@ -753,3 +753,24 @@ Trong `msg_quest.bin`, trường lời giao nhiệm vụ có thể dài nhiều 
 | Tower of Yggdrasil | Tháp Yggdrasil |
 
 Các tên riêng quái vật và nhân vật như Orc King, Orc Hero, Fenia, Menia, Nidhoggr, Hati, Skoll giữ nguyên theo những đợt trước.
+
+## Thuật ngữ AX — Quái vật, thử thách và thưởng (07/11/2026)
+
+| Nguyên văn | Quy ước Việt |
+|---|---|
+| Lord of Darkness | Chúa Tể Bóng Tối |
+| Ygg Drake | Rồng Ygg |
+| HillGiant Chief | Thủ Lĩnh Khổng Lồ Đồi |
+| FrostGiant Chief | Thủ Lĩnh Khổng Lồ Băng |
+| FlameGiant Chief | Thủ Lĩnh Khổng Lồ Lửa |
+| DarkGiant Chief | Thủ Lĩnh Khổng Lồ Bóng Tối |
+| Sword Warrior Challenge | Thử Thách Kiếm Sĩ |
+| Hammersmith Challenge | Thử Thách Chiến Binh Búa |
+| Assassin Challenge | Thử Thách Sát Thủ |
+| Mage Challenge | Thử Thách Pháp Sư |
+| Cleric Challenge | Thử Thách Giáo Sĩ |
+| Hunter Challenge | Thử Thách Thợ Săn |
+| Boss Run | Đấu Trùm Liên Hoàn |
+| Poring Paradise | Thiên Đường Poring |
+
+Các tên nhiệm vụ có hậu tố `A` lấy đúng bản Việt của nhiệm vụ tương ứng đã dịch và thêm ` A`, không tạo bản dịch mới bất đồng nhất. Giữ nguyên tên NPC và tên riêng trong bối cảnh.

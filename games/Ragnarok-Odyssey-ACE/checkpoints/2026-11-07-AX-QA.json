@@ -1,0 +1,30 @@
+{
+  "game": "Ragnarok Odyssey ACE",
+  "batch": "AX",
+  "date": "2026-11-07",
+  "previous_total": 18877,
+  "new_translations": 284,
+  "current_total": 19161,
+  "inventory": 25288,
+  "progress_pct": 75.77,
+  "needs_translation_pending_before": 2772,
+  "needs_translation_pending_after": 2488,
+  "scope": "msg_quest.bin IDs 1039–1322; all remaining 284 from SOURCE_NEXT_AX.json in AW checkpoint",
+  "checks": {
+    "source_SHA256_match": "PASS 284/284 (hash of original source strings)",
+    "id_unique": "PASS 284/284",
+    "color_markers_same_order": "PASS 284/284",
+    "numeric_tokens_same": "PASS 284/284",
+    "utf8_nfc": "PASS 284/284",
+    "line_visible_chars_lte_38": "PASS 284/284",
+    "quest_lines_lte_5": "PASS 284/284",
+    "A_series_title_consistency": "PASS 16/16",
+    "proper_names_preserved": 95,
+    "marked_rows": 69,
+    "full_official_validator": "NOT_RUN (original full source all_records.json not in checkpoint)",
+    "PS3_RPCS3_render": "NOT_TESTED"
+  },
+  "full_quest_merged_from_AW_plus_AX": 784,
+  "original_english_source_published_on_GitHub": false,
+  "next": "AY: choose next not-yet-translated records from original source archive; after AX, all 784 available msg_quest source records are finished"
+}
