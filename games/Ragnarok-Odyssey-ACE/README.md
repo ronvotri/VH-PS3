@@ -3,14 +3,14 @@
 - **Mã game:** BLUS31386 (US), APP_VER 01.00
 - **Nguồn dữ liệu:** `RagnarokACE-BanGiaoDich-2026-11-04.zip`
 - **Catalog đã kiểm kê:** 25.288 chuỗi / 76 bảng
-- **Đã có bản dịch:** 16.877 (2.175 đã duyệt trong bàn giao + 14.702 dịch sau bàn giao)
-- **Chưa dịch trong danh sách cần xử lý:** 4.772 / 19.474
-- **Cập nhật gần nhất:** 06/11/2026
+- **Đã có bản dịch:** 18.877 (2.175 bản nền đã duyệt + 16.702 bản dịch bổ sung)
+- **Chưa dịch trong danh sách cần xử lý:** 2.772 / 19.474
+- **Cập nhật gần nhất:** 07/11/2026
 - **Tình trạng:** dữ liệu bản dịch; chưa được kiểm thử đóng gói patch PS3.
 
 ## Điểm bắt đầu mỗi lần dịch
 
-1. Mở [`translations/current.json`](translations/current.json): đây là **bản hợp nhất hiện hành duy nhất**, chứa 16.877 cặp `id → target_vi`.
+1. Mở [`translations/current.json`](translations/current.json): đây là **bản hợp nhất hiện hành duy nhất**, chứa 18.877 cặp `id → target_vi`.
 2. Đối chiếu với `01_CAN_DICH/needs_translation.json` từ gói bàn giao gốc, chỉ dịch mục chưa có trong `current.json`.
 3. Không chỉnh ID, file, index, source, source_tagged, attributes, status hoặc source_sha256. Giữ token `{#0}`, `{#1}`, printf như `%u` và số liệu.
 4. Sau mỗi đợt, viết một JSON mới trong `checkpoints/`, kiểm tra, rồi cập nhật `translations/current.json` và tiến độ này.
@@ -244,3 +244,11 @@ Bước này chỉ điền các mục trong danh sách cần dịch. Để chu�
 - Giới hạn hiển thị tĩnh: ≤38 ký tự/dòng. Mô tả BGM có thể 4 dòng và chuỗi giao nhiệm vụ tới 5 dòng vì đây **không phải khung thoại NPC 3 dòng**; chưa kiểm tra thực tế RPCS3/PS3.
 - Delta: `checkpoints/2026-11-07-batch-500-AV.json`; bàn giao: `checkpoints/2026-11-07-AV-handoff.md`.
 - ZIP checkpoint AV chứa `SOURCE_NEXT_AW.json` có **784 mục nguồn** nhiệm vụ ID 522–1322, đủ cho đợt AW lớn mà không cần xin lại ZIP.
+
+## Cập nhật AW — 07/11/2026
+
+- Đã hoàn thành thêm **500 mục nhiệm vụ** thuộc `msg_quest.bin`, ID **522–1038** (loại bỏ ID không cần dịch). Tổng hợp nhất **18.877 / 25.288 (74,65%)**.
+- Số mục còn cần dịch: **2.772** trong danh sách 19.474 mục cần xử lý ban đầu.
+- Delta: [`checkpoints/2026-11-07-batch-500-AW.json`](checkpoints/2026-11-07-batch-500-AW.json). Bàn giao: [`checkpoints/2026-11-07-AW-handoff.md`](checkpoints/2026-11-07-AW-handoff.md).
+- Đã kiểm tra nguồn SHA-256, ID, mã màu, chữ số, giới hạn 38 ký tự/dòng và tối đa 5 dòng cho mô tả nhiệm vụ. **Chưa test patch/render PS3 hay RPCS3**.
+- Checkpoint ZIP AW lưu trong Library `/RagnarokACE/`, kèm **284** mục nguồn nhiệm vụ để dịch tiếp AX.

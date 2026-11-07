@@ -736,3 +736,20 @@ Tên bản nhạc trong bảng `it_db_name_bgm.rmsg` Việt hóa theo sắc thá
 | Arr. by / Composed by | Phối: / Sáng tác: (giữ đúng tên nghệ sĩ) |
 
 Trong `msg_quest.bin`, trường lời giao nhiệm vụ có thể dài nhiều dòng; không cắt còn 3 dòng vì dễ mất thông tin nhiệm vụ và mã màu. Chỉ thoại `msg_npc_talk.bin` mới giữ nguyên hạn mức 3 dòng.
+
+## Thuật ngữ mới xác nhận đợt AW — Nhiệm vụ
+
+| Nguyên văn | Quy ước tiếng Việt |
+|---|---|
+| Sograt Desert | Sa Mạc Sograt |
+| Niflheim | Niflheim (giữ nguyên địa danh) |
+| Bronzed Grendel | Grendel Đồng |
+| DarkGiant | Khổng Lồ Bóng Tối |
+| Desert Wolf | Sói Sa Mạc |
+| Domovoi Thief | Trộm Domovoi |
+| Lord of Death | Chúa Tể Tử Thần |
+| Soldier Skeleton | Lính Xương |
+| General Skeleton | Tướng Xương |
+| Tower of Yggdrasil | Tháp Yggdrasil |
+
+Các tên riêng quái vật và nhân vật như Orc King, Orc Hero, Fenia, Menia, Nidhoggr, Hati, Skoll giữ nguyên theo những đợt trước.
