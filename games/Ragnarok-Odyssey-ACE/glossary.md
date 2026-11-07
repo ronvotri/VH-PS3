@@ -26,7 +26,7 @@
 | HP / AP / SP | Giữ HP / AP / SP |
 | Tension | Nhiệt huyết (cần rà trong game) |
 
-Giữ tên riêng Eadgils, Eirik, Hilda, Rune Midgard, Prontera, Ifing và tên quái vật cho đến khi có quy ước đồng bộ. Tên `Proof of Expertise` giữ nguyên đến khi chuẩn hóa bảng vật phẩm. `near` giữ nguyên tên dịch vụ.
+Giữ tên riêng Eadgils, Eirik, Hilda, Rune Midgard, Prontera, Ifing và tên quái vật cho đến khi có quy ước đồng bộ. Tên `Proof of Expertise` chuẩn hóa thành **Chứng Nhận Thành Thạo** (trùng tên vật phẩm tại `it_db_name_material.rmsg::389`); các đoạn NPC và hướng dẫn kỹ năng ACE phải dùng đúng tên này. `near` giữ nguyên tên dịch vụ.
 
 **Xưng hô:** Eadgils xưng “ta”, gọi tân binh là “cậu”; Eirik xưng “tôi”, giọng thân mật; Hilda xưng “tôi”, điềm tĩnh. Hội thoại dùng tiếng Việt tự nhiên, vừa khung, không nói quá trang trọng.
 
