@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-07",
+  "batch": "BC",
+  "kind": "editorial_semantic_qa",
+  "snapshot": "translations/current.json",
+  "original_source": "RagnarokACE-BanGiaoDich-2026-11-04.zip",
+  "source_data_available_for_bc": "NPC_SOURCE_5403-6138.json (17 NPC revisions); prior translation and in-repository glossary/item for 1 tutorial",
+  "changed_ids": 18,
+  "new_translation_ids": 0,
+  "removed_ids": 0,
+  "total_entries": 19161,
+  "reported_catalog": 25288,
+  "checks": {
+    "revisions_have_matching_control_tokens": true,
+    "revisions_have_matching_numeric_tokens": true,
+    "revisions_preserve_newline_count": true,
+    "revisions_max_visible_38_chars_per_line": true,
+    "duplicate_ids": false,
+    "empty_values": 0,
+    "nfc_violations": 0,
+    "nul_cr_violations": 0,
+    "global_max_38_violations": 0,
+    "original_untranslated_source_available": false,
+    "original_validate_return_run": false,
+    "PS3_RPCS3_render_tested": false
+  },
+  "note": "Only pre-existing translated entries were revised. Preserve 19,161/25,288 progress. No English game source was uploaded."
+}
