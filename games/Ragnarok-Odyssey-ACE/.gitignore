@@ -1,0 +1,4 @@
+# Never commit extracted original English game scripts or local worklists.
+pending-*.local.json
+*source*.local.json
+source-private/
