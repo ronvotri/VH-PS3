@@ -2,7 +2,7 @@
   "date": "2026-11-07",
   "batch": "BC",
   "kind": "semantic_translation_revision",
-  "source_basis": "733 original NPC records already translated + source-preserving tutorial revision + existing item translation",
+  "source_basis": "15 original NPC source rows (range 5403–6138), 2 earlier NPC translations 3174/3175 and tutorial 137 checked against existing target; item name material 389 for terminology",
   "total": 18,
   "new_translations": 0,
   "groups": {
