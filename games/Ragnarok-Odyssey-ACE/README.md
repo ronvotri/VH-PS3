@@ -278,3 +278,12 @@ Bước này chỉ điền các mục trong danh sách cần dịch. Để chu�
 - Tổng tiến độ vẫn **19.161 / 25.288 (75,77%)**; còn **2.488 mục** trong danh sách dịch ban đầu. Không tuyên bố đã hoàn thành AY/AZ mục mới vì ZIP nguồn 29,6 MB chưa thể trích xuất.
 - Delta hiệu đính: [`checkpoints/2026-11-07-AZ-ui-revisions.json`](checkpoints/2026-11-07-AZ-ui-revisions.json); QA: [`checkpoints/2026-11-07-AZ-ui-QA.json`](checkpoints/2026-11-07-AZ-ui-QA.json); [bàn giao](checkpoints/2026-11-07-AZ-handoff.md).
 - Chưa kiểm thử patch/hiển thị trên RPCS3/PS3.
+
+## BA — Rà soát mô tả và hướng dẫn (07/11/2026)
+
+- Hiệu đính **102** bản dịch cũ thuộc 6 bảng (9 hướng dẫn, 11 địa điểm, 2 nguyên liệu, 3 ACE, 56 kỹ năng, 21 thẻ). **Không tăng số bản dịch**; `translations/current.json` vẫn **19.161 / 25.288 (75,77%)**, còn 2.488 mục trong danh sách cần dịch.
+- QA kỹ thuật **102/102 PASS**: đối chiếu đúng ID, mã màu, printf, chữ số (gồm chữ số toàn chiều rộng), số dòng và Unicode NFC; không ghi đè ID ngoài tập sửa.
+- Cảnh báo vượt 38 ký tự/dòng từ 102 xuống **0** (kiểm tra tĩnh toàn bộ 19.161 mục; chưa phải kết quả thử render trong game).
+- Checkpoint: [`checkpoints/2026-11-07-BA-revisions.json`](checkpoints/2026-11-07-BA-revisions.json), [`checkpoints/2026-11-07-BA-QA.json`](checkpoints/2026-11-07-BA-QA.json), [`checkpoints/2026-11-07-BA-handoff.md`](checkpoints/2026-11-07-BA-handoff.md).
+- ZIP checkpoint BA lưu trong Library `/RagnarokACE/`; bản dịch mới đợt BB cần truy xuất được ZIP gốc (nguồn `needs_translation.json` chưa đọc được), tránh bịa bản gốc hoặc trùng tiến độ.
+- **Chưa chạy validator trên toàn bộ nguồn gốc; chưa đóng patch; chưa kiểm thử RPCS3/PS3.**

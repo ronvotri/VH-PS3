@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-07",
+  "batch": "BA",
+  "scope": "review and reflow of existing Vietnamese text, not newly translated source records",
+  "baseline_total": 19161,
+  "new_ids": 0,
+  "existing_ids_revised": 102,
+  "end_total": 19161,
+  "audited_categories": {
+    "msg_tutorial.bin": 9,
+    "dc_db_text_stage.rmsg": 11,
+    "it_db_text_material.rmsg": 2,
+    "it_db_text_ace_skill.rmsg": 3,
+    "it_db_text_skill.rmsg": 56,
+    "it_db_text_card.rmsg": 21
+  },
+  "line_width_threshold_chars": 38,
+  "max_visible_chars_after": 38,
+  "technical_source_compare": "PASS 102/102 against GitHub snapshot ad6214c91d0411e1c72b71087aea15b03ce23fda",
+  "checks": {
+    "all_102_ids_exist_and_change_existing_values": "PASS",
+    "each_original_value_exceeded_38_chars_on_at_least_one_line": "PASS",
+    "all_102_revised_values_at_most_38_visible_chars_per_line": "PASS",
+    "all_number_sequences_preserved_as_multisets_including_fullwidth": "PASS",
+    "all_color_tags_order_preserved": "PASS",
+    "printf_tokens_preserved": "PASS",
+    "NFC_and_control_characters": "PASS",
+    "all_original_line_counts_preserved": "PASS",
+    "merged_id_count_preserved": "PASS",
+    "remaining_static_over_38": "0 of 19,161",
+    "game_render_validation": "NOT_RUN",
+    "original_29mb_source_zip": "UNAVAILABLE_TO_EXTRACT"
+  },
+  "warnings": [
+    "Static character limit is advisory; real PS3 glyph sizes, layout, wrapping and font not tested.",
+    "102 are revisions of already translated text, not 102 new translations.",
+    "Cannot claim 2488 pending strings translated without recoverable originals."
+  ]
+}
