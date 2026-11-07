@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-07",
+  "batch": "BB-source-readiness",
+  "github_repository": "ronvotri/VH-PS3",
+  "current_blob_sha": "480a0c7ea4f395ab0391ed7814b0d8cab8e422e6",
+  "current_entry_count": 19161,
+  "new_translations": 0,
+  "original_catalog_count": 25288,
+  "pending_reported_from_previous_checkpoint": 2488,
+  "pending_directly_reverified": false,
+  "checks": {
+    "current_count_matches_entries": "PASS",
+    "empty_targets": 0,
+    "targets_with_nul_or_cr": 0,
+    "targets_not_nfc": 0,
+    "targets_over_38_visible_characters": 0,
+    "npc_source_records": 733,
+    "npc_sources_matched_in_current": 733,
+    "npc_markup_mismatch": 0,
+    "npc_numeric_mismatch": 0,
+    "npc_lines_over_38_visible_characters": 0,
+    "npc_without_vietnamese_letters_basic_check": 0,
+    "source_zip_access": "DENIED_BY_LIBRARY",
+    "original_validator": "NOT_RUN",
+    "rpcs3_render": "NOT_RUN"
+  }
+}
