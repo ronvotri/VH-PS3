@@ -1,0 +1,33 @@
+{
+  "batch": "AZ",
+  "date": "2026-11-07",
+  "kind": "existing_translation_layout_qa",
+  "initial_total": 19161,
+  "new_translation_ids": 0,
+  "revised_existing_ids": 39,
+  "post_total": 19161,
+  "remaining_worklist_items": 2488,
+  "checks": {
+    "all_revisions_resolved_to_existing_key": "PASS",
+    "previous_values_over_38": "PASS",
+    "new_max_visible_width_le_38": "PASS",
+    "attribute_tags_preserved": "PASS",
+    "printf_preserved": "PASS",
+    "all_numeric_tokens_preserved": "PASS",
+    "unicodedata_NFC": "PASS",
+    "no_control_chars": "PASS"
+  },
+  "long_line_flags_before": 141,
+  "long_line_flags_addressed": 39,
+  "long_line_flags_after_estimate": 102,
+  "original_full_validator": "NOT_RUN_original_zip_not_accessible",
+  "runtime_display_test": "NOT_RUN",
+  "scope": "Static validation against GitHub main before AZ merge. 38 chars is a heuristic, not a proven hard limit for every UI.",
+  "github_base_sha": "afed385711167f462c8f9bd93cede815f184e47d",
+  "github_base_count": 19161,
+  "revised_ids_verified": 39,
+  "max_visible_width_after": 38,
+  "original_keys_preserved": true,
+  "numeric_and_tag_qa_pass": true,
+  "manual_in_game_qa": false
+}

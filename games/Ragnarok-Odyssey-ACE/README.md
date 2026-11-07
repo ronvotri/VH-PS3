@@ -269,3 +269,12 @@ Bước này chỉ điền các mục trong danh sách cần dịch. Để chu�
 - Quét tĩnh 19.161 bản dịch: không có chuỗi rỗng, mã màu sai cú pháp, NUL/CR hay Unicode chưa chuẩn NFC. **141 chuỗi dài hơn 38 ký tự/dòng** cần rà hiển thị theo từng màn hình, không tự sửa hàng loạt.
 - Báo cáo: [`checkpoints/2026-11-07-AY-QA-source-audit.md`](checkpoints/2026-11-07-AY-QA-source-audit.md); công cụ chạy lại: [`audit_known_sources.py`](audit_known_sources.py). Unit test 5/5 PASS.
 - ZIP nguồn gốc vẫn chưa cấp quyền trích xuất; cần phục hồi `needs_translation.json` để bắt đầu nhóm AY chưa dịch. Chưa chạy bộ validator gốc trên toàn bộ 19.161 mục và chưa kiểm thử PS3/RPCS3.
+
+## AZ — Chỉnh câu giao diện dài (07/11/2026)
+
+- Đã hiệu đính **39/39** mục giao diện cũ: `msg_common`, `msg_savedata`, `msg_field`, `msg_shop`, `msg_dialog`, `msg_load_tips_message`, `msg_room`, `msg_yggdrasill`, `msg_history`.
+- Các câu đã sửa còn **≤38 ký tự hiển thị/dòng**, giữ nguyên tên riêng, mã màu, printf và chữ số. Không thêm hoặc xóa ID.
+- Đã giảm cảnh báo chiều dài từ **141 còn 102** mục (phần còn lại ưu tiên rà theo bố cục thực tế, không cắt tự động).
+- Tổng tiến độ vẫn **19.161 / 25.288 (75,77%)**; còn **2.488 mục** trong danh sách dịch ban đầu. Không tuyên bố đã hoàn thành AY/AZ mục mới vì ZIP nguồn 29,6 MB chưa thể trích xuất.
+- Delta hiệu đính: [`checkpoints/2026-11-07-AZ-ui-revisions.json`](checkpoints/2026-11-07-AZ-ui-revisions.json); QA: [`checkpoints/2026-11-07-AZ-ui-QA.json`](checkpoints/2026-11-07-AZ-ui-QA.json); [bàn giao](checkpoints/2026-11-07-AZ-handoff.md).
+- Chưa kiểm thử patch/hiển thị trên RPCS3/PS3.
