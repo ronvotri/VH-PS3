@@ -1,0 +1,94 @@
+{
+  "date": "2026-11-07",
+  "batch": "BD",
+  "kind": "editorial_delta_no_new_ids",
+  "count": 14,
+  "source": "NPC_SOURCE_5403-6138.json",
+  "source_verified": true,
+  "entries": {
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::5434": {
+      "index": 5434,
+      "source_sha256": "6659c37af420f3c3ef08fff70e3d797be7b3ae146533e6ef874f8fd95ef25b38",
+      "before": "Dù hắn đã thấm mệt, ta tuyệt đối\nkhông lơi lỏng phòng thủ pháo đài.",
+      "after": "Dù Chúa Tể Tử Thần đã thấm mệt,\nta vẫn phải giữ chắc phòng tuyến."
+    },
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::5447": {
+      "index": 5447,
+      "source_sha256": "d6ce726e9bfa41d6048a629cb4e7ac7061d4e2f2b28abc468f16e47e20af037f",
+      "before": "Nhắc Tào Tháo là Tào Tháo đến! Hắn\ntấn công rồi! Để xem ai trụ lâu hơn!",
+      "after": "Vừa nhắc đã đến! Chúa Tể Tử Thần\nđánh rồi! Xem phe nào trụ lâu hơn!"
+    },
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::5477": {
+      "index": 5477,
+      "source_sha256": "21384265e56d390acedb827cd8c2fc961b9f52b0908810d9f10f3c6713d3c0cb",
+      "before": "Hắn phải gọi quái cấp ấy chứng\ntỏ đã cuống cuồng bảo vệ căn cứ.",
+      "after": "Chúa Tể Tử Thần gọi quái cấp ấy:\nhắn đang cuống cuồng giữ căn cứ."
+    },
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::5486": {
+      "index": 5486,
+      "source_sha256": "109bb01d53eb092441c8a5c5703d3ed47975193ac6e80954fe8debff81fa48c1",
+      "before": "Được! Diệt hết chúng, ép hắn\ngọi thêm, ta sẽ khoét một lỗ\nto vào sức lực còn lại!",
+      "after": "Được! Diệt hết Loli Ruri, ép\nhắn gọi thêm. Cứ vậy thì sức\nhắn sẽ cạn sạch!"
+    },
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::5497": {
+      "index": 5497,
+      "source_sha256": "5df31a31cd9e7e947de662f9b3ef6b4c24f8cd8fda443c800b2a3e151372e2f8",
+      "before": "Tôi thấy được điều ấy nhờ\ncậu chiến đấu không ngừng,\nép hắn phải triệu hồi thêm—",
+      "after": "Tôi nhận ra điều ấy nhờ\ncậu chiến đấu không ngừng,\nép Chúa Tể Tử Thần gọi thêm—"
+    },
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::5531": {
+      "index": 5531,
+      "source_sha256": "899f85f094576fa5585e0d378bf4d48a78553022b47c43320d7f702542aec202",
+      "before": "Bị đánh từ nhiều hướng sẽ ép\nhắn tiếp tục gọi thêm quái.",
+      "after": "Bị đánh từ nhiều phía sẽ ép\nChúa Tể Tử Thần gọi thêm quái."
+    },
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::5559": {
+      "index": 5559,
+      "source_sha256": "cbdcf8820b2e349a212bf48ea3733b1b8ae05b452c0f5e52c2e86dcf7339c793",
+      "before": "Tòa nhà rất giống dinh thự\nkhổng lồ Thrymheim thời chư thần.",
+      "after": "Tòa nhà rất giống Thrymheim,\ndinh thự khổng lồ thời chư thần."
+    },
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::5564": {
+      "index": 5564,
+      "source_sha256": "29ab0a5e82b5ea77ab1b08d0e011b037237561b018dc3d40a3e2ef2bb308ffa9",
+      "before": "Tuy nhiên, khổng lồ cũng thay\nthế hệ như người. Kẻ hiện\ntại hẳn không phải Thiazi gốc.",
+      "after": "Khổng lồ cũng đổi thay thế hệ\nnhư con người. Chúa Tể Tử Thần\nkhó là Thiazi thuở ban đầu."
+    },
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::5580": {
+      "index": 5580,
+      "source_sha256": "f6cb5b09bc56b3eedac8fc73cb2cae0f789530d1b13428bd5e55546bb0047144",
+      "before": "Hãy nhắm điểm yếu, đặc biệt\nphá giáp hắn để lộ sơ hở!",
+      "after": "Hãy nhắm điểm yếu, nhưng nhớ\nphá giáp hắn để mở đường ra đòn!"
+    },
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::5650": {
+      "index": 5650,
+      "source_sha256": "9f46117a51300ce8c1f0787533f5f838ac1f18a9d9a5b846b9e8c5689f9ce174",
+      "before": "Dù sao, hắn đã chết, Kafra được thả,\nquái cũng bị diệt. Kết thúc tốt đẹp!",
+      "after": "Chúa Tể Tử Thần đã bị hạ, các\nKafra được cứu, quái cũng bị diệt!"
+    },
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::5713": {
+      "index": 5713,
+      "source_sha256": "68d40ba104fea247dc5dde0c917407b1ecf85099fe5cdd6b2fc530bb0a8c1959",
+      "before": "Từ giờ tôi không kêu ca nữa!\nCứ tin tôi bảo vệ pháo đài cho!",
+      "after": "Cậu giúp tôi sáng mắt ra rồi!\nThôi than vãn! Pháo đài giao tôi!"
+    },
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::5755": {
+      "index": 5755,
+      "source_sha256": "43155a04a597fc24772aeb87771d2e422f9be8a6f27112fc7df8e89cf9b8263b",
+      "before": "Thế giới đâu đâu cũng đầy\nbí ẩn. Chắc không chỉ tôi\nvà Pavianne muốn khám phá.",
+      "after": "Thế giới còn bao bí ẩn. Tôi tin\nđâu chỉ tôi và Pavianne muốn\nkhám phá chúng."
+    },
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::5783": {
+      "index": 5783,
+      "source_sha256": "e2950264241756c395300174d67040d8216250c79ca0ec7f63510f7e16e72c6d",
+      "before": "Nhưng cũng có chuyện vui. Bận\nthật, mà có khi không tệ lắm.",
+      "after": "Nhưng còn bao chuyện thú vị!\nBận vậy mà hóa ra cũng vui ghê."
+    },
+    "menu.cpk::msg_field.en.pac::msg_npc_talk.bin::6074": {
+      "index": 6074,
+      "source_sha256": "1ef71a6eb4f9b34114aa17f4e7f2d8d6fa849a6dafdc23799d47e804f3952d54",
+      "before": "À! {#0}Mỗi bộ đồ và cấp độ sẽ\ncần nguyên liệu và phí khác\nnhau để mở rộng{#1}, nhớ nhé.",
+      "after": "À! {#0}Nguyên liệu và phí mở rộng\nphụ thuộc từng bộ đồ và cấp\nđộ của nó{#1}, cậu nhớ nhé!"
+    }
+  }
+}
