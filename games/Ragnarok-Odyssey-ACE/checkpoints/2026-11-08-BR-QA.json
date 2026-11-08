@@ -1,0 +1,27 @@
+{
+  "batch": "BR",
+  "source_file": "01_CAN_DICH/needs_translation.json",
+  "count": 438,
+  "counts_by_table": {
+    "it_db_name_hg.rmsg": 118,
+    "it_db_name_voice.rmsg": 58,
+    "it_db_text_voice.rmsg": 58,
+    "it_db_name_hair.rmsg": 55,
+    "it_db_text_hair.rmsg": 55,
+    "it_db_name_face.rmsg": 47,
+    "it_db_text_face.rmsg": 47
+  },
+  "source_hash_checked": 438,
+  "token_issues": [],
+  "printf_issues": [],
+  "numeric_issues": [],
+  "long_lines": [],
+  "empty_targets": [],
+  "max_line_length": 38,
+  "source_fields_preserved": true,
+  "in_game_PS3_tested": false,
+  "note": "Voice names for the 12 Japanese internal debug records use localized EN names from matching it_db_text_voice rows; source Japanese katakana actor names differ. This is a translation choice requiring in-game contextual review.",
+  "original_validator": "validate_return.py PASS: Validated 438 nonempty pending translations; 0 empty records",
+  "intra_batch_duplicate_ids": 0,
+  "source_archive": "RagnarokACE-BanGiaoDich-2026-11-04.zip"
+}
