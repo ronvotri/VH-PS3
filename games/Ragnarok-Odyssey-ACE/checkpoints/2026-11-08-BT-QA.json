@@ -1,0 +1,24 @@
+{
+  "game": "Ragnarok Odyssey ACE",
+  "batch": "BT",
+  "date": "2026-11-08",
+  "source_archived_name": "RagnarokACE-BanGiaoDich-2026-11-04.zip",
+  "original_reference": "02_TOAN_BO/all_records.json",
+  "candidate_count": 449,
+  "nonempty": 449,
+  "id_overlap_previous_current": 0,
+  "token_mismatches": 0,
+  "number_mismatches": 0,
+  "nfc_errors": 0,
+  "line_exceeding_38_codepoints": 0,
+  "max_lines": 2,
+  "maximum_line_length": 26,
+  "source_sha256_validated": true,
+  "notes": [
+    "These are names, titles, map labels, and skin descriptions; some proper names and reserved values intentionally remain unchanged.",
+    "No PS3/RPCS3 in-game rendering tested."
+  ],
+  "pending_merge": true,
+  "original_validator_result": "Validated 449 nonempty pending translations; 0 empty records",
+  "original_validator_returncode": 0
+}
