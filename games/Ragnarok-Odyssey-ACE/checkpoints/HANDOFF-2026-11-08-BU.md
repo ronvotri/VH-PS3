@@ -21,3 +21,9 @@
 - `build_bu.py`: script tái tạo từ ZIP nguồn, gồm văn bản tiếng Việt được biên tập.
 - Bảng nhiệm vụ `msg_quest.bin` còn thiếu (94 mục) được để nguyên, chưa tính hoàn thành; nên ưu tiên đợt BV.
 - Sau merge dự kiến tổng **21.389**, còn **260** mục trong worklist gốc 19.474. Chỉ xác nhận khi đọc lại GitHub.
+## Kết quả hợp nhất và kiểm kê cuối đợt
+
+- Đã hợp nhất **334 ID mới** vào `translations/current.json`, từ **21.055 lên 21.389**. Commit `30c7df93d34add24e0d531763bf530290b511fed`, 0 ID trùng.
+- Đã đọc lại blob GitHub `a460e6b73541b69ab437dd3ef14040780158babc`: số lượng ID thực tế = **21.389**.
+- Đã kiểm lại toàn bộ 19.474 ID của danh sách nguồn: còn đúng **260 ID chưa có bản dịch**. Trong đó `msg_quest.bin` 94, `dc_db_text_word.rmsg` 34, `dc_db_text_reward.rmsg` 22, cùng các bảng giao diện nhỏ hơn.
+- Đã cập nhật README và báo cáo QA trên repo. Phần thư viện ZIP có thể lưu lại dạng bàn giao độc lập, checkpoint JSON trên GitHub là nguồn trạng thái đã hợp nhất.
