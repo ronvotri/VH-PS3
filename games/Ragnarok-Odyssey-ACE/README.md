@@ -3,9 +3,9 @@
 - **Mã game:** BLUS31386 (US), APP_VER 01.00
 - **Nguồn dữ liệu:** `RagnarokACE-BanGiaoDich-2026-11-04.zip`
 - **Catalog đã kiểm kê:** 25.288 chuỗi / 76 bảng
-- **Đã có bản dịch:** 19.161 (2.175 bản nền đã duyệt + 16.986 bản dịch bổ sung)
-- **Chưa dịch trong danh sách cần xử lý:** 2.488 / 19.474
-- **Cập nhật gần nhất:** 07/11/2026
+- **Đã có bản dịch:** 20.230 (2.175 bản nền đã duyệt + 18.055 bản dịch bổ sung)
+- **Chưa dịch trong danh sách cần xử lý:** 1.419 / 19.474
+- **Cập nhật gần nhất:** 08/11/2026
 - **Tình trạng:** dữ liệu bản dịch; chưa được kiểm thử đóng gói patch PS3.
 
 ## Điểm bắt đầu mỗi lần dịch
@@ -287,3 +287,14 @@ Bước này chỉ điền các mục trong danh sách cần dịch. Để chu�
 - Checkpoint: [`checkpoints/2026-11-07-BA-revisions.json`](checkpoints/2026-11-07-BA-revisions.json), [`checkpoints/2026-11-07-BA-QA.json`](checkpoints/2026-11-07-BA-QA.json), [`checkpoints/2026-11-07-BA-handoff.md`](checkpoints/2026-11-07-BA-handoff.md).
 - ZIP checkpoint BA lưu trong Library `/RagnarokACE/`; bản dịch mới đợt BB cần truy xuất được ZIP gốc (nguồn `needs_translation.json` chưa đọc được), tránh bịa bản gốc hoặc trùng tiến độ.
 - **Chưa chạy validator trên toàn bộ nguồn gốc; chưa đóng patch; chưa kiểm thử RPCS3/PS3.**
+
+
+## Cập nhật BR — 08/11/2026: tùy biến nhân vật và kiểm toán checkpoint
+
+- Đã hoàn thành **438 bản dịch mới** cho 7 bảng: `it_db_name_hg` (118), `it_db_name_voice` (58), `it_db_text_voice` (58), `it_db_name_hair` (55), `it_db_text_hair` (55), `it_db_name_face` (47), `it_db_text_face` (47). Gộp vào `translations/current.json` từ **19.792 lên 20.230**, **0 trùng ID**. Tổng tương ứng 80,00% trên 25.288 chuỗi đã kiểm kê.
+- Đối chiếu lại `01_CAN_DICH/needs_translation.json` (19.474 bản ghi) và toàn bộ ID trong snapshot GitHub: **18.055 đã dịch / 1.419 còn thiếu** theo danh sách gốc. Số đếm này được tính trực tiếp từ ID gốc, không suy ra từ checkpoint.
+- Chạy `validate_return.py` của ZIP gốc: **PASS 438/438**; không lỗi mã `{#0}`, printf, chữ số, trường nguồn hoặc Unicode NFC. Kiểm tra tĩnh tối đa 38 ký tự/dòng; chưa thử patch trên PS3/RPCS3.
+- Bản dịch: [`checkpoints/2026-11-08-batch-438-BR.json`](checkpoints/2026-11-08-batch-438-BR.json); [QA](checkpoints/2026-11-08-BR-QA.json); [bàn giao](checkpoints/HANDOFF-2026-11-08-BR.md).
+- **Kiểm toán BJ–BQ:** tổng 906 mục checkpoint, nhưng chỉ 72 ID ở BJ/BK là mới và **chưa gộp**; 834 mục BL–BQ đã tồn tại trong snapshot trước đó. Cần soát nếu muốn dùng chúng làm bản hiệu đính, không được cộng lại tiến độ hay ghi đè tự động.
+- Những bảng còn thiếu nhiều nhất sau BR: `dc_db_text_npc.rmsg` (383, gồm 72 BJ/BK), `dc_db_text_monster.rmsg` (174), `it_db_name_equip.rmsg` (130), `msg_decorate.bin` (126), `msg_savedata.bin` (102), `msg_quest.bin` (94), `msg_enemy.bin` (88).
+- 12 tên giọng thử nghiệm chỉ có tiếng Nhật đã lấy tên nhân vật theo mô tả tiếng Anh tương ứng; cần kiểm tra tính khớp với gói game bản Mỹ khi thử trong game.
