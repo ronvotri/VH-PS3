@@ -8,3 +8,9 @@
 - Cần bảo đảm chỉ cộng các ID thực sự mới. Chưa đóng patch hoặc thử PS3/RPCS3.
 
 Bản dịch mới của BR ở `2026-11-08-batch-438-BR.json`, QA ở `2026-11-08-BR-QA.json`.
+## Kết quả đồng bộ
+
+- Đã merge **438/438 ID mới** của BR vào `translations/current.json`, commit `033f1f5114ba338138e9167463c140b36fab1c38`.
+- Snapshot sau merge: **20.230** mục; bảng danh sách gốc còn **1.419** mục chưa dịch.
+- Cập nhật README và rà lại kiểm kê, commit `840dbcd8903a14c19043425c4b1f179250ca32a4`.
+- Hai checkpoint BJ/BK với 72 ID mới vẫn đang chờ rà và gộp riêng. BL–BQ có 834 ID trùng snapshot, không tự động cộng/ghi đè.
