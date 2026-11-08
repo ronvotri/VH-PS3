@@ -3,8 +3,8 @@
 - **Mã game:** BLUS31386 (US), APP_VER 01.00
 - **Nguồn dữ liệu:** `RagnarokACE-BanGiaoDich-2026-11-04.zip`
 - **Catalog đã kiểm kê:** 25.288 chuỗi / 76 bảng
-- **Đã có bản dịch:** 20.230 (2.175 bản nền đã duyệt + 18.055 bản dịch bổ sung)
-- **Chưa dịch trong danh sách cần xử lý:** 1.419 / 19.474
+- **Đã có bản dịch:** 20.606 (2.175 bản nền đã duyệt + 18.431 bản dịch bổ sung)
+- **Chưa dịch trong danh sách cần xử lý:** 1.043 / 19.474
 - **Cập nhật gần nhất:** 08/11/2026
 - **Tình trạng:** dữ liệu bản dịch; chưa được kiểm thử đóng gói patch PS3.
 
@@ -298,3 +298,13 @@ Bước này chỉ điền các mục trong danh sách cần dịch. Để chu�
 - **Kiểm toán BJ–BQ:** tổng 906 mục checkpoint, nhưng chỉ 72 ID ở BJ/BK là mới và **chưa gộp**; 834 mục BL–BQ đã tồn tại trong snapshot trước đó. Cần soát nếu muốn dùng chúng làm bản hiệu đính, không được cộng lại tiến độ hay ghi đè tự động.
 - Những bảng còn thiếu nhiều nhất sau BR: `dc_db_text_npc.rmsg` (383, gồm 72 BJ/BK), `dc_db_text_monster.rmsg` (174), `it_db_name_equip.rmsg` (130), `msg_decorate.bin` (126), `msg_savedata.bin` (102), `msg_quest.bin` (94), `msg_enemy.bin` (88).
 - 12 tên giọng thử nghiệm chỉ có tiếng Nhật đã lấy tên nhân vật theo mô tả tiếng Anh tương ứng; cần kiểm tra tính khớp với gói game bản Mỹ khi thử trong game.
+
+
+## Cập nhật BS — 08/11/2026: bách khoa quái vật, trang bị, cứu BJ/BK
+
+- Đã thêm **304 bản dịch mới** từ ZIP nguồn: 87 tên và 87 mô tả `dc_db_text_monster.rmsg` (ID 0–173), cùng 130 tên `it_db_name_equip.rmsg` (0–145, bỏ qua 16 ID đã có).
+- Đã kiểm định, ngắt dòng và gộp **72 mục cũ BJ/BK** thuộc `dc_db_text_npc.rmsg` (ID 122–193), sửa chữ số nguồn trong các mục 123, 132, 140, 153, 166. Không tính 72 mục này là nội dung dịch mới BS.
+- Chạy **`validate_return.py` chính thức với `02_TOAN_BO/all_records.json` trích từ ZIP gốc: PASS 376/376**, 0 lỗi token/printf/chữ số/ID/source, 0 mục rỗng; dòng tối đa 38 ký tự (kiểm tra tĩnh). Chưa test font/render trong RPCS3/PS3.
+- GitHub `translations/current.json` đã **tăng từ 20.230 lên 20.606 ID**, 0 trùng, commit `a14ef16fd62bb0c6c4a09b4dab3d01910d680b1f`. Trong danh sách nguồn 19.474 mục còn **1.043 mục thiếu**. Tỷ lệ trên catalog 25.288: **81,49%**.
+- [Checkpoint BS](checkpoints/2026-11-08-batch-304-BS.json) · [72 mục BJ/BK đã chuẩn hóa](checkpoints/2026-11-08-BS-BJ-BK-72-repaired.json) · [QA](checkpoints/2026-11-08-BS-QA.json) · [Bàn giao](checkpoints/HANDOFF-2026-11-08-BS.md).
+- Checkpoint BL–BQ có 834 ID đã nằm trong bản hợp nhất trước BS; không cộng trùng hoặc ghi đè tự động.
