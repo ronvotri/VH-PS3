@@ -1,0 +1,27 @@
+{
+  "game": "Ragnarok Odyssey ACE",
+  "batch": "BS",
+  "date": "2026-11-08",
+  "source": "01_CAN_DICH/needs_translation.json",
+  "new_bs": 304,
+  "revived_BJ_BK": 72,
+  "total_to_merge": 376,
+  "source_hash_raw_errors": [],
+  "token_mismatches": [],
+  "entry_count": 376,
+  "longest_target_line": 38,
+  "in_game_rendering_tested": false,
+  "note": "Dùng validate_return.py gốc sau đó, đối chiếu với danh sách nguồn; không ghi đè ID đã có trong current.",
+  "original_validator": "validate_return.py: PASS 376/376; 0 empty; full reference 02_TOAN_BO/all_records.json",
+  "maximum_line_length": 38,
+  "max_line_width_target": 38,
+  "source_sha256_verified": 376,
+  "numeric_hotfix_ids": [
+    123,
+    132,
+    140,
+    153,
+    166
+  ],
+  "status": "QA passed; pending GitHub merge confirmation"
+}
