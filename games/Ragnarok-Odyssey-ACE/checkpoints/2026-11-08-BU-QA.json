@@ -1,0 +1,29 @@
+{
+  "game": "Ragnarok Odyssey ACE",
+  "batch": "BU",
+  "date": "2026-11-08",
+  "source_archive": "RagnarokACE-BanGiaoDich-2026-11-04.zip",
+  "original_validator": "validate_return.py: PASS 334/334, 0 empty, checked against 02_TOAN_BO/all_records.json",
+  "groups": {
+    "dc_db_text_npc.rmsg": 214,
+    "msg_savedata.bin": 102,
+    "msg_room.bin": 9,
+    "msg_history.bin": 9
+  },
+  "count": 334,
+  "source_metadata_integrity": "PASS (id, file, index, source, source_tagged, source_sha256, attributes)",
+  "attribute_tokens": "PASS (Counter source_tagged == target_vi)",
+  "printf_tokens": "PASS",
+  "numeric_tokens": "PASS",
+  "utf8_nfc": "PASS",
+  "max_visible_line_len": 46,
+  "empty_target_count": 0,
+  "duplicate_ids": 0,
+  "notes": [
+    "Source NPC IDs 194 onward are principally Midgard date labels and proper nouns, not 214 new narrative paragraphs.",
+    "PlayStation®3, PlayStation®Vita, PlayStation®Network trademarks and all numeric placeholders preserved.",
+    "PS3/RPCS3 game UI and patch/font not tested.",
+    "GitHub merge pending at time of packaging."
+  ],
+  "local_source_records_sha256": "2601f0fc35362794c212365a47a19bdacb8ee6d230e26afdf0965cd5774b6e81"
+}
