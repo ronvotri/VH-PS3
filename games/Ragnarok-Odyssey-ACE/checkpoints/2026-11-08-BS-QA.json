@@ -23,5 +23,9 @@
     153,
     166
   ],
-  "status": "QA passed; pending GitHub merge confirmation"
+  "status": "QA passed; merged into GitHub current.json",
+  "merge_commit": "a14ef16fd62bb0c6c4a09b4dab3d01910d680b1f",
+  "current_after_merge": 20606,
+  "current_before_merge": 20230,
+  "remaining_needs_translation": 1043
 }
