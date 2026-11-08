@@ -3,14 +3,14 @@
 - **Mã game:** BLUS31386 (US), APP_VER 01.00
 - **Nguồn dữ liệu:** `RagnarokACE-BanGiaoDich-2026-11-04.zip`
 - **Catalog đã kiểm kê:** 25.288 chuỗi / 76 bảng
-- **Đã có bản dịch:** 21.389 (2.175 bản nền đã duyệt + 19.214 bản dịch bổ sung)
-- **Chưa dịch trong danh sách cần xử lý:** 260 / 19.474
+- **Đã có bản dịch:** 21.649 (2.175 bản nền đã duyệt + 19.474 bản dịch bổ sung)
+- **Chưa dịch trong danh sách cần xử lý:** 0 / 19.474
 - **Cập nhật gần nhất:** 08/11/2026
 - **Tình trạng:** dữ liệu bản dịch; chưa được kiểm thử đóng gói patch PS3.
 
 ## Điểm bắt đầu mỗi lần dịch
 
-1. Mở [`translations/current.json`](translations/current.json): đây là **bản hợp nhất hiện hành duy nhất**, chứa 19.161 cặp `id → target_vi`.
+1. Mở [`translations/current.json`](translations/current.json): đây là **bản hợp nhất hiện hành duy nhất**, chứa 21.649 cặp `id → target_vi`.
 2. Đối chiếu với `01_CAN_DICH/needs_translation.json` từ gói bàn giao gốc, chỉ dịch mục chưa có trong `current.json`.
 3. Không chỉnh ID, file, index, source, source_tagged, attributes, status hoặc source_sha256. Giữ token `{#0}`, `{#1}`, printf như `%u` và số liệu.
 4. Sau mỗi đợt, viết một JSON mới trong `checkpoints/`, kiểm tra, rồi cập nhật `translations/current.json` và tiến độ này.
@@ -329,3 +329,11 @@ Bước này chỉ điền các mục trong danh sách cần dịch. Để chu�
 - [Checkpoint BU](checkpoints/2026-11-08-batch-334-BU.json) · [QA BU](checkpoints/2026-11-08-BU-QA.json) · [Bàn giao BU](checkpoints/HANDOFF-2026-11-08-BU.md).
 - Đợt tiếp **BV** ưu tiên 94 mục `msg_quest.bin` còn thiếu, nhãn giao diện lưu trữ/hiển thị và các bảng nhỏ chưa hoàn tất. Không cộng lại checkpoint BL–BQ đã trùng trong snapshot.
 - Dữ liệu mới kiểm thử cấu trúc, chưa có bản vá game hoặc xác nhận render font trên RPCS3/PS3.
+
+
+## Bổ sung BV — 08/11/2026
+
+- Hoàn tất 260 ID còn thiếu trong `needs_translation.json` sau BU; QA `validate_return.py` gốc PASS 260/260.
+- Hợp nhất `translations/current.json` lên **21.649** ID, còn **0** ID trong worklist 19.474.
+- Chi tiết: [`checkpoints/HANDOFF-2026-11-08-BV.md`](checkpoints/HANDOFF-2026-11-08-BV.md).
+- **Không đồng nghĩa 100% nội dung game:** vẫn cần kiểm tra 5.814 chuỗi còn lại trong catalog, ảnh, font, patch và thử RPCS3/PS3.
