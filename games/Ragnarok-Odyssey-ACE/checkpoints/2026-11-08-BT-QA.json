@@ -18,7 +18,12 @@
     "These are names, titles, map labels, and skin descriptions; some proper names and reserved values intentionally remain unchanged.",
     "No PS3/RPCS3 in-game rendering tested."
   ],
-  "pending_merge": true,
+  "pending_merge": false,
   "original_validator_result": "Validated 449 nonempty pending translations; 0 empty records",
-  "original_validator_returncode": 0
+  "original_validator_returncode": 0,
+  "merge_completed": true,
+  "merged_commit": "82e7c8b0da25ebb00e6c5b1ef7a8db712497535a",
+  "before_merge_count": 20606,
+  "after_merge_count": 21055,
+  "remaining_source_worklist": 594
 }
