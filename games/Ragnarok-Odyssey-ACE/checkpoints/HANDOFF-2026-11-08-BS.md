@@ -24,3 +24,8 @@
 
 - Tiếp tục bảng `dc_db_text_npc.rmsg` còn lại, mục bách khoa thuật ngữ, hướng dẫn / giao diện. Luôn kiểm tra thực tế số mục còn thiếu bằng ID từ `needs_translation.json` và `translations/current.json`.
 - Credit khi đóng patch: **Việt hóa bởi Votri Valley.**
+## Kết quả sau hợp nhất
+
+- `translations/current.json` đã hợp nhất **376 ID mới đối với snapshot** (304 ID đợt BS + 72 ID đã dịch BJ/BK), không có ID va chạm, tăng **20.230 → 20.606**. Commit: `a14ef16fd62bb0c6c4a09b4dab3d01910d680b1f`.
+- `README.md` đã cập nhật tiến độ, số mục còn thiếu **1.043 / 19.474**. Commit: `ac083a64536a064032940739ee4325511b4e896c`.
+- Cần ưu tiên bảng bách khoa NPC, giao diện trang trí, lưu trò chơi và bảng nhiệm vụ còn thiếu. Hãy đối chiếu `needs_translation.json` với `current.json` trước khi chọn đợt tiếp theo.
