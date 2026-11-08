@@ -3,8 +3,8 @@
 - **Mã game:** BLUS31386 (US), APP_VER 01.00
 - **Nguồn dữ liệu:** `RagnarokACE-BanGiaoDich-2026-11-04.zip`
 - **Catalog đã kiểm kê:** 25.288 chuỗi / 76 bảng
-- **Đã có bản dịch:** 21.055 (2.175 bản nền đã duyệt + 18.880 bản dịch bổ sung)
-- **Chưa dịch trong danh sách cần xử lý:** 594 / 19.474
+- **Đã có bản dịch:** 21.389 (2.175 bản nền đã duyệt + 19.214 bản dịch bổ sung)
+- **Chưa dịch trong danh sách cần xử lý:** 260 / 19.474
 - **Cập nhật gần nhất:** 08/11/2026
 - **Tình trạng:** dữ liệu bản dịch; chưa được kiểm thử đóng gói patch PS3.
 
@@ -318,3 +318,14 @@ Bước này chỉ điền các mục trong danh sách cần dịch. Để chu�
 - GitHub `translations/current.json` đã tăng **20.606 → 21.055 ID duy nhất**, **0 trùng**, commit `82e7c8b0da25ebb00e6c5b1ef7a8db712497535a`. Tổng đạt **83,26%** trong 25.288 chuỗi catalog, danh sách 19.474 mục còn **594 chưa dịch**.
 - [Checkpoint BT](checkpoints/2026-11-08-batch-449-BT.json) · [QA BT](checkpoints/2026-11-08-BT-QA.json) · [Bàn giao BT](checkpoints/HANDOFF-2026-11-08-BT.md).
 - **Đợt BU gợi ý:** ưu tiên bảng `dc_db_text_npc.rmsg` các mục chưa dịch thực sự, `msg_savedata.bin` (cảnh báo sao lưu/khôi phục), `msg_quest.bin`, `msg_history.bin`, `msg_room.bin`. Lọc chống trùng từ source trước khi tạo checkpoint. Các ID còn lại trong bách khoa NPC có thể là ngày giả lập/placeholder, không được tự bịa mô tả.
+
+
+## Cập nhật BU — 08/11/2026: cứu lưu game/Cross-Save, hoàn tất bách khoa NPC
+
+- Dịch, kiểm tra **334 chuỗi chưa có ID trong snapshot**: 214 nhãn `dc_db_text_npc.rmsg` (ngày Midgard, tên thần, trạng thái và biệt danh), 102 thông báo `msg_savedata.bin`, 9 nhãn `msg_room.bin`, 9 nhãn `msg_history.bin`. **Không tính** 214 nhãn NPC như 214 đoạn thoại mới; phần lớn là tên hoặc ngày tháng lặp lại.
+- Nhóm lưu/khôi phục và Cross-Save được biên tập đầy đủ, giữ nguyên thông tin rủi ro ghi đè, PlayStation®Network, PlayStation®3, PlayStation®Vita, mã chèn và số liệu. Giữ nguyên 16 ID lưu game đã dịch trước đó.
+- Bộ **`validate_return.py` gốc** chạy với `02_TOAN_BO/all_records.json` từ ZIP nguồn: **PASS 334/334**, 0 bản ghi rỗng, không lỗi token/printf/chữ số/ID/source. Độ dài tĩnh tối đa 46 ký tự/dòng, chưa đo bằng font thật.
+- GitHub `translations/current.json`: **21.055 → 21.389**, 0 trùng, commit `30c7df93d34add24e0d531763bf530290b511fed`, đã đọc lại và xác nhận 21.389 ID duy nhất. Tương đương **84,58%** catalog 25.288 chuỗi. Còn **260 mục** trong danh sách nguồn 19.474.
+- [Checkpoint BU](checkpoints/2026-11-08-batch-334-BU.json) · [QA BU](checkpoints/2026-11-08-BU-QA.json) · [Bàn giao BU](checkpoints/HANDOFF-2026-11-08-BU.md).
+- Đợt tiếp **BV** ưu tiên 94 mục `msg_quest.bin` còn thiếu, nhãn giao diện lưu trữ/hiển thị và các bảng nhỏ chưa hoàn tất. Không cộng lại checkpoint BL–BQ đã trùng trong snapshot.
+- Dữ liệu mới kiểm thử cấu trúc, chưa có bản vá game hoặc xác nhận render font trên RPCS3/PS3.
