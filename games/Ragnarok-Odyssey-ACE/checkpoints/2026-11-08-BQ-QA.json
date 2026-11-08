@@ -1,0 +1,25 @@
+{
+  "batch": "BQ",
+  "source_archive": "RagnarokACE-BanGiaoDich-2026-11-04.zip",
+  "source_file": "RagnarokACE-BanGiaoDich-2026-11-04/01_CAN_DICH/theo_bang/menu.cpk__msg_field.en.pac__msg_npc_talk.bin.json",
+  "range": [
+    6001,
+    6138
+  ],
+  "translated_count": 136,
+  "missing_source_ids_in_range": [
+    6084,
+    6105
+  ],
+  "source_status_checked": true,
+  "duplicate_ids_in_checkpoint": 0,
+  "overlap_with_pending_BJ_BP": 0,
+  "empty_targets": [],
+  "source_tagged_token_mismatches": [],
+  "more_than_three_lines": [],
+  "line_exceeding_52_characters": [],
+  "maximum_line_length": 50,
+  "maximum_line_count": 3,
+  "source_hash_verified": true,
+  "warning": "Text QA only. In-game PS3 display and packer compatibility not tested. No merge into current.json."
+}
