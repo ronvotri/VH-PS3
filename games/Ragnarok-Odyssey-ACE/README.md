@@ -3,8 +3,8 @@
 - **Mã game:** BLUS31386 (US), APP_VER 01.00
 - **Nguồn dữ liệu:** `RagnarokACE-BanGiaoDich-2026-11-04.zip`
 - **Catalog đã kiểm kê:** 25.288 chuỗi / 76 bảng
-- **Đã có bản dịch:** 20.606 (2.175 bản nền đã duyệt + 18.431 bản dịch bổ sung)
-- **Chưa dịch trong danh sách cần xử lý:** 1.043 / 19.474
+- **Đã có bản dịch:** 21.055 (2.175 bản nền đã duyệt + 18.880 bản dịch bổ sung)
+- **Chưa dịch trong danh sách cần xử lý:** 594 / 19.474
 - **Cập nhật gần nhất:** 08/11/2026
 - **Tình trạng:** dữ liệu bản dịch; chưa được kiểm thử đóng gói patch PS3.
 
@@ -308,3 +308,13 @@ Bước này chỉ điền các mục trong danh sách cần dịch. Để chu�
 - GitHub `translations/current.json` đã **tăng từ 20.230 lên 20.606 ID**, 0 trùng, commit `a14ef16fd62bb0c6c4a09b4dab3d01910d680b1f`. Trong danh sách nguồn 19.474 mục còn **1.043 mục thiếu**. Tỷ lệ trên catalog 25.288: **81,49%**.
 - [Checkpoint BS](checkpoints/2026-11-08-batch-304-BS.json) · [72 mục BJ/BK đã chuẩn hóa](checkpoints/2026-11-08-BS-BJ-BK-72-repaired.json) · [QA](checkpoints/2026-11-08-BS-QA.json) · [Bàn giao](checkpoints/HANDOFF-2026-11-08-BS.md).
 - Checkpoint BL–BQ có 834 ID đã nằm trong bản hợp nhất trước BS; không cộng trùng hoặc ghi đè tự động.
+
+
+## Cập nhật BT — 08/11/2026: nhãn nhân vật, danh hiệu, tên quái, bộ phận boss
+
+- Hoàn thành **449 ID mới** trên 8 bảng: bách khoa NPC tên/phiên bản (97), danh hiệu trang trí (126), tên quái (88), nhãn NPC (53), bộ phận boss (44), tên bản đồ (15), tên màu da (13), mô tả màu da (13).
+- Nhiều mục là **tên riêng, nhãn dự phòng và mã thứ tự**; giữ nguyên đúng khi bản địa hóa không phù hợp. Các mục này được kiểm định và điền vào `target_vi`, không đồng nghĩa với 449 đoạn thoại mới.
+- Chạy `validate_return.py` nguyên bản với `02_TOAN_BO/all_records.json` gốc: **PASS 449/449**, không chuỗi trống, không lỗi source, tag, số hoặc Unicode. Kiểm tra tĩnh ≤38 ký tự/dòng; chưa kiểm thử kết quả render PS3/RPCS3.
+- GitHub `translations/current.json` đã tăng **20.606 → 21.055 ID duy nhất**, **0 trùng**, commit `82e7c8b0da25ebb00e6c5b1ef7a8db712497535a`. Tổng đạt **83,26%** trong 25.288 chuỗi catalog, danh sách 19.474 mục còn **594 chưa dịch**.
+- [Checkpoint BT](checkpoints/2026-11-08-batch-449-BT.json) · [QA BT](checkpoints/2026-11-08-BT-QA.json) · [Bàn giao BT](checkpoints/HANDOFF-2026-11-08-BT.md).
+- **Đợt BU gợi ý:** ưu tiên bảng `dc_db_text_npc.rmsg` các mục chưa dịch thực sự, `msg_savedata.bin` (cảnh báo sao lưu/khôi phục), `msg_quest.bin`, `msg_history.bin`, `msg_room.bin`. Lọc chống trùng từ source trước khi tạo checkpoint. Các ID còn lại trong bách khoa NPC có thể là ngày giả lập/placeholder, không được tự bịa mô tả.
